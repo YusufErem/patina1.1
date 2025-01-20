@@ -1,0 +1,1 @@
+web: gunicorn patina_cappadocia.wsgi:application 

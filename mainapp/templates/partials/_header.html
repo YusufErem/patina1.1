@@ -309,6 +309,32 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin-top: auto;
+    }
+
+    .mobile-bottom .book-btn {
+        width: 100%;
+        text-align: center;
+        order: -1;
+        background: var(--primary);
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border: 2px solid var(--primary);
+        margin-bottom: 10px;
+    }
+
+    .mobile-bottom .book-btn:hover {
+        background: transparent;
+        color: #fff;
+    }
+
+    .mobile-bottom .lang-select {
+        width: 100%;
     }
 
     .mobile-bottom .lang-select select {
@@ -318,11 +344,7 @@
         padding: 12px 15px;
         border-radius: 8px;
         font-size: 16px;
-    }
-
-    .mobile-bottom .book-btn {
-        width: 100%;
-        text-align: center;
+        color: #fff;
     }
 
     @media (max-width: 991px) {

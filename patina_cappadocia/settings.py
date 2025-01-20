@@ -136,6 +136,17 @@ LANGUAGE_COOKIE_SECURE = False
 LANGUAGE_COOKIE_HTTPONLY = True
 LANGUAGE_COOKIE_SAMESITE = 'Lax'
 
+# Cache control settings
+CACHE_MIDDLEWARE_SECONDS = 0  # Disable caching for development
+CACHE_MIDDLEWARE_KEY_PREFIX = ''
+
+# Session settings
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
+
+# Ensure session is refreshed on language change
+SESSION_SAVE_EVERY_REQUEST = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/

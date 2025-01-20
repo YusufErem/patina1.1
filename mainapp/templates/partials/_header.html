@@ -20,10 +20,10 @@
 
         <div class="header-right">
             <div class="lang-select">
-                <form action="{% url 'set_language' %}" method="post">
+                <form action="{% url 'set_language' %}" method="post" id="language-form">
                     {% csrf_token %}
                     <input name="next" type="hidden" value="{{ request.path }}">
-                    <select name="language" onchange="this.form.submit()">
+                    <select name="language" onchange="submitLanguageForm(this)">
                         {% get_current_language as CURRENT_LANGUAGE %}
                         {% get_available_languages as AVAILABLE_LANGUAGES %}
                         {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
@@ -58,10 +58,10 @@
         </nav>
         <div class="mobile-bottom">
             <div class="lang-select">
-                <form action="{% url 'set_language' %}" method="post">
+                <form action="{% url 'set_language' %}" method="post" id="language-form">
                     {% csrf_token %}
                     <input name="next" type="hidden" value="{{ request.path }}">
-                    <select name="language" onchange="this.form.submit()">
+                    <select name="language" onchange="submitLanguageForm(this)">
                         {% for language in languages %}
                             <option value="{{ language.code }}"{% if language.code == CURRENT_LANGUAGE %} selected{% endif %}>
                                 {{ language.name_local }}
@@ -438,5 +438,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function submitLanguageForm(select) {
+    const form = document.getElementById('language-form');
+    const csrfToken = form.querySelector('[name=csrfmiddlewaretoken]').value;
+    
+    fetch(form.action, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRFToken': csrfToken,
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+        },
+        body: new URLSearchParams({
+            'language': select.value,
+            'next': form.querySelector('[name=next]').value,
+            'csrfmiddlewaretoken': csrfToken
+        })
+    }).then(response => {
+        if (response.ok) {
+            window.location.reload(true);
+        }
+    });
+}
 </script>
 

@@ -20,20 +20,16 @@
 
         <div class="header-right">
             <div class="lang-select">
-                <form action="{% url 'set_language' %}" method="post" id="language-form">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="{{ request.path }}">
-                    <select name="language" onchange="submitLanguageForm(this)">
-                        {% get_current_language as CURRENT_LANGUAGE %}
-                        {% get_available_languages as AVAILABLE_LANGUAGES %}
-                        {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
-                        {% for language in languages %}
-                            <option value="{{ language.code }}"{% if language.code == CURRENT_LANGUAGE %} selected{% endif %}>
-                                {{ language.name_local }}
-                            </option>
-                        {% endfor %}
-                    </select>
-                </form>
+                <select onchange="changeLang(this.value)">
+                    {% get_current_language as CURRENT_LANGUAGE %}
+                    {% get_available_languages as AVAILABLE_LANGUAGES %}
+                    {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                    {% for language in languages %}
+                        <option value="{{ language.code }}"{% if language.code == CURRENT_LANGUAGE %} selected{% endif %}>
+                            {{ language.name_local }}
+                        </option>
+                    {% endfor %}
+                </select>
             </div>
             <a href="https://www.reseliva.com/booknow/patina-cappadocia/" class="book-btn" target="_blank">
                 {% trans "Rezervasyon" %}
@@ -58,17 +54,16 @@
         </nav>
         <div class="mobile-bottom">
             <div class="lang-select">
-                <form action="{% url 'set_language' %}" method="post" id="language-form">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="{{ request.path }}">
-                    <select name="language" onchange="submitLanguageForm(this)">
-                        {% for language in languages %}
-                            <option value="{{ language.code }}"{% if language.code == CURRENT_LANGUAGE %} selected{% endif %}>
-                                {{ language.name_local }}
-                            </option>
-                        {% endfor %}
-                    </select>
-                </form>
+                <select onchange="changeLang(this.value)">
+                    {% get_current_language as CURRENT_LANGUAGE %}
+                    {% get_available_languages as AVAILABLE_LANGUAGES %}
+                    {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                    {% for language in languages %}
+                        <option value="{{ language.code }}"{% if language.code == CURRENT_LANGUAGE %} selected{% endif %}>
+                            {{ language.name_local }}
+                        </option>
+                    {% endfor %}
+                </select>
             </div>
             <a href="https://www.reseliva.com/booknow/patina-cappadocia/" class="book-btn" target="_blank">
                 {% trans "Rezervasyon" %}
@@ -418,7 +413,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.toggle('active');
         body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
         
-        // Toggle reviews badge visibility
         if (reviewsBadge) {
             reviewsBadge.style.display = mobileMenu.classList.contains('active') ? 'none' : '';
         }
@@ -431,7 +425,6 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenu.classList.remove('active');
             body.style.overflow = '';
             
-            // Show reviews badge when menu closes
             if (reviewsBadge) {
                 reviewsBadge.style.display = '';
             }
@@ -439,28 +432,66 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function submitLanguageForm(select) {
-    const form = document.getElementById('language-form');
-    const csrfToken = form.querySelector('[name=csrfmiddlewaretoken]').value;
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+function changeLang(lang) {
+    const csrftoken = getCookie('csrftoken');
     
-    fetch(form.action, {
+    // Tüm dil seçicileri devre dışı bırak
+    document.querySelectorAll('.lang-select select').forEach(select => {
+        select.disabled = true;
+    });
+
+    fetch('{% url "set_language" %}', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            'X-CSRFToken': csrfToken,
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache',
-            'Expires': '0'
+            'X-CSRFToken': csrftoken
         },
         body: new URLSearchParams({
-            'language': select.value,
-            'next': form.querySelector('[name=next]').value,
-            'csrfmiddlewaretoken': csrfToken
+            'language': lang,
+            'next': window.location.pathname
         })
-    }).then(response => {
-        if (response.ok) {
-            window.location.reload(true);
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Dil değiştirme başarısız oldu');
         }
+        // URL'yi güncelle ve sayfayı yeniden yükle
+        const currentPath = window.location.pathname;
+        const pathParts = currentPath.split('/');
+        
+        // İlk parça boş string (/) ve ikinci parça dil kodu olacak
+        if (pathParts.length > 1) {
+            // Mevcut dil kodunu yenisiyle değiştir
+            pathParts[1] = lang;
+            const newPath = pathParts.join('/');
+            window.location.href = newPath;
+        } else {
+            // Eğer URL'de dil kodu yoksa, yeni dil koduyla birlikte yönlendir
+            window.location.href = '/' + lang + currentPath;
+        }
+    })
+    .catch(error => {
+        console.error('Hata:', error);
+        // Hata durumunda seçicileri tekrar etkinleştir
+        document.querySelectorAll('.lang-select select').forEach(select => {
+            select.disabled = false;
+            select.value = '{{ CURRENT_LANGUAGE }}';
+        });
     });
 }
 </script>

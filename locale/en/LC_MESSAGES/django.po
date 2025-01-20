@@ -1,0 +1,448 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-15 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Navigation
+msgid "Ana Sayfa"
+msgstr "Home"
+
+msgid "Odalar"
+msgstr "Rooms"
+
+msgid "Hakkımızda"
+msgstr "About Us"
+
+msgid "İletişim"
+msgstr "Contact"
+
+msgid "Rezervasyon"
+msgstr "Reservation"
+
+# Home Page
+msgid "Kapadokya'nın En Lüks Mağara Oteli"
+msgstr "The Most Luxurious Cave Hotel in Cappadocia"
+
+msgid "Özel Havuzlu Odalar"
+msgstr "Rooms with Private Pools"
+
+msgid "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
+msgstr "An Unforgettable Stay in the Heart of Magical Cappadocia"
+
+# Rooms Section
+msgid "Konforlu Odalar"
+msgstr "Comfortable Rooms"
+
+msgid "Odalarımız"
+msgstr "Our Rooms"
+
+msgid "Detayları Gör"
+msgstr "View Details"
+
+msgid "Superior Oda"
+msgstr "Superior Room"
+
+msgid "Kapadokya manzaralı, özel teraslı lüks odalarımız"
+msgstr "Our luxurious rooms with private terraces and views of Cappadocia"
+
+msgid "King Suite"
+msgstr "King Suite"
+
+msgid "Geniş ve konforlu, modern donanımlı odalarımız"
+msgstr "Spacious, comfortable, and modernly equipped rooms"
+
+msgid "Queen Oda"
+msgstr "Queen Room"
+
+msgid "Şık tasarımlı, konforlu odalarımız"
+msgstr "Elegantly designed, comfortable rooms"
+
+msgid "Executive Oda"
+msgstr "Executive Room"
+
+msgid "İş seyahatleri için ideal, konforlu odalarımız"
+msgstr "Ideal and comfortable rooms for business trips"
+
+msgid "Presidential Suite"
+msgstr "Presidential Suite"
+
+msgid "En lüks ve geniş suit odamız"
+msgstr "Our most luxurious and spacious suite"
+
+msgid "Cave Honeymoon"
+msgstr "Cave Honeymoon"
+
+msgid "Balayı çiftleri için özel tasarlanmış suit odamız"
+msgstr "Our specially designed suite for honeymoon couples"
+
+# Gallery Modal
+msgid "Kapat"
+msgstr "Close"
+
+msgid "Önceki"
+msgstr "Previous"
+
+msgid "Sonraki"
+msgstr "Next"
+
+msgid "Galeri Görüntüsü"
+msgstr "Gallery View"
+
+# Room Features
+msgid "Oda Özellikleri"
+msgstr "Room Features"
+
+msgid "King Size Yatak"
+msgstr "King Size Bed"
+
+msgid "Queen Size Yatak"
+msgstr "Queen Size Bed"
+
+msgid "Özel Tasarım Banyo"
+msgstr "Custom-Designed Bathroom"
+
+msgid "Smart TV"
+msgstr "Smart TV"
+
+msgid "Ücretsiz Wi-Fi"
+msgstr "Free Wi-Fi"
+
+msgid "Mini Bar"
+msgstr "Mini Bar"
+
+msgid "Klima"
+msgstr "Air Conditioning"
+
+msgid "Oturma Alanı"
+msgstr "Seating Area"
+
+msgid "Özel Teras"
+msgstr "Private Terrace"
+
+msgid "Jakuzili Banyo"
+msgstr "Bathroom with Jacuzzi"
+
+msgid "Çalışma Masası"
+msgstr "Work Desk"
+
+msgid "Yüksek Hızlı Wi-Fi"
+msgstr "High-Speed Wi-Fi"
+
+msgid "Lüks Banyo"
+msgstr "Luxury Bathroom"
+
+msgid "Kahve Makinesi"
+msgstr "Coffee Machine"
+
+msgid "Şömine"
+msgstr "Fireplace"
+
+msgid "Mini Mutfak"
+msgstr "Kitchenette"
+
+msgid "Özel Jakuzi"
+msgstr "Private Jacuzzi"
+
+msgid "Şampanya Servisi"
+msgstr "Champagne Service"
+
+# Room Descriptions
+msgid "Kapadokya'nın Doğal Dokusunda Modern Konfor"
+msgstr "Modern Comfort in the Natural Texture of Cappadocia"
+
+msgid "Modern Konforun Doğal Dokuyla Buluşması"
+msgstr "The Fusion of Modern Comfort and Natural Texture"
+
+msgid "Superior odalarımız, Kapadokya'nın eşsiz mağara mimarisini modern konforla buluşturuyor. Her odamız özenle restore edilmiş olup, bölgenin tarihi dokusunu yaşatırken size konforlu bir konaklama deneyimi sunuyor."
+msgstr "Our Superior rooms combine Cappadocia's unique cave architecture with modern comfort. Each room is carefully restored, preserving the region's historical character while offering you a comfortable stay."
+
+msgid "Tarihi Atmosferde Lüks Deneyim"
+msgstr "A Luxurious Experience in a Historical Atmosphere"
+
+msgid "King Suite odalarımız, geniş yaşam alanı ve özel terası ile size unutulmaz bir Kapadokya deneyimi sunuyor. Tarihi doku modern tasarım öğeleriyle harmanlanarak benzersiz bir atmosfer yaratıyor."
+msgstr "Our King Suite rooms offer an unforgettable Cappadocia experience with spacious living areas and private terraces. The historical texture blends with modern design elements to create a unique atmosphere."
+
+msgid "Konforlu ve Şık Tasarım"
+msgstr "Comfortable and Elegant Design"
+
+msgid "Queen odalarımız, şık tasarımı ve konforlu yaşam alanıyla misafirlerimize huzurlu bir konaklama sunuyor. Modern dokunuşlar ve geleneksel mimari detaylar mükemmel bir uyum içinde."
+msgstr "Our Queen rooms offer guests a peaceful stay with their elegant design and comfortable living space. Modern touches and traditional architectural details create a perfect harmony."
+
+msgid "İş ve Konforun Buluşması"
+msgstr "Where Business Meets Comfort"
+
+msgid "Executive odalarımız, iş seyahatlerinizde konfor ve lüksü bir arada sunar. Çalışma alanı ve modern olanaklar ile donatılmış odalarımız, verimli bir konaklama deneyimi sağlar."
+msgstr "Our Executive rooms offer both comfort and luxury for your business trips. Equipped with a workspace and modern amenities, they provide an efficient stay experience."
+
+msgid "Eşsiz Lüks ve Konfor"
+msgstr "Unparalleled Luxury and Comfort"
+
+msgid "Presidential Suite, en üst düzey konfor ve lüksü arayanlar için tasarlandı. Geniş yaşam alanı, özel teras ve jakuzi gibi ayrıcalıklı olanaklar sunan süitimiz, unutulmaz bir konaklama deneyimi vadediyor."
+msgstr "The Presidential Suite is designed for those seeking ultimate comfort and luxury. Offering a spacious living area, private terrace, and exclusive amenities like a jacuzzi, our suite promises an unforgettable stay."
+
+msgid "Romantik Kaçamak"
+msgstr "Romantic Getaway"
+
+msgid "Cave Honeymoon Suite, balayı çiftleri için özel olarak tasarlanmış romantik bir kaçamak sunuyor. Özel jakuzi, şömine ve büyüleyici manzarasıyla unutulmaz anlar yaşayacağınız bir mekan."
+msgstr "The Cave Honeymoon Suite offers a romantic getaway specially designed for honeymoon couples. With a private jacuzzi, fireplace, and breathtaking views, it is a place to create unforgettable moments."
+
+# Contact Information
+msgid "Adres"
+msgstr "Address"
+
+msgid "Telefon"
+msgstr "Phone"
+
+msgid "E-posta"
+msgstr "Email"
+
+# Activities
+msgid "Vadi Yürüyüşü"
+msgstr "Valley Walk"
+
+msgid "Balon Turu"
+msgstr "Hot Air Balloon Tour"
+
+msgid "Yeraltı Şehri"
+msgstr "Underground City"
+
+msgid "Peri Bacaları"
+msgstr "Fairy Chimneys"
+
+# Experiences Section
+msgid "Eşsiz Deneyimler"
+msgstr "Unique Experiences"
+
+msgid "Kapadokya'da Unutulmaz Deneyimler"
+msgstr "Unforgettable Experiences in Cappadocia"
+
+msgid "Güneşin doğuşunu gökyüzünden izleyin"
+msgstr "Watch the sunrise from the sky"
+
+msgid "Eşsiz vadileri keşfedin"
+msgstr "Explore unique valleys"
+
+msgid "Büyüleyici peri bacalarını keşfedin"
+msgstr "Discover enchanting fairy chimneys"
+
+# Social Media
+msgid "Instagram'da Bizi Takip Edin"
+msgstr "Follow Us on Instagram"
+
+# Error Pages
+msgid "Sayfa Bulunamadı - 404"
+msgstr "Page Not Found - 404"
+
+msgid "Aradığınız Sayfa Bulunamadı"
+msgstr "The Page You're Looking For Cannot Be Found"
+
+msgid "Üzgünüz, aradığınız sayfaya ulaşılamıyor. Ana sayfaya dönüp tekrar deneyebilirsiniz."
+msgstr "Sorry, the page you're looking for is not accessible. You can return to the homepage and try again."
+
+msgid "Ana Sayfaya Dön"
+msgstr "Return to Homepage"
+
+# About Page
+msgid "Hakkımızda - Patina Cappadocia"
+msgstr "About Us - Patina Cappadocia"
+
+msgid "Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
+msgstr "A Unique Stay Experience in the Heart of Cappadocia"
+
+msgid "Tarihçemiz"
+msgstr "Our History"
+
+msgid "Geleneksel Mimarinin Modern Yorumu"
+msgstr "Modern Interpretation of Traditional Architecture"
+
+msgid "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, geleneksel dokuyu ve modern lüksü mükemmel bir uyumla bir araya getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu bir konaklama deneyimi yaşatıyor."
+msgstr "Located among the enchanting views of Uchisar, Patina Cappadocia perfectly combines traditional texture with modern luxury. While our stone-crafted architecture reflects the region's rich cultural heritage, our contemporary amenities provide you with a comfortable stay experience."
+
+msgid "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Kapadokya, büyüleyici Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır."
+msgstr "Whether for adventurers seeking to explore nature and history, or couples and families looking for peace, Patina Cappadocia is the perfect starting point to discover magical Cappadocia."
+
+msgid "Daha Fazla"
+msgstr "Learn More"
+
+msgid "Misyonumuz"
+msgstr "Our Mission"
+
+msgid "Benzersiz Deneyimler Sunuyoruz"
+msgstr "We Offer Unique Experiences"
+
+msgid "Misafirlerimize sadece bir konaklama değil, Kapadokya'nın büyülü atmosferini tam anlamıyla yaşayabilecekleri özel bir deneyim sunmayı hedefliyoruz. Profesyonel ekibimiz, size bölgenin en güzel yerlerini keşfetmeniz için rehberlik ederken, konforlu odalarımız ve özenle hazırlanan hizmetlerimizle unutulmaz anılar biriktirmenizi sağlıyoruz."
+msgstr "We aim to offer our guests not just accommodation, but a special experience where they can fully immerse themselves in Cappadocia's magical atmosphere. While our professional team guides you to discover the region's most beautiful spots, our comfortable rooms and carefully prepared services help you create unforgettable memories."
+
+msgid "Özel Tasarlanmış Odalar"
+msgstr "Custom Designed Rooms"
+
+msgid "Panoramik Manzara"
+msgstr "Panoramic View"
+
+msgid "Profesyonel Hizmet"
+msgstr "Professional Service"
+
+msgid "Bölge Rehberliği"
+msgstr "Regional Guidance"
+
+msgid "Hizmetlerimiz"
+msgstr "Our Services"
+
+msgid "Size Özel Ayrıcalıklar"
+msgstr "Exclusive Privileges for You"
+
+msgid "Patina Cappadocia'da konaklama deneyiminizi özel kılan pek çok hizmet sunuyoruz. Balon turlarından vadi yürüyüşlerine, özel restoran rezervasyonlarından bölge turlarına kadar tüm ihtiyaçlarınızı karşılıyoruz."
+msgstr "At Patina Cappadocia, we offer many services that make your stay experience special. From balloon tours to valley walks, from special restaurant reservations to regional tours, we meet all your needs."
+
+msgid "7/24 Concierge"
+msgstr "24/7 Concierge"
+
+msgid "Özel Restoran"
+msgstr "Private Restaurant"
+
+msgid "Transfer Hizmeti"
+msgstr "Transfer Service"
+
+msgid "Tur Organizasyonu"
+msgstr "Tour Organization"
+
+msgid "Galeri"
+msgstr "Gallery"
+
+msgid "Patina'dan Kareler"
+msgstr "Moments from Patina"
+
+# Contact Page
+msgid "İletişim - Patina Cappadocia"
+msgstr "Contact - Patina Cappadocia"
+
+msgid "Size Yardımcı Olmaktan Mutluluk Duyarız"
+msgstr "We're Happy to Help You"
+
+msgid "Hemen Ara"
+msgstr "Call Now"
+
+msgid "WhatsApp'tan Mesaj"
+msgstr "Message on WhatsApp"
+
+msgid "Yol Tarifi Al"
+msgstr "Get Directions"
+
+msgid "Yol Tarifi"
+msgstr "Directions"
+
+msgid "Çalışma Saatleri"
+msgstr "Working Hours"
+
+msgid "7/24 Hizmetinizdeyiz"
+msgstr "We're at Your Service 24/7"
+
+msgid "Check-in: 14:00"
+msgstr "Check-in: 14:00"
+
+msgid "Check-out: 12:00"
+msgstr "Check-out: 12:00"
+
+msgid "Sık Sorulan Sorular"
+msgstr "Frequently Asked Questions"
+
+msgid "Rezervasyon nasıl yapabilirim?"
+msgstr "How can I make a reservation?"
+
+msgid "Rezervasyon için bizi telefonla arayabilir, WhatsApp üzerinden mesaj gönderebilir veya"
+msgstr "You can call us by phone, send a message via WhatsApp, or"
+
+msgid "rezervasyon sitemizden"
+msgstr "from our reservation website"
+
+msgid "yapabilirsiniz."
+msgstr "make a reservation."
+
+msgid "Otele nasıl ulaşabilirim?"
+msgstr "How can I reach the hotel?"
+
+msgid "Nevşehir Havalimanı'ndan otelimize transfer hizmeti sunuyoruz. Ayrıca Göreme merkeze yakın konumumuz sayesinde toplu taşıma ile de kolayca ulaşabilirsiniz."
+msgstr "We offer transfer service from Nevşehir Airport to our hotel. Also, thanks to our location close to Göreme center, you can easily reach us by public transportation."
+
+msgid "Balon turu rezervasyonu yapabilir miyim?"
+msgstr "Can I book a balloon tour?"
+
+msgid "Evet, otelimiz üzerinden balon turu rezervasyonu yapabilirsiniz. En iyi fiyat garantisi ve güvenilir balon şirketleriyle çalışıyoruz."
+msgstr "Yes, you can book a balloon tour through our hotel. We work with reliable balloon companies and offer best price guarantee."
+
+msgid "Oda özellikleri nelerdir?"
+msgstr "What are the room features?"
+
+msgid "Tüm odalarımızda ücretsiz Wi-Fi, klima, minibar, LED TV, özel banyo ve lüks banyo malzemeleri bulunmaktadır. Detaylı bilgi için odalar sayfamızı inceleyebilirsiniz."
+msgstr "All our rooms feature free Wi-Fi, air conditioning, minibar, LED TV, private bathroom, and luxury bathroom amenities. You can check our rooms page for detailed information."
+
+# Footer
+msgid "Hızlı Linkler"
+msgstr "Quick Links"
+
+msgid "Sosyal Medya"
+msgstr "Social Media"
+
+msgid "Konum"
+msgstr "Location"
+
+msgid "Copyright"
+msgstr "Copyright"
+
+msgid "Tüm hakları saklıdır"
+msgstr "All rights reserved"
+
+msgid "Göreme, Nevşehir, Türkiye"
+msgstr "Göreme, Nevşehir, Turkey"
+
+# Reviews
+msgid "Misafir Yorumları"
+msgstr "Guest Reviews"
+
+msgid "Google'da Bizi Değerlendirin"
+msgstr "Rate Us on Google"
+
+msgid "Google'da Değerlendir"
+msgstr "Review on Google"
+
+msgid " 36 Değerlendirme"
+msgstr " 36 Reviews"
+
+msgid "Değerlendir"
+msgstr "Rate"
+
+# Booking
+msgid "Hemen Rezervasyon Yap"
+msgstr "Book Now"
+
+msgid "Rezervasyon Yap"
+msgstr "Book Now"
+
+msgid "Bizi Arayın"
+msgstr "Call Us"
+
+msgid "Özel Banyo"
+msgstr "Private Bathroom"
+
+msgid "Romantik Aydınlatma"
+msgstr "Romantic Lighting"
+
+msgid "Lüks Mağara Odalarımız"
+msgstr "Luxury Cave Rooms"
+
+

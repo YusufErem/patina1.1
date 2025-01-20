@@ -1,0 +1,634 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "İletişim - Patina Cappadocia" %}{% endblock %}
+
+{% block content %}
+<div class="contact_page">
+    <!-- Hero Section -->
+    <div class="contact_hero">
+        <div class="container">
+            <div class="hero_content text-center">
+                <h1>{% trans "İletişim" %}</h1>
+                <p class="lead">{% trans "Size Yardımcı Olmaktan Mutluluk Duyarız" %}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Content -->
+    <div class="contact_content">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Contact Buttons -->
+                <div class="col-12 mb-5">
+                    <div class="quick_contact">
+                        <a href="tel:+905424685050" class="contact_btn call_btn">
+                            <i class="fas fa-phone"></i>
+                            <span>{% trans "Hemen Ara" %}</span>
+                        </a>
+                        <a href="https://wa.me/905424685050" target="_blank" class="contact_btn whatsapp_btn">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>{% trans "WhatsApp'tan Mesaj" %}</span>
+                        </a>
+                        <a href="https://maps.google.com/?q=Patina+Cappadocia" target="_blank" class="contact_btn maps_btn">
+                            <i class="fas fa-location-dot"></i>
+                            <span>{% trans "Yol Tarifi Al" %}</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Info Cards -->
+                <div class="col-lg-6">
+                    <div class="info_cards">
+                        <div class="info_card">
+                            <div class="card_icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="card_content">
+                                <h3>{% trans "Adres" %}</h3>
+                                <p>Aydınlı Mahallesi, Aydınlı Sokak No:26, 50180 Göreme/Nevşehir</p>
+                                <a href="https://maps.google.com/?q=Patina+Cappadocia" target="_blank" class="direction_link">
+                                    <i class="fas fa-directions"></i> {% trans "Yol Tarifi" %}
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="info_card">
+                            <div class="card_icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="card_content">
+                                <h3>{% trans "Telefon" %}</h3>
+                                <p><a href="tel:+903842193837">+90 384 219 38 37</a></p>
+                                <p><a href="tel:+905424685050">+90 542 468 50 50</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info_card">
+                            <div class="card_icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="card_content">
+                                <h3>{% trans "Çalışma Saatleri" %}</h3>
+                                <p>{% trans "7/24 Hizmetinizdeyiz" %}</p>
+                                <p>{% trans "Check-in: 14:00" %}</p>
+                                <p>{% trans "Check-out: 12:00" %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="col-lg-6">
+                    <div class="faq_section">
+                        <h2>{% trans "Sık Sorulan Sorular" %}</h2>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        {% trans "Rezervasyon nasıl yapabilirim?" %}
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        {% trans "Rezervasyon için bizi telefonla arayabilir, WhatsApp üzerinden mesaj gönderebilir veya" %} <a href="https://www.reseliva.com/booknow/patina-cappadocia/" target="_blank">{% trans "rezervasyon sitemizden" %}</a> {% trans "yapabilirsiniz." %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        {% trans "Otele nasıl ulaşabilirim?" %}
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        {% trans "Nevşehir Havalimanı'ndan otelimize transfer hizmeti sunuyoruz. Ayrıca Göreme merkeze yakın konumumuz sayesinde toplu taşıma ile de kolayca ulaşabilirsiniz." %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        {% trans "Balon turu rezervasyonu yapabilir miyim?" %}
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        {% trans "Evet, otelimiz üzerinden balon turu rezervasyonu yapabilirsiniz. En iyi fiyat garantisi ve güvenilir balon şirketleriyle çalışıyoruz." %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        {% trans "Oda özellikleri nelerdir?" %}
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        {% trans "Tüm odalarımızda ücretsiz Wi-Fi, klima, minibar, LED TV, özel banyo ve lüks banyo malzemeleri bulunmaktadır. Detaylı bilgi için odalar sayfamızı inceleyebilirsiniz." %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map_section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.776143545658!2d34.82898334999999!3d38.64287365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152a6b1c6f5f1213%3A0x1bc7b6c5f4b24c1b!2sPatina%20Cappadocia!5e0!3m2!1str!2str!4v1625136234567!5m2!1str!2str" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<style>
+.contact_page {
+    background: #fff;
+}
+
+.contact_hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{% static "img/views/70.jpg" %}') no-repeat center center;
+    background-size: cover;
+}
+
+.hero_content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero_content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero_content .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.contact_content {
+    padding: 0 0 80px;
+}
+
+.contact_info {
+    background: #F5F1EB;
+    padding: 40px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.section_title {
+    margin-bottom: 30px;
+}
+
+.section_title span {
+    display: block;
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section_title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2C3E50;
+    position: relative;
+    display: inline-block;
+}
+
+.section_title h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+}
+
+.info_items {
+    margin-bottom: 30px;
+}
+
+.info_item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.info_item i {
+    font-size: 24px;
+    color: var(--primary);
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.info_content h4 {
+    font-size: 1.2rem;
+    color: #2C3E50;
+    margin-bottom: 5px;
+}
+
+.info_content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.info_content a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info_content a:hover {
+    color: var(--primary);
+}
+
+.social_links {
+    display: flex;
+    gap: 15px;
+}
+
+.social_links a {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C3E50;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social_links a:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.contact_form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+
+.form_group {
+    margin-bottom: 20px;
+}
+
+.form_group input,
+.form_group select,
+.form_group textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2C3E50;
+    transition: all 0.3s ease;
+}
+
+.form_group input:focus,
+.form_group select:focus,
+.form_group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 157, 255, 0.1);
+}
+
+.form_group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact_form button {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.contact_form button i {
+    margin-left: 8px;
+}
+
+.contact_form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.map_section {
+    height: 450px;
+    margin-bottom: -80px;
+}
+
+.map_section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .contact_hero {
+        height: 50vh;
+        margin-bottom: 60px;
+    }
+
+    .hero_content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero_content .lead {
+        font-size: 1.2rem;
+    }
+
+    .section_title h2 {
+        font-size: 2rem;
+    }
+    
+    .contact_info {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact_hero {
+        height: 40vh;
+        margin-bottom: 40px;
+    }
+    
+    .hero_content h1 {
+        font-size: 2rem;
+    }
+
+    .hero_content .lead {
+        font-size: 1rem;
+    }
+
+    .section_title h2 {
+        font-size: 1.75rem;
+    }
+
+    .contact_info,
+    .contact_form {
+        padding: 20px;
+    }
+
+    .info_item i {
+        font-size: 20px;
+    }
+
+    .info_content h4 {
+        font-size: 1.1rem;
+    }
+
+    .info_content p {
+        font-size: 1rem;
+    }
+
+    .social_links a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .form_group input,
+    .form_group select,
+    .form_group textarea {
+        padding: 10px 15px;
+    }
+
+    .contact_form button {
+        width: 100%;
+    }
+}
+
+.quick_contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact_btn {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact_btn i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.call_btn {
+    background: var(--primary);
+}
+
+.whatsapp_btn {
+    background: #25D366;
+}
+
+.maps_btn {
+    background: #4285F4;
+}
+
+.contact_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.info_cards {
+    display: grid;
+    gap: 30px;
+}
+
+.info_card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.info_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card_icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.card_icon i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.card_content h3 {
+    font-size: 1.3rem;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.card_content p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.card_content a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card_content a:hover {
+    color: var(--primary);
+}
+
+.direction_link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary) !important;
+    margin-top: 10px;
+}
+
+.direction_link i {
+    margin-right: 5px;
+}
+
+.faq_section {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.faq_section h2 {
+    font-size: 2rem;
+    color: #2C3E50;
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+    color: #2C3E50;
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background: var(--primary);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 20px;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+    .contact_btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .contact_btn i {
+        font-size: 1.3rem;
+    }
+
+    .info_card {
+        padding: 20px;
+    }
+
+    .card_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card_icon i {
+        font-size: 20px;
+    }
+
+    .faq_section {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .quick_contact {
+        flex-direction: column;
+    }
+
+    .contact_btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .info_card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card_icon {
+        margin: 0 auto 15px;
+    }
+
+    .social_links {
+        justify-content: center;
+    }
+}
+</style>
+{% endblock %} 

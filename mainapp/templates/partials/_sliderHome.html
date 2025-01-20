@@ -1,0 +1,46 @@
+{% load static %}
+{% load i18n %}
+
+<div class="slider_area">
+    <style>
+        .slider_area {
+            position: relative;
+            height: 100vh;
+        }
+        .slider_text h3 {
+            font-size: 4.5rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        .slider_text p {
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .slider_text h3 {
+                font-size: 2.5rem;
+            }
+            .slider_text p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+    <div class="slider_active owl-carousel">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <h3>{% trans "Patina Cappadocia" %}</h3>
+                            <p>{% trans "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi" %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

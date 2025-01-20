@@ -1,0 +1,464 @@
+{% load static %}
+{% load i18n %}
+
+<!-- rooms_area_start -->
+<div class="rooms_area">
+    <div class="container">
+        <div class="section_title text-center mb-5">
+            <span>{% trans "Konforlu Odalar" %}</span>
+            <h3>{% trans "Odalarımız" %}</h3>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6">
+                <div class="room_item">
+                    <div class="room_img">
+                        <img src="{% static 'img/rooms/superior1.jpg' %}" alt="{% trans 'Superior Oda' %}" loading="lazy">
+                        <div class="room_hover">
+                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
+                        </div>
+                    </div>
+                    <div class="room_info">
+                        <h4>{% trans "Superior Oda" %}</h4>
+                        <p>{% trans "Kapadokya manzaralı, özel teraslı lüks odalarımız" %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="room_item">
+                    <div class="room_img">
+                        <img src="{% static 'img/rooms/kingsuite1.jpeg' %}" alt="{% trans 'King Suite' %}" loading="lazy">
+                        <div class="room_hover">
+                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
+                        </div>
+                    </div>
+                    <div class="room_info">
+                        <h4>{% trans "King Suite" %}</h4>
+                        <p>{% trans "Geniş ve konforlu, modern donanımlı odalarımız" %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="room_item">
+                    <div class="room_img">
+                        <img src="{% static 'img/rooms/queen1.jpeg' %}" alt="{% trans 'Queen Oda' %}" loading="lazy">
+                        <div class="room_hover">
+                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
+                        </div>
+                    </div>
+                    <div class="room_info">
+                        <h4>{% trans "Queen Oda" %}</h4>
+                        <p>{% trans "Şık tasarımlı, konforlu odalarımız" %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="room_item">
+                    <div class="room_img">
+                        <img src="{% static 'img/rooms/executive1.jpeg' %}" alt="{% trans 'Executive Oda' %}" loading="lazy">
+                        <div class="room_hover">
+                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
+                        </div>
+                    </div>
+                    <div class="room_info">
+                        <h4>{% trans "Executive Oda" %}</h4>
+                        <p>{% trans "İş seyahatleri için ideal, konforlu odalarımız" %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="room_item">
+                    <div class="room_img">
+                        <img src="{% static 'img/rooms/presidentialsuite1.jpeg' %}" alt="{% trans 'Presidential Suite' %}" loading="lazy">
+                        <div class="room_hover">
+                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
+                        </div>
+                    </div>
+                    <div class="room_info">
+                        <h4>{% trans "Presidential Suite" %}</h4>
+                        <p>{% trans "En lüks ve geniş suit odamız" %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="room_item">
+                    <div class="room_img">
+                        <img src="{% static 'img/rooms/CurveHoneymoon1.jpeg' %}" alt="{% trans 'Cave Honeymoon' %}" loading="lazy">
+                        <div class="room_hover">
+                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
+                        </div>
+                    </div>
+                    <div class="room_info">
+                        <h4>{% trans "Cave Honeymoon" %}</h4>
+                        <p>{% trans "Balayı çiftleri için özel tasarlanmış suit odamız" %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- rooms_area_end -->
+
+<!-- Gallery Modal -->
+<div id="galleryModal" class="modal">
+    <span class="close" title="{% trans 'Kapat' %}">&times;</span>
+    <div class="modal-content">
+        <div class="gallery-container">
+            <button class="prev" title="{% trans 'Önceki' %}">&#10094;</button>
+            <img id="galleryImage" src="" alt="{% trans 'Galeri Görüntüsü' %}">
+            <button class="next" title="{% trans 'Sonraki' %}">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.rooms_area {
+    background: #F5F1EB;
+    padding: 120px 0;
+    position: relative;
+    color: #2C3E50;
+}
+
+.rooms_area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: url("{% static 'img/pattern/pattern-light.png' %}") repeat;
+    opacity: 0.1;
+}
+
+.section_title {
+    position: relative;
+    z-index: 1;
+}
+
+.section_title span {
+    display: block;
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section_title h3 {
+    color: #2C3E50;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section_title h3:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    transform: translateX(-50%);
+}
+
+.room_item {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.room_item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.room_img {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 75%;
+}
+
+.room_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.room_item:hover .room_img img {
+    transform: scale(1.1);
+}
+
+.room_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 62, 80, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.room_item:hover .room_hover {
+    opacity: 1;
+}
+
+.book_now {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+}
+
+.room_item:hover .book_now {
+    transform: translateY(0);
+}
+
+.book_now:hover {
+    background: #fff;
+    color: var(--primary);
+}
+
+.room_info {
+    padding: 25px;
+    text-align: center;
+    background: #fff;
+}
+
+.room_info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2C3E50;
+}
+
+.room_info p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+    .rooms_area {
+        padding: 80px 0;
+    }
+    
+    .section_title h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .rooms_area {
+        padding: 60px 0;
+    }
+    
+    .section_title h3 {
+        font-size: 1.75rem;
+    }
+    
+    .room_info h4 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#galleryImage {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    color: #f1f1f1;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
+</style>
+
+<script>
+const galleryImages = {
+    'superior': [
+        '{% static "img/rooms/superior1.jpg" %}',
+        '{% static "img/rooms/superior2.jpeg" %}',
+        '{% static "img/rooms/superior3.jpeg" %}',
+        '{% static "img/rooms/superior4.jpeg" %}'
+    ],
+    'king': [
+        '{% static "img/rooms/kingsuite1.jpeg" %}',
+        '{% static "img/rooms/kingsuite2.jpeg" %}',
+        '{% static "img/rooms/kingsuite3.jpeg" %}',
+        '{% static "img/rooms/kingsuite4.jpeg" %}'
+    ],
+    'queen': [
+        '{% static "img/rooms/queen1.jpeg" %}',
+        '{% static "img/rooms/queen2.jpeg" %}',
+        '{% static "img/rooms/queen3.jpeg" %}',
+        '{% static "img/rooms/queen4.jpeg" %}'
+    ],
+    'executive': [
+        '{% static "img/rooms/executive1.jpeg" %}',
+        '{% static "img/rooms/executive2.jpeg" %}',
+        '{% static "img/rooms/executive3.jpeg" %}',
+        '{% static "img/rooms/executive4.jpeg" %}'
+    ],
+    'presidential': [
+        '{% static "img/rooms/presidentialsuite1.jpeg" %}',
+        '{% static "img/rooms/presidentialsuite2.jpeg" %}',
+        '{% static "img/rooms/presidentialsuite3.jpeg" %}',
+        '{% static "img/about/70.jpg" %}'
+    ],
+    'honeymoon': [
+        '{% static "img/rooms/CurveHoneymoon1.jpeg" %}',
+        '{% static "img/rooms/CurveHoneymoon2.jpeg" %}',
+        '{% static "img/rooms/CurveHoneymoon3.jpeg" %}',
+        '{% static "img/about/71.jpg" %}'
+    ]
+};
+
+let currentRoom = '';
+let currentIndex = 0;
+
+function openGallery(room) {
+    currentRoom = room;
+    currentIndex = 0;
+    const modal = document.getElementById('galleryModal');
+    const img = document.getElementById('galleryImage');
+    img.src = galleryImages[room][currentIndex];
+    modal.style.display = 'block';
+}
+
+function closeGallery() {
+    document.getElementById('galleryModal').style.display = 'none';
+}
+
+function changeImage(direction) {
+    const images = galleryImages[currentRoom];
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    document.getElementById('galleryImage').src = images[currentIndex];
+}
+
+document.querySelector('.close').onclick = closeGallery;
+document.querySelector('.prev').onclick = () => changeImage(-1);
+document.querySelector('.next').onclick = () => changeImage(1);
+
+window.onclick = function(event) {
+    const modal = document.getElementById('galleryModal');
+    if (event.target == modal) {
+        closeGallery();
+    }
+}
+
+// Mouse drag scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.rooms_slider');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+});
+</script>

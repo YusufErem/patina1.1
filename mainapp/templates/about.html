@@ -1,0 +1,387 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Hakkımızda - Patina Cappadocia" %}{% endblock %}
+
+{% block content %}
+<div class="about_page">
+    <!-- Hero Section -->
+    <div class="about_hero">
+        <div class="container">
+            <div class="hero_content text-center">
+                <h1>{% trans "Patina Cappadocia" %}</h1>
+                <p class="lead">{% trans "Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi" %}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="about_content">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <div class="content_block">
+                        <div class="section_title">
+                            <span>{% trans "Tarihçemiz" %}</span>
+                            <h2>{% trans "Geleneksel Mimarinin Modern Yorumu" %}</h2>
+                        </div>
+                        <p>{% trans "Patina Cappadocia, Uçhisar'ın tarihi dokusunu modern konforla buluşturan özel bir butik oteldir. Bölgenin doğal taş yapılarını koruyarak restore edilen otelimiz, misafirlerine özgün bir konaklama deneyimi sunmaktadır." %}</p>
+                        <p>{% trans "Her odamız, Kapadokya'nın eşsiz manzarasına açılan özel terasları ve geleneksel mimariyi yansıtan detaylarıyla benzersiz bir atmosfer yaratmaktadır. Modern konfor ve lüks anlayışını, bölgenin otantik ruhuyla harmanlayan tasarım anlayışımız, size unutulmaz bir konaklama deneyimi vaat ediyor." %}</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image_grid">
+                        <img src="{% static 'img/about/51.jpg' %}" alt="Patina Cappadocia" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 flex-row-reverse">
+                <div class="col-lg-6">
+                    <div class="content_block">
+                        <div class="section_title">
+                            <span>{% trans "Misyonumuz" %}</span>
+                            <h2>{% trans "Benzersiz Deneyimler Sunuyoruz" %}</h2>
+                        </div>
+                        <p>{% trans "Misafirlerimize sadece bir konaklama değil, Kapadokya'nın büyülü atmosferini tam anlamıyla yaşayabilecekleri özel bir deneyim sunmayı hedefliyoruz. Profesyonel ekibimiz, size bölgenin en güzel yerlerini keşfetmeniz için rehberlik ederken, konforlu odalarımız ve özenle hazırlanan hizmetlerimizle unutulmaz anılar biriktirmenizi sağlıyoruz." %}</p>
+                        <ul class="feature_list">
+                            <li>{% trans "Özel Tasarlanmış Odalar" %}</li>
+                            <li>{% trans "Panoramik Manzara" %}</li>
+                            <li>{% trans "Profesyonel Hizmet" %}</li>
+                            <li>{% trans "Bölge Rehberliği" %}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image_grid">
+                        <img src="{% static 'img/about/58.jpg' %}" alt="Patina Cappadocia" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <div class="content_block">
+                        <div class="section_title">
+                            <span>{% trans "Hizmetlerimiz" %}</span>
+                            <h2>{% trans "Size Özel Ayrıcalıklar" %}</h2>
+                        </div>
+                        <p>{% trans "Patina Cappadocia'da konaklama deneyiminizi özel kılan pek çok hizmet sunuyoruz. Balon turlarından vadi yürüyüşlerine, özel restoran rezervasyonlarından bölge turlarına kadar tüm ihtiyaçlarınızı karşılıyoruz." %}</p>
+                        <div class="services_grid">
+                            <div class="service_item">
+                                <i class="fa fa-bell-concierge"></i>
+                                <h4>{% trans "7/24 Concierge" %}</h4>
+                            </div>
+                            <div class="service_item">
+                                <i class="fa fa-utensils"></i>
+                                <h4>{% trans "Özel Restoran" %}</h4>
+                            </div>
+                            <div class="service_item">
+                                <i class="fa fa-car"></i>
+                                <h4>{% trans "Transfer Hizmeti" %}</h4>
+                            </div>
+                            <div class="service_item">
+                                <i class="fa fa-map-location-dot"></i>
+                                <h4>{% trans "Tur Organizasyonu" %}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image_grid">
+                        <img src="{% static 'img/about/65.jpg' %}" alt="Patina Cappadocia" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery_section">
+        <div class="container">
+            <div class="section_title text-center mb-5">
+                <span>{% trans "Galeri" %}</span>
+                <h2>{% trans "Patina'dan Kareler" %}</h2>
+            </div>
+            <div class="gallery_grid">
+                <div class="gallery_item">
+                    <img src="{% static 'img/about/56.jpg' %}" alt="Patina Cappadocia">
+                </div>
+                <div class="gallery_item">
+                    <img src="{% static 'img/about/67.jpg' %}" alt="Patina Cappadocia">
+                </div>
+                <div class="gallery_item">
+                    <img src="{% static 'img/about/70.jpg' %}" alt="Patina Cappadocia">
+                </div>
+                <div class="gallery_item">
+                    <img src="{% static 'img/about/71.jpg' %}" alt="Patina Cappadocia">
+                </div>
+                <div class="gallery_item">
+                    <img src="{% static 'img/about/65.jpg' %}" alt="Patina Cappadocia">
+                </div>
+                <div class="gallery_item">
+                    <img src="{% static 'img/about/58.jpg' %}" alt="Patina Cappadocia">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Section -->
+    {% include 'partials/_instagramHome.html' %}
+</div>
+
+<style>
+.about_page {
+    background: #fff;
+}
+
+.about_hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static "img/views/70.jpg" %}') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.about_hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.about_hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.about_content {
+    padding: 0 0 80px;
+}
+
+.content_block {
+    padding: 30px;
+}
+
+.section_title {
+    margin-bottom: 30px;
+}
+
+.section_title span {
+    display: block;
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section_title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2C3E50;
+    position: relative;
+    display: inline-block;
+}
+
+.section_title h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+}
+
+.content_block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.feature_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature_list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #2C3E50;
+}
+
+.feature_list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.image_grid {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+
+.image_grid img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image_grid:hover img {
+    transform: scale(1.05);
+}
+
+.services_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service_item {
+    text-align: center;
+    padding: 30px;
+    background: #F5F1EB;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.service_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.service_item i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.service_item h4 {
+    font-size: 1.2rem;
+    color: #2C3E50;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .about_hero {
+        height: 50vh;
+    }
+
+    .about_hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about_hero p {
+        font-size: 1.2rem;
+    }
+
+    .section_title h2 {
+        font-size: 2rem;
+    }
+
+    .content_block {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .image_grid img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about_hero {
+        height: 40vh;
+    }
+
+    .about_hero h1 {
+        font-size: 2rem;
+    }
+
+    .about_hero p {
+        font-size: 1rem;
+    }
+
+    .section_title h2 {
+        font-size: 1.75rem;
+    }
+
+    .content_block p {
+        font-size: 1rem;
+    }
+
+    .image_grid img {
+        height: 250px;
+    }
+
+    .services_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.gallery_section {
+    padding: 80px 0;
+    background: #F5F1EB;
+}
+
+.gallery_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery_item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+
+.gallery_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery_item:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .gallery_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery_grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery_section {
+        padding: 40px 0;
+    }
+}
+</style>
+{% endblock %}

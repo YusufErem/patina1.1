@@ -1,0 +1,99 @@
+{% load static %}
+{% load i18n %}
+
+<div class="forQuery">
+    <style>
+        .forQuery {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .Query_border {
+            background: #fff;
+            padding: 50px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .Query_text h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1F1F1F;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .phone_num {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .phone_num a {
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .mobile_no {
+            background: #f8f9fa;
+            color: #1F1F1F;
+            padding: 12px 25px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .mobile_no:hover {
+            background: #e9ecef;
+        }
+        .reservation_btn {
+            background: #009DFF;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .reservation_btn:hover {
+            background: #0056b3;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .forQuery {
+                padding: 40px 0;
+            }
+            .Query_border {
+                padding: 30px 20px;
+            }
+            .Query_text h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            .phone_num {
+                margin-top: 30px;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1 col-md-12">
+                <div class="Query_border">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="Query_text">
+                                <h1>{% trans "Rezervasyon" %}</h1>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="phone_num">
+                                <a href="tel:+905424685050" class="mobile_no" title="{% trans 'Bizi Arayın' %}">
+                                    <i class="fa fa-phone"></i> +90 542 468 50 50
+                                </a>
+                                <a href="https://www.reseliva.com/booknow/patina-cappadocia/" class="reservation_btn">
+                                    {% trans "Hemen Rezervasyon Yap" %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

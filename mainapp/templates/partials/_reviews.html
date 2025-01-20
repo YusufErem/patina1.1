@@ -1,0 +1,276 @@
+{% load static %}
+{% load i18n %}
+
+<div class="reviews_section">
+    <div class="container">
+        <div class="section_title text-center mb-5">
+            <span>{% trans "Misafir Yorumları" %}</span>
+            <h3>{% trans "Google'da Bizi Değerlendirin" %}</h3>
+        </div>
+        
+        <div class="reviews_slider swiper">
+            <div class="swiper-wrapper">
+                {% for review in reviews %}
+                <div class="swiper-slide">
+                    <div class="review_card">
+                        <div class="review_header">
+                            {% if review.author_photo %}
+                            <img src="{{ review.author_photo }}" alt="{{ review.author_name }}" class="reviewer_photo">
+                            {% else %}
+                            <div class="reviewer_avatar">{{ review.author_name|make_list|first }}</div>
+                            {% endif %}
+                            <div class="reviewer_info">
+                                <h4>{{ review.author_name }}</h4>
+                                <div class="rating">
+                                    {% for i in "12345"|make_list %}
+                                        {% if forloop.counter <= review.rating %}
+                                        <i class="fas fa-star"></i>
+                                        {% else %}
+                                        <i class="far fa-star"></i>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <span class="review_date">{{ review.time|date:"d M Y" }}</span>
+                            </div>
+                        </div>
+                        <div class="review_content">
+                            <p>{{ review.text }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="https://g.page/r/CRvHwSQUxJ7CEBE/review" target="_blank" class="review_btn">
+                <i class="fab fa-google"></i>
+                {% trans "Google'da Değerlendir" %}
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+.reviews_section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section_title span {
+    display: block;
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section_title h3 {
+    color: #2C3E50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.section_title h3:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    transform: translateX(-50%);
+}
+
+.reviews_slider {
+    padding: 20px;
+    margin: -20px;
+}
+
+.review_card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.review_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.review_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviewer_photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.reviewer_avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.reviewer_info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #2C3E50;
+}
+
+.rating {
+    color: #FFC107;
+    margin-bottom: 5px;
+}
+
+.review_date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.review_content {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.review_content p {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.review_btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    color: var(--primary);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.review_btn i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.review_btn:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Swiper Customization */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary);
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+    background: var(--primary);
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .section_title h3 {
+        font-size: 2rem;
+    }
+    
+    .review_card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .reviews_section {
+        padding: 40px 0;
+    }
+    
+    .section_title h3 {
+        font-size: 1.75rem;
+    }
+    
+    .reviewer_photo,
+    .reviewer_avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .review_btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.reviews_slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            }
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        }
+    });
+});
+</script> 

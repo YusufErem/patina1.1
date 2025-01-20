@@ -1,0 +1,124 @@
+{% load static %}
+{% load i18n %}
+
+<div class="features_room">
+    <style>
+        .features_room {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        .section_title h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1F1F1F;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+        .rooms_here {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -5px;
+        }
+        .single_rooms {
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding: 5px;
+        }
+        .room_thumb {
+            position: relative;
+            padding-bottom: 100%;
+            overflow: hidden;
+        }
+        .room_thumb img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .room_heading {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        }
+        .room_heading_inner h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        @media (max-width: 991px) {
+            .single_rooms {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+        @media (max-width: 576px) {
+            .single_rooms {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .section_title h3 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center">
+                    <h3>{% trans "Kapadokya'da Unutulmaz Deneyimler" %}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="rooms_here">
+            <div class="single_rooms">
+                <div class="room_thumb">
+                    <img src="{% static 'img/views/kapadokya-vadi-yuruyusu.jpg' %}" alt="{% trans 'Kapadokya Vadi Yürüyüşü' %}" loading="lazy">
+                    <div class="room_heading">
+                        <div class="room_heading_inner">
+                            <h3>{% trans "Vadi Yürüyüşü" %}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_rooms">
+                <div class="room_thumb">
+                    <img src="{% static 'img/views/ballons.jpg' %}" alt="{% trans 'Kapadokya Balon Turu' %}" loading="lazy">
+                    <div class="room_heading">
+                        <div class="room_heading_inner">
+                            <h3>{% trans "Balon Turu" %}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_rooms">
+                <div class="room_thumb">
+                    <img src="{% static 'img/views/yeraltisehri.jpg' %}" alt="{% trans 'Kapadokya Yeraltı Şehri' %}" loading="lazy">
+                    <div class="room_heading">
+                        <div class="room_heading_inner">
+                            <h3>{% trans "Yeraltı Şehri" %}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_rooms">
+                <div class="room_thumb">
+                    <img src="{% static 'img/views/peribacalari.jpg' %}" alt="{% trans 'Kapadokya Peri Bacaları' %}" loading="lazy">
+                    <div class="room_heading">
+                        <div class="room_heading_inner">
+                            <h3>{% trans "Peri Bacaları" %}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,695 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Odalarımız - Patina Cappadocia" %}{% endblock %}
+
+{% block content %}
+<div class="rooms_page">
+    <!-- Hero Section -->
+    <div class="room_hero">
+        <div class="container">
+            <div class="hero_content text-center">
+                <h1>{% trans "Lüks Mağara Odalarımız" %}</h1>
+                <p class="lead">{% trans "Kapadokya'nın Doğal Dokusunda Modern Konfor" %}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rooms Content -->
+    <div class="rooms_content">
+        <div class="container">
+            <!-- Superior Room -->
+            <div class="room_item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="room_image">
+                            <img src="{% static 'img/rooms/superior1.jpeg' %}" alt="Superior Oda" class="main_image">
+                            <div class="image_gallery">
+                                <img src="{% static 'img/rooms/superior2.jpeg' %}" alt="Superior Oda Detay">
+                                <img src="{% static 'img/rooms/superior3.jpeg' %}" alt="Superior Oda Banyo">
+                                <img src="{% static 'img/rooms/superior4.jpeg' %}" alt="Superior Oda Detay">
+                                <img src="{% static 'img/rooms/superior5.jpeg' %}" alt="Superior Oda Banyo">
+                                <img src="{% static 'img/rooms/superior6.jpeg' %}" alt="Superior Oda Detay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="room_details">
+                            <div class="section_title">
+                                <span>{% trans "Superior Oda" %}</span>
+                                <h2>{% trans "Modern Konforun Doğal Dokuyla Buluşması" %}</h2>
+                            </div>
+                            <p>{% trans "Superior odalarımız, Kapadokya'nın eşsiz mağara mimarisini modern konforla buluşturuyor. Her odamız özenle restore edilmiş olup, bölgenin tarihi dokusunu yaşatırken size konforlu bir konaklama deneyimi sunuyor." %}</p>
+                            <div class="room_features">
+                                <h3>{% trans "Oda Özellikleri" %}</h3>
+                                <ul>
+                                    <li><i class="fa fa-bed"></i> {% trans "King Size Yatak" %}</li>
+                                    <li><i class="fa fa-bath"></i> {% trans "Özel Tasarım Banyo" %}</li>
+                                    <li><i class="fa fa-tv"></i> {% trans "Smart TV" %}</li>
+                                    <li><i class="fa fa-wifi"></i> {% trans "Ücretsiz Wi-Fi" %}</li>
+                                    <li><i class="fa fa-mug-hot"></i> {% trans "Mini Bar" %}</li>
+                                    <li><i class="fa fa-snowflake"></i> {% trans "Klima" %}</li>
+                                </ul>
+                            </div>
+                            <div class="room_booking">
+                                <a href="https://www.reseliva.com/booknow/patina-cappadocia/" target="_blank" class="btn btn-primary">{% trans "Rezervasyon Yap" %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- King Suite -->
+            <div class="room_item">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="room_image">
+                            <img src="{% static 'img/rooms/kingsuite1.jpeg' %}" alt="King Suite" class="main_image">
+                            <div class="image_gallery">
+                                <img src="{% static 'img/rooms/kingsuite2.jpeg' %}" alt="King Suite Detay">
+                                <img src="{% static 'img/rooms/kingsuite3.jpeg' %}" alt="King Suite Banyo">
+                                <img src="{% static 'img/rooms/kingsuite4.jpeg' %}" alt="King Suite Detay">
+                                <img src="{% static 'img/rooms/kingsuite5.jpeg' %}" alt="King Suite Banyo">
+                                <img src="{% static 'img/rooms/kingsuite6.jpeg' %}" alt="King Suite Detay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="room_details">
+                            <div class="section_title">
+                                <span>{% trans "King Suite" %}</span>
+                                <h2>{% trans "Tarihi Atmosferde Lüks Deneyim" %}</h2>
+                            </div>
+                            <p>{% trans "King Suite odalarımız, geniş yaşam alanı ve özel terası ile size unutulmaz bir Kapadokya deneyimi sunuyor. Tarihi doku modern tasarım öğeleriyle harmanlanarak benzersiz bir atmosfer yaratıyor." %}</p>
+                            <div class="room_features">
+                                <h3>{% trans "Oda Özellikleri" %}</h3>
+                                <ul>
+                                    <li><i class="fa fa-bed"></i> {% trans "King Size Yatak" %}</li>
+                                    <li><i class="fa fa-couch"></i> {% trans "Oturma Alanı" %}</li>
+                                    <li><i class="fa fa-door-open"></i> {% trans "Özel Teras" %}</li>
+                                    <li><i class="fa fa-bath"></i> {% trans "Jakuzili Banyo" %}</li>
+                                    <li><i class="fa fa-tv"></i> {% trans "Smart TV" %}</li>
+                                    <li><i class="fa fa-wifi"></i> {% trans "Ücretsiz Wi-Fi" %}</li>
+                                </ul>
+                            </div>
+                            <div class="room_booking">
+                                <a href="https://www.reseliva.com/booknow/patina-cappadocia/" target="_blank" class="btn btn-primary">{% trans "Rezervasyon Yap" %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Queen Room -->
+            <div class="room_item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="room_image">
+                            <img src="{% static 'img/rooms/queen1.jpeg' %}" alt="Queen Oda" class="main_image">
+                            <div class="image_gallery">
+                                <img src="{% static 'img/rooms/queen2.jpeg' %}" alt="Queen Oda Detay">
+                                <img src="{% static 'img/rooms/queen3.jpeg' %}" alt="Queen Oda Banyo">
+                                <img src="{% static 'img/rooms/queen4.jpeg' %}" alt="Queen Oda Detay">
+                                <img src="{% static 'img/rooms/queen5.jpeg' %}" alt="Queen Oda Banyo">
+                                <img src="{% static 'img/rooms/queen6.jpeg' %}" alt="Queen Oda Detay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="room_details">
+                            <div class="section_title">
+                                <span>{% trans "Queen Oda" %}</span>
+                                <h2>{% trans "Konforlu ve Şık Tasarım" %}</h2>
+                            </div>
+                            <p>{% trans "Queen odalarımız, şık tasarımı ve konforlu yaşam alanıyla misafirlerimize huzurlu bir konaklama sunuyor. Modern dokunuşlar ve geleneksel mimari detaylar mükemmel bir uyum içinde." %}</p>
+                            <div class="room_features">
+                                <h3>{% trans "Oda Özellikleri" %}</h3>
+                                <ul>
+                                    <li><i class="fa fa-bed"></i> {% trans "Queen Size Yatak" %}</li>
+                                    <li><i class="fa fa-bath"></i> {% trans "Özel Banyo" %}</li>
+                                    <li><i class="fa fa-tv"></i> {% trans "Smart TV" %}</li>
+                                    <li><i class="fa fa-wifi"></i> {% trans "Ücretsiz Wi-Fi" %}</li>
+                                    <li><i class="fa fa-mug-hot"></i> {% trans "Mini Bar" %}</li>
+                                    <li><i class="fa fa-snowflake"></i> {% trans "Klima" %}</li>
+                                </ul>
+                            </div>
+                            <div class="room_booking">
+                                <a href="https://www.reseliva.com/booknow/patina-cappadocia/" target="_blank" class="btn btn-primary">{% trans "Rezervasyon Yap" %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Room -->
+            <div class="room_item">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="room_image">
+                            <img src="{% static 'img/rooms/executive1.jpeg' %}" alt="Executive Oda" class="main_image">
+                            <div class="image_gallery">
+                                <img src="{% static 'img/rooms/executive2.jpeg' %}" alt="Executive Oda Detay">
+                                <img src="{% static 'img/rooms/executive3.jpeg' %}" alt="Executive Oda Banyo">
+                                <img src="{% static 'img/rooms/executive4.jpeg' %}" alt="Executive Oda Detay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="room_details">
+                            <div class="section_title">
+                                <span>{% trans "Executive Oda" %}</span>
+                                <h2>{% trans "İş ve Konforun Buluşması" %}</h2>
+                            </div>
+                            <p>{% trans "Executive odalarımız, iş seyahatlerinizde konfor ve lüksü bir arada sunar. Çalışma alanı ve modern olanaklar ile donatılmış odalarımız, verimli bir konaklama deneyimi sağlar." %}</p>
+                            <div class="room_features">
+                                <h3>{% trans "Oda Özellikleri" %}</h3>
+                                <ul>
+                                    <li><i class="fa fa-bed"></i> {% trans "King Size Yatak" %}</li>
+                                    <li><i class="fa fa-desk"></i> {% trans "Çalışma Masası" %}</li>
+                                    <li><i class="fa fa-wifi"></i> {% trans "Yüksek Hızlı Wi-Fi" %}</li>
+                                    <li><i class="fa fa-bath"></i> {% trans "Lüks Banyo" %}</li>
+                                    <li><i class="fa fa-coffee"></i> {% trans "Kahve Makinesi" %}</li>
+                                    <li><i class="fa fa-tv"></i> {% trans "Smart TV" %}</li>
+                                </ul>
+                            </div>
+                            <div class="room_booking">
+                                <a href="https://www.reseliva.com/booknow/patina-cappadocia/" target="_blank" class="btn btn-primary">{% trans "Rezervasyon Yap" %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presidential Suite -->
+            <div class="room_item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="room_image">
+                            <img src="{% static 'img/rooms/presidentialsuite1.jpeg' %}" alt="Presidential Suite" class="main_image">
+                            <div class="image_gallery">
+                                <img src="{% static 'img/rooms/presidentialsuite2.jpeg' %}" alt="Presidential Suite Detay">
+                                <img src="{% static 'img/rooms/presidentialsuite3.jpeg' %}" alt="Presidential Suite Banyo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="room_details">
+                            <div class="section_title">
+                                <span>{% trans "Presidential Suite" %}</span>
+                                <h2>{% trans "Eşsiz Lüks ve Konfor" %}</h2>
+                            </div>
+                            <p>{% trans "Presidential Suite, en üst düzey konfor ve lüksü arayanlar için tasarlandı. Geniş yaşam alanı, özel teras ve jakuzi gibi ayrıcalıklı olanaklar sunan süitimiz, unutulmaz bir konaklama deneyimi vadediyor." %}</p>
+                            <div class="room_features">
+                                <h3>{% trans "Oda Özellikleri" %}</h3>
+                                <ul>
+                                    <li><i class="fa fa-bed"></i> {% trans "King Size Yatak" %}</li>
+                                    <li><i class="fa fa-bath"></i> {% trans "Jakuzili Banyo" %}</li>
+                                    <li><i class="fa fa-door-open"></i> {% trans "Özel Teras" %}</li>
+                                    <li><i class="fa fa-fire"></i> {% trans "Şömine" %}</li>
+                                    <li><i class="fa fa-utensils"></i> {% trans "Mini Mutfak" %}</li>
+                                    <li><i class="fa fa-couch"></i> {% trans "Oturma Alanı" %}</li>
+                                </ul>
+                            </div>
+                            <div class="room_booking">
+                                <a href="https://www.reseliva.com/booknow/patina-cappadocia/" target="_blank" class="btn btn-primary">{% trans "Rezervasyon Yap" %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cave Honeymoon Suite -->
+            <div class="room_item">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="room_image">
+                            <img src="{% static 'img/rooms/CurveHoneymoon1.jpeg' %}" alt="Cave Honeymoon Suite" class="main_image">
+                            <div class="image_gallery">
+                                <img src="{% static 'img/rooms/CurveHoneymoon2.jpeg' %}" alt="Cave Honeymoon Suite Detay">
+                                <img src="{% static 'img/rooms/CurveHoneymoon3.jpeg' %}" alt="Cave Honeymoon Suite Banyo">
+                                <img src="{% static 'img/rooms/CurveHoneymoon4.jpeg' %}" alt="Cave Honeymoon Suite Detay">
+                                <img src="{% static 'img/rooms/CurveHoneymoon5.jpeg' %}" alt="Cave Honeymoon Suite Banyo">
+                                <img src="{% static 'img/rooms/CurveHoneymoon6.jpeg' %}" alt="Cave Honeymoon Suite Detay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="room_details">
+                            <div class="section_title">
+                                <span>{% trans "Cave Honeymoon Suite" %}</span>
+                                <h2>{% trans "Romantik Kaçamak" %}</h2>
+                            </div>
+                            <p>{% trans "Cave Honeymoon Suite, balayı çiftleri için özel olarak tasarlanmış romantik bir kaçamak sunuyor. Özel jakuzi, şömine ve büyüleyici manzarasıyla unutulmaz anlar yaşayacağınız bir mekan." %}</p>
+                            <div class="room_features">
+                                <h3>{% trans "Oda Özellikleri" %}</h3>
+                                <ul>
+                                    <li><i class="fa fa-bed"></i> {% trans "King Size Yatak" %}</li>
+                                    <li><i class="fa fa-bath"></i> {% trans "Özel Jakuzi" %}</li>
+                                    <li><i class="fa fa-fire"></i> {% trans "Şömine" %}</li>
+                                    <li><i class="fa fa-glass-cheers"></i> {% trans "Şampanya Servisi" %}</li>
+                                    <li><i class="fa fa-door-open"></i> {% trans "Özel Teras" %}</li>
+                                    <li><i class="fa fa-moon"></i> {% trans "Romantik Aydınlatma" %}</li>
+                                </ul>
+                            </div>
+                            <div class="room_booking">
+                                <a href="https://www.reseliva.com/booknow/patina-cappadocia/" target="_blank" class="btn btn-primary">{% trans "Rezervasyon Yap" %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="swiper roomSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Images will be loaded here via JavaScript -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.rooms_page {
+    background: #fff;
+}
+
+.room_hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static "img/views/54.jpg" %}') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.room_hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.room_hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.rooms_content {
+    padding: 0 0 80px;
+}
+
+.room_item {
+    margin-bottom: 100px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+
+.room_image {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.room_image .main_image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.image_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.image_gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.room_image .main_image:hover,
+.image_gallery img:hover {
+    transform: scale(1.05);
+}
+
+.room_details {
+    padding: 30px;
+}
+
+.section_title {
+    margin-bottom: 30px;
+}
+
+.section_title span {
+    display: block;
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section_title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2C3E50;
+    position: relative;
+    display: inline-block;
+}
+
+.section_title h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+}
+
+.room_details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.room_features {
+    margin-bottom: 2rem;
+}
+
+.room_features h3 {
+    font-size: 1.5rem;
+    color: #2C3E50;
+    margin-bottom: 1rem;
+}
+
+.room_features ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.room_features li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.room_features li i {
+    margin-right: 10px;
+    color: var(--primary);
+}
+
+.room_booking .btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.room_booking .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Modal Styles */
+.modal-dialog.modal-xl {
+    max-width: 95%;
+    margin: 1rem auto;
+}
+
+.modal-content {
+    background: rgba(0,0,0,0.95);
+    border: none;
+}
+
+.modal-header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1060;
+    border: none;
+    padding: 1rem;
+}
+
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.roomSwiper {
+    width: 100%;
+    height: 85vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--primary);
+}
+
+@media (max-width: 991px) {
+    .room_hero {
+        height: 50vh;
+    }
+
+    .room_hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .room_hero p {
+        font-size: 1.2rem;
+    }
+
+    .room_item {
+        padding: 30px;
+        margin-bottom: 60px;
+    }
+
+    .room_image .main_image {
+        height: 400px;
+    }
+
+    .image_gallery img {
+        height: 120px;
+    }
+
+    .section_title h2 {
+        font-size: 2rem;
+    }
+
+    .room_features ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .roomSwiper {
+        height: 70vh;
+    }
+
+    .swiper-slide img {
+        max-height: 70vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .room_hero {
+        height: 40vh;
+    }
+
+    .room_hero h1 {
+        font-size: 2rem;
+    }
+
+    .room_hero p {
+        font-size: 1rem;
+    }
+
+    .room_item {
+        padding: 15px;
+        margin-bottom: 40px;
+    }
+
+    .room_image .main_image {
+        height: 300px;
+    }
+
+    .image_gallery img {
+        height: 100px;
+    }
+
+    .section_title h2 {
+        font-size: 1.75rem;
+    }
+
+    .room_features ul {
+        grid-template-columns: 1fr;
+    }
+
+    .room_booking .btn {
+        width: 100%;
+    }
+
+    .roomSwiper {
+        height: 60vh;
+    }
+
+    .swiper-slide img {
+        max-height: 60vh;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 20px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Swiper
+    const roomSwiper = new Swiper('.roomSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+    });
+
+    // Handle image click
+    document.querySelectorAll('.image_gallery img, .room_image > .main_image').forEach(img => {
+        img.addEventListener('click', function() {
+            const roomItem = this.closest('.room_item');
+            const allImages = [...roomItem.querySelectorAll('.room_image > .main_image, .image_gallery img')];
+            const clickedIndex = allImages.indexOf(this);
+
+            // Clear previous slides
+            const swiperWrapper = document.querySelector('.roomSwiper .swiper-wrapper');
+            swiperWrapper.innerHTML = '';
+
+            // Add all images to swiper
+            allImages.forEach(img => {
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+                const image = document.createElement('img');
+                image.src = img.src;
+                image.alt = img.alt;
+                slide.appendChild(image);
+                swiperWrapper.appendChild(slide);
+            });
+
+            // Show modal and update swiper
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            modal.show();
+            roomSwiper.update();
+            roomSwiper.slideTo(clickedIndex, 0);
+        });
+    });
+
+    // Handle keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        const modal = document.getElementById('imageModal');
+        if (modal.classList.contains('show')) {
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                roomSwiper.slidePrev();
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                roomSwiper.slideNext();
+            } else if (e.key === 'Escape') {
+                const modalInstance = bootstrap.Modal.getInstance(modal);
+                modalInstance.hide();
+            }
+        }
+    });
+});
+</script>
+{% endblock %}

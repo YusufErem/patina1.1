@@ -1,0 +1,457 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-15 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Navigation
+msgid "Ana Sayfa"
+msgstr "Inicio"
+
+msgid "Odalar"
+msgstr "Habitaciones"
+
+msgid "Hakkımızda"
+msgstr "Sobre Nosotros"
+
+msgid "İletişim"
+msgstr "Contacto"
+
+msgid "Rezervasyon"
+msgstr "Reserva"
+
+# Home Page
+msgid "Kapadokya'nın En Lüks Mağara Oteli"
+msgstr "El Hotel de Cuevas Más Lujoso de Capadocia"
+
+msgid "Özel Havuzlu Odalar"
+msgstr "Habitaciones con Piscinas Privadas"
+
+msgid "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
+msgstr "Una Estancia Inolvidable en el Corazón de la Mágica Capadocia"
+
+# Rooms Section
+msgid "Konforlu Odalar"
+msgstr "Habitaciones Cómodas"
+
+msgid "Odalarımız"
+msgstr "Nuestras Habitaciones"
+
+msgid "Detayları Gör"
+msgstr "Ver Detalles"
+
+msgid "Superior Oda"
+msgstr "Habitación Superior"
+
+msgid "Kapadokya manzaralı, özel teraslı lüks odalarımız"
+msgstr "Nuestras habitaciones de lujo con terraza privada y vistas a Capadocia"
+
+msgid "King Suite"
+msgstr "Suite King"
+
+msgid "Geniş ve konforlu, modern donanımlı odalarımız"
+msgstr "Habitaciones amplias, cómodas y equipadas con modernas comodidades"
+
+msgid "Queen Oda"
+msgstr "Habitación Queen"
+
+msgid "Şık tasarımlı, konforlu odalarımız"
+msgstr "Habitaciones elegantes y cómodas"
+
+msgid "Executive Oda"
+msgstr "Habitación Ejecutiva"
+
+msgid "İş seyahatleri için ideal, konforlu odalarımız"
+msgstr "Habitaciones ideales y cómodas para viajes de negocios"
+
+msgid "Presidential Suite"
+msgstr "Suite Presidencial"
+
+msgid "En lüks ve geniş suit odamız"
+msgstr "Nuestra suite más lujosa y espaciosa"
+
+msgid "Cave Honeymoon"
+msgstr "Cueva de Luna de Miel"
+
+msgid "Balayı çiftleri için özel tasarlanmış suit odamız"
+msgstr "Nuestra suite especialmente diseñada para parejas en luna de miel"
+
+# Gallery Modal
+msgid "Kapat"
+msgstr "Cerrar"
+
+msgid "Önceki"
+msgstr "Anterior"
+
+msgid "Sonraki"
+msgstr "Siguiente"
+
+msgid "Galeri Görüntüsü"
+msgstr "Vista de la Galería"
+
+# Room Features
+msgid "Oda Özellikleri"
+msgstr "Características de la Habitación"
+
+msgid "King Size Yatak"
+msgstr "Cama King Size"
+
+msgid "Queen Size Yatak"
+msgstr "Cama Queen Size"
+
+msgid "Özel Tasarım Banyo"
+msgstr "Baño de Diseño Personalizado"
+
+msgid "Smart TV"
+msgstr "Smart TV"
+
+msgid "Ücretsiz Wi-Fi"
+msgstr "Wi-Fi Gratis"
+
+msgid "Mini Bar"
+msgstr "Minibar"
+
+msgid "Klima"
+msgstr "Aire Acondicionado"
+
+msgid "Oturma Alanı"
+msgstr "Área de Estar"
+
+msgid "Özel Teras"
+msgstr "Terraza Privada"
+
+msgid "Jakuzili Banyo"
+msgstr "Baño con Jacuzzi"
+
+msgid "Çalışma Masası"
+msgstr "Escritorio de Trabajo"
+
+msgid "Yüksek Hızlı Wi-Fi"
+msgstr "Wi-Fi de Alta Velocidad"
+
+msgid "Lüks Banyo"
+msgstr "Baño de Lujo"
+
+msgid "Kahve Makinesi"
+msgstr "Máquina de Café"
+
+msgid "Şömine"
+msgstr "Chimenea"
+
+msgid "Mini Mutfak"
+msgstr "Cocineta"
+
+msgid "Özel Jakuzi"
+msgstr "Jacuzzi Privado"
+
+msgid "Şampanya Servisi"
+msgstr "Servicio de Champán"
+
+# Room Descriptions
+msgid "Kapadokya'nın Doğal Dokusunda Modern Konfor"
+msgstr "Comodidad Moderna en la Textura Natural de Capadocia"
+
+msgid "Modern Konforun Doğal Dokuyla Buluşması"
+msgstr "La Fusión de la Comodidad Moderna y la Textura Natural"
+
+msgid "Superior odalarımız, Kapadokya'nın eşsiz mağara mimarisini modern konforla buluşturuyor. Her odamız özenle restore edilmiş olup, bölgenin tarihi dokusunu yaşatırken size konforlu bir konaklama deneyimi sunuyor."
+msgstr "Nuestras habitaciones Superior combinan la única arquitectura de las cuevas de Capadocia con comodidad moderna. Cada habitación ha sido cuidadosamente restaurada, manteniendo el carácter histórico de la región mientras le ofrece una estancia cómoda."
+
+msgid "Tarihi Atmosferde Lüks Deneyim"
+msgstr "Una Experiencia Lujosa en una Atmósfera Histórica"
+
+msgid "King Suite odalarımız, geniş yaşam alanı ve özel terası ile size unutulmaz bir Kapadokya deneyimi sunuyor. Tarihi doku modern tasarım öğeleriyle harmanlanarak benzersiz bir atmosfer yaratıyor."
+msgstr "Nuestras habitaciones King Suite ofrecen una experiencia inolvidable de Capadocia con amplias áreas de estar y terrazas privadas. La textura histórica se mezcla con elementos de diseño moderno creando una atmósfera única."
+
+msgid "Konforlu ve Şık Tasarım"
+msgstr "Diseño Cómodo y Elegante"
+
+msgid "Queen odalarımız, şık tasarımı ve konforlu yaşam alanıyla misafirlerimize huzurlu bir konaklama sunuyor. Modern dokunuşlar ve geleneksel mimari detaylar mükemmel bir uyum içinde."
+msgstr "Nuestras habitaciones Queen ofrecen a los huéspedes una estancia tranquila con su diseño elegante y espacio de vida cómodo. Los toques modernos y los detalles arquitectónicos tradicionales crean una armonía perfecta."
+
+msgid "İş ve Konforun Buluşması"
+msgstr "Donde el Negocio y la Comodidad se Encuentran"
+
+msgid "Executive odalarımız, iş seyahatlerinizde konfor ve lüksü bir arada sunar. Çalışma alanı ve modern olanaklar ile donatılmış odalarımız, verimli bir konaklama deneyimi sağlar."
+msgstr "Nuestras habitaciones Executive ofrecen tanto comodidad como lujo para sus viajes de negocios. Equipadas con un área de trabajo y comodidades modernas, proporcionan una estancia eficiente."
+
+msgid "Eşsiz Lüks ve Konfor"
+msgstr "Lujo y Comodidad Inigualables"
+
+msgid "Presidential Suite, en üst düzey konfor ve lüksü arayanlar için tasarlandı. Geniş yaşam alanı, özel teras ve jakuzi gibi ayrıcalıklı olanaklar sunan süitimiz, unutulmaz bir konaklama deneyimi vadediyor."
+msgstr "La Presidential Suite está diseñada para quienes buscan el máximo confort y lujo. Con una amplia área de estar, terraza privada y comodidades exclusivas como un jacuzzi, nuestra suite promete una estancia inolvidable."
+
+msgid "Romantik Kaçamak"
+msgstr "Escapada Romántica"
+
+msgid "Cave Honeymoon Suite, balayı çiftleri için özel olarak tasarlanmış romantik bir kaçamak sunuyor. Özel jakuzi, şömine ve büyüleyici manzarasıyla unutulmaz anlar yaşayacağınız bir mekan."
+msgstr "La Cave Honeymoon Suite ofrece una escapada romántica especialmente diseñada para parejas en luna de miel. Con un jacuzzi privado, chimenea y vistas impresionantes, es un lugar para crear momentos inolvidables."
+
+# Contact Information
+msgid "Adres"
+msgstr "Dirección"
+
+msgid "Telefon"
+msgstr "Teléfono"
+
+msgid "E-posta"
+msgstr "Correo Electrónico"
+
+# Activities
+msgid "Vadi Yürüyüşü"
+msgstr "Caminata por el Valle"
+
+msgid "Balon Turu"
+msgstr "Tour en Globo Aerostático"
+
+msgid "Yeraltı Şehri"
+msgstr "Ciudad Subterránea"
+
+msgid "Peri Bacaları"
+msgstr "Chimeneas de Hadas"
+
+# Experiences Section
+msgid "Eşsiz Deneyimler"
+msgstr "Experiencias Únicas"
+
+msgid "Kapadokya'da Unutulmaz Deneyimler"
+msgstr "Experiencias Inolvidables en Capadocia"
+
+msgid "Güneşin doğuşunu gökyüzünden izleyin"
+msgstr "Mira el amanecer desde el cielo"
+
+msgid "Eşsiz vadileri keşfedin"
+msgstr "Explora valles únicos"
+
+msgid "Büyüleyici peri bacalarını keşfedin"
+msgstr "Descubre las encantadoras chimeneas de hadas"
+
+# Social Media
+msgid "Instagram'da Bizi Takip Edin"
+msgstr "Síguenos en Instagram"
+
+# Error Pages
+msgid "Sayfa Bulunamadı - 404"
+msgstr "Página No Encontrada - 404"
+
+msgid "Aradığınız Sayfa Bulunamadı"
+msgstr "La Página Que Estás Buscando No Se Puede Encontrar"
+
+msgid "Üzgünüz, aradığınız sayfaya ulaşılamıyor. Ana sayfaya dönüp tekrar deneyebilirsiniz."
+msgstr "Lo sentimos, no se puede acceder a la página que estás buscando. Puedes regresar a la página de inicio e intentarlo de nuevo."
+
+msgid "Ana Sayfaya Dön"
+msgstr "Regresar a la Página de Inicio"
+
+# About Page
+msgid "Hakkımızda - Patina Cappadocia"
+msgstr "Sobre Nosotros - Patina Cappadocia"
+
+msgid "Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
+msgstr "Una Estancia Única en el Corazón de Capadocia"
+
+msgid "Tarihçemiz"
+msgstr "Nuestra Historia"
+
+msgid "Geleneksel Mimarinin Modern Yorumu"
+msgstr "Interpretación Moderna de la Arquitectura Tradicional"
+
+msgid "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, geleneksel dokuyu ve modern lüksü mükemmel bir uyumla bir araya getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu bir konaklama deneyimi yaşatıyor."
+msgstr "Ubicada entre las impresionantes vistas de Uchisar, Patina Cappadocia combina a la perfección la textura tradicional con el lujo moderno. Nuestra arquitectura construida con trabajos en piedra refleja el rico patrimonio cultural de la región, mientras que nuestras modernas comodidades le ofrecen una estancia cómoda."
+
+msgid "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Kapadokya, büyüleyici Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır."
+msgstr "Ya sea para aventureros que desean explorar la naturaleza y la historia, o para parejas y familias que buscan paz, Patina Cappadocia es el punto de partida perfecto para descubrir la mágica Capadocia."
+
+msgid "Daha Fazla"
+msgstr "Más Información"
+
+msgid "Misyonumuz"
+msgstr "Nuestra Misión"
+
+msgid "Benzersiz Deneyimler Sunuyoruz"
+msgstr "Ofrecemos Experiencias Únicas"
+
+msgid "Misafirlerimize sadece bir konaklama değil, Kapadokya'nın büyülü atmosferini tam anlamıyla yaşayabilecekleri özel bir deneyim sunmayı hedefliyoruz. Profesyonel ekibimiz, size bölgenin en güzel yerlerini keşfetmeniz için rehberlik ederken, konforlu odalarımız ve özenle hazırlanan hizmetlerimizle unutulmaz anılar biriktirmenizi sağlıyoruz."
+msgstr "Nuestro objetivo no es solo ofrecer alojamiento, sino proporcionar una experiencia especial donde nuestros huéspedes puedan sumergirse completamente en la atmósfera mágica de Capadocia. Nuestro equipo profesional le guiará a descubrir los lugares más bellos de la región, mientras que nuestras cómodas habitaciones y servicios cuidadosamente preparados le ayudarán a crear recuerdos inolvidables."
+
+msgid "Özel Tasarlanmış Odalar"
+msgstr "Habitaciones Diseñadas a Medida"
+
+msgid "Panoramik Manzara"
+msgstr "Vista Panorámica"
+
+msgid "Profesyonel Hizmet"
+msgstr "Servicio Profesional"
+
+msgid "Bölge Rehberliği"
+msgstr "Guía Regional"
+
+msgid "Hizmetlerimiz"
+msgstr "Nuestros Servicios"
+
+msgid "Size Özel Ayrıcalıklar"
+msgstr "Privilegios Exclusivos para Usted"
+
+msgid "Patina Cappadocia'da konaklama deneyiminizi özel kılan pek çok hizmet sunuyoruz. Balon turlarından vadi yürüyüşlerine, özel restoran rezervasyonlarından bölge turlarına kadar tüm ihtiyaçlarınızı karşılıyoruz."
+msgstr "En Patina Cappadocia ofrecemos muchos servicios que hacen que su experiencia de estancia sea especial. Desde tours en globo hasta caminatas por el valle, desde reservas en restaurantes exclusivos hasta tours regionales, cubrimos todas sus necesidades."
+
+msgid "7/24 Concierge"
+msgstr "Conserjería 24/7"
+
+msgid "Özel Restoran"
+msgstr "Restaurante Privado"
+
+msgid "Transfer Hizmeti"
+msgstr "Servicio de Traslados"
+
+msgid "Tur Organizasyonu"
+msgstr "Organización de Tours"
+
+msgid "Galeri"
+msgstr "Galería"
+
+msgid "Patina'dan Kareler"
+msgstr "Momentos de Patina"
+
+# Contact Page
+msgid "İletişim - Patina Cappadocia"
+msgstr "Contacto - Patina Cappadocia"
+
+msgid "Size Yardımcı Olmaktan Mutluluk Duyarız"
+msgstr "Estamos Encantados de Ayudarle"
+
+msgid "Hemen Ara"
+msgstr "Llamar Ahora"
+
+msgid "WhatsApp'tan Mesaj"
+msgstr "Mensaje por WhatsApp"
+
+msgid "Yol Tarifi Al"
+msgstr "Obtener Dirección"
+
+msgid "Yol Tarifi"
+msgstr "Direcciones"
+
+msgid "Çalışma Saatleri"
+msgstr "Horas de Oficina"
+
+msgid "7/24 Hizmetinizdeyiz"
+msgstr "Estamos a Su Servicio 24/7"
+
+msgid "Check-in: 14:00"
+msgstr "Check-in: 14:00"
+
+msgid "Check-out: 12:00"
+msgstr "Check-out: 12:00"
+
+msgid "Sık Sorulan Sorular"
+msgstr "Preguntas Frecuentes"
+
+msgid "Rezervasyon nasıl yapabilirim?"
+msgstr "¿Cómo puedo hacer una reserva?"
+
+msgid "Rezervasyon için bizi telefonla arayabilir, WhatsApp üzerinden mesaj gönderebilir veya"
+msgstr "Puede llamarnos por teléfono, enviarnos un mensaje por WhatsApp o"
+
+msgid "rezervasyon sitemizden"
+msgstr "desde nuestro sitio web de reservas"
+
+msgid "yapabilirsiniz."
+msgstr "hacer su reserva."
+
+msgid "Otele nasıl ulaşabilirim?"
+msgstr "¿Cómo puedo llegar al hotel?"
+
+msgid "Nevşehir Havalimanı'ndan otelimize transfer hizmeti sunuyoruz. Ayrıca Göreme merkeze yakın konumumuz sayesinde toplu taşıma ile de kolayca ulaşabilirsiniz."
+msgstr "Ofrecemos servicio de traslado desde el Aeropuerto de Nevşehir a nuestro hotel. Además, gracias a nuestra ubicación cerca del centro de Göreme, también puede llegar fácilmente mediante transporte público."
+
+msgid "Balon turu rezervasyonu yapabilir miyim?"
+msgstr "¿Puedo hacer una reserva para el tour en globo?"
+
+msgid "Evet, otelimiz üzerinden balon turu rezervasyonu yapabilirsiniz. En iyi fiyat garantisi ve güvenilir balon şirketleriyle çalışıyoruz."
+msgstr "Sí, puede hacer una reserva para el tour en globo a través de nuestro hotel. Trabajamos con empresas de globos confiables y ofrecemos la mejor garantía de precio."
+
+msgid "Oda özellikleri nelerdir?"
+msgstr "¿Cuáles son las características de la habitación?"
+
+msgid "Tüm odalarımızda ücretsiz Wi-Fi, klima, minibar, LED TV, özel banyo ve lüks banyo malzemeleri bulunmaktadır. Detaylı bilgi için odalar sayfamızı inceleyebilirsiniz."
+msgstr "Todas nuestras habitaciones cuentan con Wi-Fi gratuito, aire acondicionado, minibar, TV LED, baño privado y artículos de baño de lujo. Puede consultar nuestra página de habitaciones para obtener más detalles."
+
+# Footer
+msgid "Hızlı Linkler"
+msgstr "Enlaces Rápidos"
+
+msgid "Sosyal Medya"
+msgstr "Redes Sociales"
+
+msgid "Konum"
+msgstr "Ubicación"
+
+msgid "Copyright"
+msgstr "Derechos de Autor"
+
+msgid "Tüm hakları saklıdır"
+msgstr "Todos los derechos reservados"
+
+msgid "Göreme, Nevşehir, Türkiye"
+msgstr "Göreme, Nevşehir, Turquía"
+
+# Reviews
+msgid "Misafir Yorumları"
+msgstr "Opiniones de los Huéspedes"
+
+msgid "Google'da Bizi Değerlendirin"
+msgstr "Califíquenos en Google"
+
+msgid "Google'da Değerlendir"
+msgstr "Calificar en Google"
+
+msgid " 36 Değerlendirme"
+msgstr " 36 Opiniones"
+
+msgid "Değerlendir"
+msgstr "Calificar"
+
+# Booking
+msgid "Hemen Rezervasyon Yap"
+msgstr "Reservar Ahora"
+
+msgid "Rezervasyon Yap"
+msgstr "Reservar Ahora"
+
+msgid "Bizi Arayın"
+msgstr "Llámenos"
+
+msgid "Özel Banyo"
+msgstr "Baño Privado"
+
+msgid "Romantik Aydınlatma"
+msgstr "Iluminación Romántica"
+
+msgid "Lüks Mağara Odalarımız"
+msgstr "Nuestras Habitaciones de Cueva de Lujo"
+
+# URL Translations
+msgid "iletisim/"
+msgstr "contacto/"
+
+msgid "hakkimizda/"
+msgstr "sobre-nosotros/"
+
+msgid "odalar/"
+msgstr "habitaciones/"
+

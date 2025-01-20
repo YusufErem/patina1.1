@@ -1,0 +1,455 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-15 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Navigation
+msgid "Ana Sayfa"
+msgstr "الصفحة الرئيسية"
+
+msgid "Odalar"
+msgstr "الغرف"
+
+msgid "Hakkımızda"
+msgstr "عنّا"
+
+msgid "İletişim"
+msgstr "اتصال"
+
+msgid "Rezervasyon"
+msgstr "الحجز"
+
+# Home Page
+msgid "Kapadokya'nın En Lüks Mağara Oteli"
+msgstr "أفخم فندق كهف في كابادوكيا"
+
+msgid "Özel Havuzlu Odalar"
+msgstr "غرف مع حمامات سباحة خاصة"
+
+msgid "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
+msgstr "تجربة إقامة لا تُنسى في قلب كابادوكيا الساحرة"
+
+# Rooms Section
+msgid "Konforlu Odalar"
+msgstr "غرف مريحة"
+
+msgid "Odalarımız"
+msgstr "غرفنا"
+
+msgid "Detayları Gör"
+msgstr "عرض التفاصيل"
+
+msgid "Superior Oda"
+msgstr "غرفة سوبيريور"
+
+msgid "Kapadokya manzaralı, özel teraslı lüks odalarımız"
+msgstr "غرفنا الفاخرة مع تراسات خاصة وإطلالة على كابادوكيا"
+
+msgid "King Suite"
+msgstr "جناح كينغ"
+
+msgid "Geniş ve konforlu, modern donanımlı odalarımız"
+msgstr "غرف واسعة ومريحة مجهزة تجهيزا حديثا"
+
+msgid "Queen Oda"
+msgstr "غرفة كوين"
+
+msgid "Şık tasarımlı, konforlu odalarımız"
+msgstr "غرفنا الأنيقة والمريحة"
+
+msgid "Executive Oda"
+msgstr "غرفة إدارية"
+
+msgid "İş seyahatleri için ideal, konforlu odalarımız"
+msgstr "غرف مريحة ومثالية لرحلات العمل"
+
+msgid "Presidential Suite"
+msgstr "الجناح الرئاسي"
+
+msgid "En lüks ve geniş suit odamız"
+msgstr "أفخم وأكبر جناح لدينا"
+
+msgid "Cave Honeymoon"
+msgstr "جناح العسل الكهفي"
+
+msgid "Balayı çiftleri için özel tasarlanmış suit odamız"
+msgstr "جناحنا المصمم خصيصًا لزوجين في شهر العسل"
+
+# Gallery Modal
+msgid "Kapat"
+msgstr "إغلاق"
+
+msgid "Önceki"
+msgstr "السابق"
+
+msgid "Sonraki"
+msgstr "التالي"
+
+msgid "Galeri Görüntüsü"
+msgstr "عرض المعرض"
+
+# Room Features
+msgid "Oda Özellikleri"
+msgstr "مميزات الغرفة"
+
+msgid "King Size Yatak"
+msgstr "سرير كينغ سايز"
+
+msgid "Queen Size Yatak"
+msgstr "سرير كوين سايز"
+
+msgid "Özel Tasarım Banyo"
+msgstr "حمام بتصميم خاص"
+
+msgid "Smart TV"
+msgstr "تلفاز ذكي"
+
+msgid "Ücretsiz Wi-Fi"
+msgstr "واي فاي مجاني"
+
+msgid "Mini Bar"
+msgstr "ميني بار"
+
+msgid "Klima"
+msgstr "تكييف هواء"
+
+msgid "Oturma Alanı"
+msgstr "منطقة الجلوس"
+
+msgid "Özel Teras"
+msgstr "تراس خاص"
+
+msgid "Jakuzili Banyo"
+msgstr "حمام مع جاكوزي"
+
+msgid "Çalışma Masası"
+msgstr "مكتب عمل"
+
+msgid "Yüksek Hızlı Wi-Fi"
+msgstr "واي فاي عالي السرعة"
+
+msgid "Lüks Banyo"
+msgstr "حمام فاخر"
+
+msgid "Kahve Makinesi"
+msgstr "آلة قهوة"
+
+msgid "Şömine"
+msgstr "مدفأة"
+
+msgid "Mini Mutfak"
+msgstr "مطبخ صغير"
+
+msgid "Özel Jakuzi"
+msgstr "جاكوزي خاص"
+
+msgid "Şampanya Servisi"
+msgstr "خدمة الشمبانيا"
+
+# Room Descriptions
+msgid "Kapadokya'nın Doğal Dokusunda Modern Konfor"
+msgstr "راحة حديثة في نسيج كابادوكيا الطبيعي"
+
+msgid "Modern Konforun Doğal Dokuyla Buluşması"
+msgstr "الراحة الحديثة تلتقي بالنسيج الطبيعي"
+
+msgid "Superior odalarımız, Kapadokya'nın eşsiz mağara mimarisini modern konforla buluşturuyor. Her odamız özenle restore edilmiş olup, bölgenin tarihi dokusunu yaşatırken size konforlu bir konaklama deneyimi sunuyor."
+msgstr "غرفنا سوبيريور تجمع بين الهندسة المعمارية الفريدة لكهوف كابادوكيا والراحة الحديثة. كل غرفة تم تجديدها بعناية وتحتفظ بالطابع التاريخي للمنطقة مع توفير تجربة إقامة مريحة."
+
+msgid "Tarihi Atmosferde Lüks Deneyim"
+msgstr "تجربة فاخرة في جو تاريخي"
+
+msgid "King Suite odalarımız, geniş yaşam alanı ve özel terası ile size unutulmaz bir Kapadokya deneyimi sunuyor. Tarihi doku modern tasarım öğeleriyle harmanlanarak benzersiz bir atmosfer yaratıyor."
+msgstr "غرف جناح كينغ تقدم لك تجربة لا تُنسى في كابادوكيا مع مساحات معيشة واسعة وتراس خاص. يتم مزج الطابع التاريخي مع العناصر الحديثة لإنشاء جو فريد."
+
+msgid "Konforlu ve Şık Tasarım"
+msgstr "تصميم مريح وأنيق"
+
+msgid "Queen odalarımız, şık tasarımı ve konforlu yaşam alanıyla misafirlerimize huzurlu bir konaklama sunuyor. Modern dokunuşlar ve geleneksel mimari detaylar mükemmel bir uyum içinde."
+msgstr "غرف كوين توفر إقامة هادئة لضيوفنا بتصميم أنيق ومساحة معيشة مريحة. اللمسات الحديثة والتفاصيل المعمارية التقليدية تنسجم بشكل مثالي."
+
+msgid "İş ve Konforun Buluşması"
+msgstr "حيث يلتقي العمل بالراحة"
+
+msgid "Executive odalarımız, iş seyahatlerinizde konfor ve lüksü bir arada sunar. Çalışma alanı ve modern olanaklar ile donatılmış odalarımız, verimli bir konaklama deneyimi sağlar."
+msgstr "غرفنا التنفيذية تقدم الراحة والفخامة لرحلات العمل. الغرف مجهزة بمساحة للعمل ووسائل الراحة الحديثة لتوفير تجربة إقامة فعالة."
+
+msgid "Eşsiz Lüks ve Konfor"
+msgstr "فخامة وراحة لا مثيل لها"
+
+msgid "Presidential Suite, en üst düzey konfor ve lüksü arayanlar için tasarlandı. Geniş yaşam alanı, özel teras ve jakuzi gibi ayrıcalıklı olanaklar sunan süitimiz, unutulmaz bir konaklama deneyimi vadediyor."
+msgstr "الجناح الرئاسي مصمم لأولئك الذين يبحثون عن أقصى درجات الراحة والفخامة. جناحنا يقدم مساحة معيشة واسعة وتراس خاص مع جاكوزي لتجربة إقامة لا تُنسى."
+
+msgid "Romantik Kaçamak"
+msgstr "ملاذ رومانسي"
+
+msgid "Cave Honeymoon Suite, balayı çiftleri için özel olarak tasarlanmış romantik bir kaçamak sunuyor. Özel jakuzi, şömine ve büyüleyici manzarasıyla unutulmaz anlar yaşayacağınız bir mekan."
+msgstr "جناح العسل الكهفي يقدم ملاذًا رومانسيًا مصممًا خصيصًا لزوجين في شهر العسل. مع جاكوزي خاص ومدفأة ومناظر ساحرة، إنه مكان لتجربة لحظات لا تُنسى."
+
+# Contact Information
+msgid "Adres"
+msgstr "العنوان"
+
+msgid "Telefon"
+msgstr "الهاتف"
+
+msgid "E-posta"
+msgstr "البريد الإلكتروني"
+
+# Activities
+msgid "Vadi Yürüyüşü"
+msgstr "جولة في الوادي"
+
+msgid "Balon Turu"
+msgstr "جولة بالبالون الهوائي"
+
+msgid "Yeraltı Şehri"
+msgstr "المدينة تحت الأرض"
+
+msgid "Peri Bacaları"
+msgstr "مداخن الجنيات"
+
+# Experiences Section
+msgid "Eşsiz Deneyimler"
+msgstr "تجارب فريدة"
+
+msgid "Kapadokya'da Unutulmaz Deneyimler"
+msgstr "تجارب لا تُنسى في كابادوكيا"
+
+msgid "Güneşin doğuşunu gökyüzünden izleyin"
+msgstr "شاهد شروق الشمس من السماء"
+
+msgid "Eşsiz vadileri keşfedin"
+msgstr "اكتشف الأودية الفريدة"
+
+msgid "Büyüleyici peri bacalarını keşfedin"
+msgstr "اكتشف مداخن الجنيات الساحرة"
+
+# Social Media
+msgid "Instagram'da Bizi Takip Edin"
+msgstr "تابعنا على إنستغرام"
+
+# Error Pages
+msgid "Sayfa Bulunamadı - 404"
+msgstr "الصفحة غير موجودة - 404"
+
+msgid "Aradığınız Sayfa Bulunamadı"
+msgstr "الصفحة التي تبحث عنها غير موجودة"
+
+msgid "Üzgünüz, aradığınız sayfaya ulaşılamıyor. Ana sayfaya dönüp tekrar deneyebilirsiniz."
+msgstr "عذرًا، لا يمكن الوصول إلى الصفحة التي تبحث عنها. يمكنك العودة إلى الصفحة الرئيسية والمحاولة مرة أخرى."
+
+msgid "Ana Sayfaya Dön"
+msgstr "العودة إلى الصفحة الرئيسية"
+
+# About Page
+msgid "Hakkımızda - Patina Cappadocia"
+msgstr "عنّا - باتينا كابادوكيا"
+
+msgid "Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
+msgstr "تجربة إقامة لا تُنسى في قلب كابادوكيا"
+
+msgid "Tarihçemiz"
+msgstr "تاريخنا"
+
+msgid "Geleneksel Mimarinin Modern Yorumu"
+msgstr "التفسير الحديث للعمارة التقليدية"
+
+msgid "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, geleneksel dokuyu ve modern lüksü mükemmel bir uyumla bir araya getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu bir konaklama deneyimi yaşatıyor."
+msgstr "يقع باتينا كابادوكيا بين المناظر الخلابة لمدينة أوتشيسار، حيث يدمج بشكل مثالي النسيج التقليدي والفخامة الحديثة. تعكس معمارنا المبني من الحجارة التراث الثقافي الغني للمنطقة، بينما توفر خدماتنا الحديثة تجربة إقامة مريحة."
+
+msgid "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Kapadokya, büyüleyici Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır."
+msgstr "سواء للمغامرين الذين يتطلعون لاكتشاف الطبيعة والتاريخ، أو الأزواج والعائلات الذين يبحثون عن السلام، يعد باتينا كابادوكيا نقطة انطلاق مثالية لاكتشاف كابادوكيا الساحرة."
+
+msgid "Daha Fazla"
+msgstr "تعرف أكثر"
+
+msgid "Misyonumuz"
+msgstr "مهمتنا"
+
+msgid "Benzersiz Deneyimler Sunuyoruz"
+msgstr "نقدم تجارب فريدة"
+
+msgid "Misafirlerimize sadece bir konaklama değil, Kapadokya'nın büyülü atmosferini tam anlamıyla yaşayabilecekleri özel bir deneyim sunmayı hedefliyoruz. Profesyonel ekibimiz, size bölgenin en güzel yerlerini keşfetmeniz için rehberlik ederken, konforlu odalarımız ve özenle hazırlanan hizmetlerimizle unutulmaz anılar biriktirmenizi sağlıyoruz."
+msgstr "هدفنا هو تقديم تجربة خاصة لضيوفنا حيث يمكنهم الاستمتاع بجو كابادوكيا الساحر بشكل كامل. بينما يوجههم فريقنا المحترف لاكتشاف أجمل الأماكن في المنطقة، نقدم لهم إقامة مريحة وخدمات معدة بعناية لتجميع ذكريات لا تُنسى."
+
+msgid "Özel Tasarlanmış Odalar"
+msgstr "غرف مصممة خصيصًا"
+
+msgid "Panoramik Manzara"
+msgstr "إطلالة بانورامية"
+
+msgid "Profesyonel Hizmet"
+msgstr "خدمة احترافية"
+
+msgid "Bölge Rehberliği"
+msgstr "إرشاد إقليمي"
+
+msgid "Hizmetlerimiz"
+msgstr "خدماتنا"
+
+msgid "Size Özel Ayrıcalıklar"
+msgstr "امتيازات خاصة لك"
+
+msgid "Patina Cappadocia'da konaklama deneyiminizi özel kılan pek çok hizmet sunuyoruz. Balon turlarından vadi yürüyüşlerine, özel restoran rezervasyonlarından bölge turlarına kadar tüm ihtiyaçlarınızı karşılıyoruz."
+msgstr "نقدم العديد من الخدمات التي تجعل تجربتك في باتينا كابادوكيا مميزة. من جولات البالون إلى جولات الوادي، من حجوزات المطاعم الخاصة إلى الجولات الإقليمية، نحن نوفر لك جميع احتياجاتك."
+
+msgid "7/24 Concierge"
+msgstr "خدمة الكونسيرج على مدار الساعة"
+
+msgid "Özel Restoran"
+msgstr "مطعم خاص"
+
+msgid "Transfer Hizmeti"
+msgstr "خدمة النقل"
+
+msgid "Tur Organizasyonu"
+msgstr "تنظيم الجولات"
+
+msgid "Galeri"
+msgstr "معرض الصور"
+
+msgid "Patina'dan Kareler"
+msgstr "لحظات من باتينا"
+
+# Contact Page
+msgid "İletişim - Patina Cappadocia"
+msgstr "اتصال - باتينا كابادوكيا"
+
+msgid "Size Yardımcı Olmaktan Mutluluk Duyarız"
+msgstr "يسعدنا مساعدتك"
+
+msgid "Hemen Ara"
+msgstr "اتصل الآن"
+
+msgid "WhatsApp'tan Mesaj"
+msgstr "أرسل رسالة عبر واتساب"
+
+msgid "Yol Tarifi Al"
+msgstr "احصل على الاتجاهات"
+
+msgid "Yol Tarifi"
+msgstr "الاتجاهات"
+
+msgid "Çalışma Saatleri"
+msgstr "ساعات العمل"
+
+msgid "7/24 Hizmetinizdeyiz"
+msgstr "نحن في خدمتك على مدار الساعة"
+
+msgid "Check-in: 14:00"
+msgstr "تسجيل الوصول: 14:00"
+
+msgid "Check-out: 12:00"
+msgstr "تسجيل المغادرة: 12:00"
+
+msgid "Sık Sorulan Sorular"
+msgstr "الأسئلة الشائعة"
+
+msgid "Rezervasyon nasıl yapabilirim?"
+msgstr "كيف يمكنني إجراء حجز؟"
+
+msgid "Rezervasyon için bizi telefonla arayabilir, WhatsApp üzerinden mesaj gönderebilir veya"
+msgstr "يمكنك الاتصال بنا عبر الهاتف، إرسال رسالة عبر واتساب، أو"
+
+msgid "rezervasyon sitemizden"
+msgstr "من خلال موقع الحجز لدينا"
+
+msgid "yapabilirsiniz."
+msgstr "إجراء الحجز."
+
+msgid "Otele nasıl ulaşabilirim?"
+msgstr "كيف يمكنني الوصول إلى الفندق؟"
+
+msgid "Nevşehir Havalimanı'ndan otelimize transfer hizmeti sunuyoruz. Ayrıca Göreme merkeze yakın konumumuz sayesinde toplu taşıma ile de kolayca ulaşabilirsiniz."
+msgstr "نحن نقدم خدمة النقل من مطار نيفشهير إلى فندقنا. بالإضافة إلى ذلك، يمكنك الوصول إلينا بسهولة باستخدام وسائل النقل العامة بفضل موقعنا القريب من مركز جوريم."
+
+msgid "Balon turu rezervasyonu yapabilir miyim?"
+msgstr "هل يمكنني حجز جولة بالبالون؟"
+
+msgid "Evet, otelimiz üzerinden balon turu rezervasyonu yapabilirsiniz. En iyi fiyat garantisi ve güvenilir balon şirketleriyle çalışıyoruz."
+msgstr "نعم، يمكنك حجز جولة بالبالون من خلال فندقنا. نحن نتعامل مع شركات بالونات موثوقة ونقدم ضمان أفضل الأسعار."
+
+msgid "Oda özellikleri nelerdir?"
+msgstr "ما هي مميزات الغرفة؟"
+
+msgid "Tüm odalarımızda ücretsiz Wi-Fi, klima, minibar, LED TV, özel banyo ve lüks banyo malzemeleri bulunmaktadır. Detaylı bilgi için odalar sayfamızı inceleyebilirsiniz."
+msgstr "جميع غرفنا تحتوي على واي فاي مجاني، تكييف، ميني بار، تلفزيون LED، حمام خاص، ومواد حمام فاخرة. لمزيد من التفاصيل، يمكنك الاطلاع على صفحة الغرف لدينا."
+
+# Footer
+msgid "Hızlı Linkler"
+msgstr "روابط سريعة"
+
+msgid "Sosyal Medya"
+msgstr "وسائل التواصل الاجتماعي"
+
+msgid "Konum"
+msgstr "الموقع"
+
+msgid "Copyright"
+msgstr "حقوق الطبع والنشر"
+
+msgid "Tüm hakları saklıdır"
+msgstr "جميع الحقوق محفوظة"
+
+msgid "Göreme, Nevşehir, Türkiye"
+msgstr "غوريمه، نيفشهير، تركيا"
+
+# Reviews
+msgid "Misafir Yorumları"
+msgstr "تقييمات الضيوف"
+
+msgid "Google'da Bizi Değerlendirin"
+msgstr "قيمنا على جوجل"
+
+msgid "Google'da Değerlendir"
+msgstr "قيم على جوجل"
+
+msgid " 36 Değerlendirme"
+msgstr " ٣٦ تقييم"
+
+msgid "Değerlendir"
+msgstr "قيم"
+
+# Booking
+msgid "Hemen Rezervasyon Yap"
+msgstr "احجز الآن"
+
+msgid "Rezervasyon Yap"
+msgstr "احجز الآن"
+
+msgid "Bizi Arayın"
+msgstr "اتصل بنا"
+
+msgid "Özel Banyo"
+msgstr "حمام خاص"
+
+msgid "Romantik Aydınlatma"
+msgstr "إضاءة رومانسية"
+
+msgid "Lüks Mağara Odalarımız"
+msgstr "غرف الكهوف الفاخرة لدينا"
+
+msgid "iletisim/"
+msgstr "اتصل-بنا/"
+
+msgid "hakkimizda/"
+msgstr "عنا/"
+
+msgid "odalar/"
+msgstr "الغرف/"

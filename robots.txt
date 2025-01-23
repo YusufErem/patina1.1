@@ -1,9 +1,6 @@
 # robots.txt for patinacappadocia.com
 User-agent: *
 Allow: /
-Allow: /about
-Allow: /rooms
-Allow: /contact
 Allow: /static/
 Allow: /media/
 
@@ -12,12 +9,8 @@ Sitemap: https://patinacappadocia.com/sitemap.xml
 
 # Prevent access to admin and unnecessary paths
 Disallow: /admin/
+Disallow: /accounts/
 Disallow: /private/
-Disallow: /tmp/
-Disallow: /cache/
-Disallow: /*.php$
-Disallow: /*?*
-Disallow: /ping/
 
 # Crawl-delay for better server performance
 Crawl-delay: 1

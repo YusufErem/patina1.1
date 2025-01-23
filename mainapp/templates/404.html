@@ -4,6 +4,45 @@
 
 {% block title %}{% trans "Sayfa Bulunamadı - 404" %}{% endblock %}
 
+{% block extra_head %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Override the changeLang function for 404 page
+    window.changeLang = function(lang_code) {
+        // Create a form to submit the language change
+        let form = document.createElement('form');
+        form.method = 'post';
+        form.action = '/i18n/setlang/';
+        
+        // Add CSRF token
+        let csrfInput = document.createElement('input');
+        csrfInput.type = 'hidden';
+        csrfInput.name = 'csrfmiddlewaretoken';
+        csrfInput.value = '{{ csrf_token }}';
+        
+        // Add language input
+        let langInput = document.createElement('input');
+        langInput.type = 'hidden';
+        langInput.name = 'language';
+        langInput.value = lang_code;
+        
+        // Add next page input - always redirect to homepage for 404
+        let nextInput = document.createElement('input');
+        nextInput.type = 'hidden';
+        nextInput.name = 'next';
+        nextInput.value = '/' + lang_code + '/';
+        
+        // Append inputs and submit
+        form.appendChild(csrfInput);
+        form.appendChild(langInput);
+        form.appendChild(nextInput);
+        document.body.appendChild(form);
+        form.submit();
+    };
+});
+</script>
+{% endblock %}
+
 {% block content %}
 <div class="error_page">
     <div class="error_content">

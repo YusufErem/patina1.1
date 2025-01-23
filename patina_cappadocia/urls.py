@@ -23,12 +23,30 @@ from django.shortcuts import render
 from django.views.generic.base import TemplateView
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
+from django.middleware.csrf import get_token
+from django.utils import translation
 
 def custom_404(request, exception=None):
-    return render(request, '404.html', status=404)
+    # Ensure CSRF token is generated
+    get_token(request)
+    
+    # Get current language
+    current_language = translation.get_language()
+    
+    return render(request, '404.html', {
+        'LANGUAGE_CODE': current_language,
+    }, status=404)
 
 def custom_500(request, exception=None):
-    return render(request, '404.html', status=500)
+    # Ensure CSRF token is generated
+    get_token(request)
+    
+    # Get current language
+    current_language = translation.get_language()
+    
+    return render(request, '404.html', {
+        'LANGUAGE_CODE': current_language,
+    }, status=500)
 
 # Temel URL desenleri
 urlpatterns = [

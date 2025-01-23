@@ -10,7 +10,7 @@
         <h1>404</h1>
         <h2>{% trans "Aradığınız Sayfa Bulunamadı" %}</h2>
         <p>{% trans "Üzgünüz, aradığınız sayfaya ulaşılamıyor. Ana sayfaya dönüp tekrar deneyebilirsiniz." %}</p>
-        <a href="{% url 'index' %}" class="return_btn">
+        <a href="/{{ LANGUAGE_CODE }}/" class="return_btn">
             <i class="fas fa-home"></i>
             {% trans "Ana Sayfaya Dön" %}
         </a>

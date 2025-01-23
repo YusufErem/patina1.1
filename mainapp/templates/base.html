@@ -229,6 +229,86 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
+    <script>
+    function changeLang(lang_code) {
+        // Get current path without language prefix
+        let path = window.location.pathname;
+        let pathParts = path.split('/').filter(Boolean);
+        
+        // URL mapping for localized paths to English
+        const urlMapping = {
+            'iletisim': 'contact',
+            'hakkimizda': 'about',
+            'odalar': 'rooms',
+            'контакты': 'contact',
+            'о-нас': 'about',
+            'номера': 'rooms',
+            'contacto': 'contact',
+            'sobre-nosotros': 'about',
+            'habitaciones': 'rooms',
+            'contact': 'contact',
+            'about': 'about',
+            'rooms': 'rooms',
+            'kontakt': 'contact',
+            'uber-uns': 'about',
+            'zimmer': 'rooms',
+            'اتصل': 'contact',
+            'معلومات-عنا': 'about',
+            'الغرف': 'rooms',
+            'contact-fr': 'contact',
+            'a-propos': 'about',
+            'chambres': 'rooms'
+        };
+
+        // Remove current language code if it exists
+        if (pathParts.length > 0 && ['tr', 'en', 'ar', 'ru', 'es', 'fr', 'de'].includes(pathParts[0])) {
+            pathParts.shift();
+        }
+
+        // If there's a path, ensure it's in English
+        if (pathParts.length > 0) {
+            const currentPath = pathParts[0];
+            if (urlMapping[currentPath]) {
+                pathParts[0] = urlMapping[currentPath];
+            }
+        }
+
+        // Construct new URL with selected language
+        let newPath = '/' + lang_code + (pathParts.length > 0 ? '/' + pathParts.join('/') : '') + '/';
+        
+        // Create a form to submit the language change
+        let form = document.createElement('form');
+        form.method = 'post';
+        form.action = '/i18n/setlang/';
+        
+        // Add CSRF token
+        let csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        let csrfInput = document.createElement('input');
+        csrfInput.type = 'hidden';
+        csrfInput.name = 'csrfmiddlewaretoken';
+        csrfInput.value = csrfToken;
+        
+        // Add language input
+        let langInput = document.createElement('input');
+        langInput.type = 'hidden';
+        langInput.name = 'language';
+        langInput.value = lang_code;
+        
+        // Add next page input
+        let nextInput = document.createElement('input');
+        nextInput.type = 'hidden';
+        nextInput.name = 'next';
+        nextInput.value = newPath;
+        
+        // Append inputs and submit
+        form.appendChild(csrfInput);
+        form.appendChild(langInput);
+        form.appendChild(nextInput);
+        document.body.appendChild(form);
+        form.submit();
+    }
+    </script>
+    
     <style>
         /* Theme Colors Override */
         :root {
@@ -495,6 +575,7 @@
 </head>
 
 <body>
+    {% csrf_token %}
     <!-- header-start -->
     {% include 'partials/_header.html' %}
     <!-- header-end -->

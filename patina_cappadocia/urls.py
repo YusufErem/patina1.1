@@ -25,6 +25,12 @@ from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 from django.middleware.csrf import get_token
 from django.utils import translation
+from django.http import HttpResponse
+
+def sitemap_view(request):
+    return render(request, 'sitemap.xml', {
+        'request': request,
+    }, content_type='application/xml')
 
 def custom_404(request, exception=None):
     # Ensure CSRF token is generated
@@ -52,7 +58,7 @@ def custom_500(request, exception=None):
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
     path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
-    path('sitemap.xml', TemplateView.as_view(template_name="sitemap.xml", content_type="application/xml")),
+    path('sitemap.xml', sitemap_view, name='sitemap'),
 ]
 
 # Statik dosyalar için URL desenleri

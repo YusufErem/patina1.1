@@ -26,11 +26,15 @@ from django.utils.translation import gettext_lazy as _
 from django.middleware.csrf import get_token
 from django.utils import translation
 from django.http import HttpResponse
+from django.views.decorators.cache import cache_page
 
+@cache_page(60 * 15)  # Cache for 15 minutes
 def sitemap_view(request):
-    return render(request, 'sitemap.xml', {
+    response = render(request, 'sitemap.xml', {
         'request': request,
-    }, content_type='application/xml')
+    })
+    response['Content-Type'] = 'application/xml; charset=utf-8'
+    return response
 
 def custom_404(request, exception=None):
     # Ensure CSRF token is generated

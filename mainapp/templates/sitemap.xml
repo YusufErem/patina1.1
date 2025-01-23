@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% load i18n %}
     {% get_available_languages as LANGUAGES %}
-    {% get_current_language as CURRENT_LANGUAGE %}
 
     <!-- Ana Sayfa -->
     {% for lang_code, lang_name in LANGUAGES %}
     <url>
         <loc>https://{{ request.get_host }}/{{ lang_code }}/</loc>
-        {% for other_code, other_name in LANGUAGES %}
-        <xhtml:link 
-            rel="alternate"
-            hreflang="{{ other_code }}"
-            href="https://{{ request.get_host }}/{{ other_code }}/"
-        />
-        {% endfor %}
         <lastmod>{% now "Y-m-d" %}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -26,13 +17,6 @@
     {% for lang_code, lang_name in LANGUAGES %}
     <url>
         <loc>https://{{ request.get_host }}/{{ lang_code }}/rooms/</loc>
-        {% for other_code, other_name in LANGUAGES %}
-        <xhtml:link 
-            rel="alternate"
-            hreflang="{{ other_code }}"
-            href="https://{{ request.get_host }}/{{ other_code }}/rooms/"
-        />
-        {% endfor %}
         <lastmod>{% now "Y-m-d" %}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -43,13 +27,6 @@
     {% for lang_code, lang_name in LANGUAGES %}
     <url>
         <loc>https://{{ request.get_host }}/{{ lang_code }}/about/</loc>
-        {% for other_code, other_name in LANGUAGES %}
-        <xhtml:link 
-            rel="alternate"
-            hreflang="{{ other_code }}"
-            href="https://{{ request.get_host }}/{{ other_code }}/about/"
-        />
-        {% endfor %}
         <lastmod>{% now "Y-m-d" %}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -60,13 +37,6 @@
     {% for lang_code, lang_name in LANGUAGES %}
     <url>
         <loc>https://{{ request.get_host }}/{{ lang_code }}/contact/</loc>
-        {% for other_code, other_name in LANGUAGES %}
-        <xhtml:link 
-            rel="alternate"
-            hreflang="{{ other_code }}"
-            href="https://{{ request.get_host }}/{{ other_code }}/contact/"
-        />
-        {% endfor %}
         <lastmod>{% now "Y-m-d" %}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

@@ -453,3 +453,189 @@ msgstr "a-propos/"
 
 msgid "odalar/"
 msgstr "chambres/"
+
+# Turkish Hamam Cave Room
+msgid "Türk Hamamlı Mağara Oda"
+msgstr "Chambre Grotte avec Hamam Turc"
+
+msgid "Geleneksel Hamam Deneyimi"
+msgstr "Expérience Hamam Traditionnelle"
+
+msgid "Türk Hamamlı Mağara Odamız, geleneksel Türk hamam kültürünü modern lüksle buluşturuyor. Otantik mağara atmosferinde, özel tasarım Türk hamamı, sıcak taş döşeme ve geleneksel mimari detaylarla unutulmaz bir deneyim sunuyor."
+msgstr "Notre chambre grotte avec hamam turc combine la culture traditionnelle du hamam turc avec le luxe moderne. Dans une atmosphère authentique de grotte, elle offre une expérience inoubliable avec un hamam turc spécialement conçu, des sols en pierre chauffée et des détails architecturaux traditionnels."
+
+msgid "Özel Türk Hamamı"
+msgstr "Hamam Turc Privé"
+
+msgid "Sıcak Taş Döşeme"
+msgstr "Sol en Pierre Chauffée"
+
+msgid "Doğal Mağara Duvarları"
+msgstr "Murs de Grotte Naturels"
+
+msgid "Hamam Masaj Alanı"
+msgstr "Espace Massage du Hamam"
+
+msgid "Geleneksel Şömine"
+msgstr "Cheminée Traditionnelle"
+
+msgid "Geleneksel Türk hamam deneyimi ile lüks konaklama"
+msgstr "Hébergement de luxe avec expérience hamam turc traditionnel"
+
+msgid "Türk Hamamlı Mağara Oda Detay"
+msgstr "Détail Chambre Grotte avec Hamam Turc"
+
+msgid "Türk Hamamlı Mağara Oda Hamam"
+msgstr "Hamam de la Chambre Grotte Turque"
+
+msgid "Türk Hamamlı Mağara Oda Banyo"
+msgstr "Salle de Bain Chambre Grotte avec Hamam Turc"
+
+# Page Titles with Patina Cappadocia Brand
+msgid "Patina Cappadocia - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia - Hôtels Troglodytes Turquie | Suites Bain Turc | Tourisme Turquie"
+
+msgid "Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All Room Types"
+msgstr "Patina Cappadocia Chambres - Hôtels Troglodytes Turquie | Suites Bain Turc | Tous Types de Chambres"
+
+msgid "Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel Experience"
+msgstr "Patina Cappadocia À Propos - Avis Hôtels Troglodytes Turquie | Expérience Hôtel Bain Turc"
+
+msgid "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism"
+msgstr "Patina Cappadocia Guide - Hôtels Turquie | Hôtels Troglodytes Bain Turc | Tourisme Turquie"
+
+msgid "Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia Contact - Hôtels Troglodytes Turquie | Suites Bain Turc | Tourisme Turquie"
+
+# Blog Content Translations
+msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+msgstr "Guide Complet Hôtels Turquie - Meilleurs Hébergements Turquie"
+
+msgid "Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey Tourism Guide"
+msgstr "Hôtels Troglodytes, Suites Bain Turc, Hôtels Tours Montgolfière - Guide Complet Tourisme Turquie"
+
+msgid "Best Hotels in Turkey - Complete Tourism Guide"
+msgstr "Meilleurs Hôtels en Turquie - Guide Tourisme Complet"
+
+msgid "Turkey offers some of the world's most unique accommodation experiences. From cave hotels in Cappadocia to luxury beach resorts in Antalya, boutique hotels in Istanbul to thermal spa hotels - Turkey tourism has it all. This comprehensive guide covers the best hotel experiences across Turkey."
+msgstr "La Turquie offre certaines des expériences d'hébergement les plus uniques au monde. Des hôtels troglodytes en Cappadoce aux stations balnéaires de luxe à Antalya, des hôtels boutiques à Istanbul aux hôtels spa thermaux - le tourisme turc a tout. Ce guide complet couvre les meilleures expériences hôtelières à travers la Turquie."
+
+msgid "Why Choose Turkey for Your Next Holiday?"
+msgstr "Pourquoi Choisir la Turquie pour Vos Prochaines Vacances?"
+
+msgid "Unique cave hotel experiences in Cappadocia"
+msgstr "Expériences uniques d'hôtels troglodytes en Cappadoce"
+
+msgid "Turkish bath and spa hotel traditions"
+msgstr "Traditions de bain turc et d'hôtels spa"
+
+msgid "Hot air balloon tours from luxury hotels"
+msgstr "Tours en montgolfière depuis des hôtels de luxe"
+
+msgid "Historic boutique hotels in Istanbul and Ankara"
+msgstr "Hôtels boutiques historiques à Istanbul et Ankara"
+
+msgid "Beach resort hotels in Mediterranean coast"
+msgstr "Hôtels resort sur la côte méditerranéenne"
+
+msgid "Thermal spa hotels for wellness tourism"
+msgstr "Hôtels spa thermaux pour le tourisme bien-être"
+
+msgid "Cave Hotels Turkey - Unique Accommodation Experience"
+msgstr "Hôtels Troglodytes Turquie - Expérience d'Hébergement Unique"
+
+msgid "Cave hotels in Turkey, particularly in Cappadocia region, offer visitors a once-in-a-lifetime accommodation experience. These hotels are carved into natural rock formations, providing authentic atmosphere while maintaining modern luxury standards."
+msgstr "Les hôtels troglodytes en Turquie, particulièrement dans la région de Cappadoce, offrent aux visiteurs une expérience d'hébergement unique. Ces hôtels sont sculptés dans des formations rocheuses naturelles, offrant une atmosphère authentique tout en maintenant des standards de luxe modernes."
+
+msgid "Types of Cave Hotels in Turkey"
+msgstr "Types d'Hôtels Troglodytes en Turquie"
+
+msgid "Superior Cave Rooms - Modern comfort in traditional settings"
+msgstr "Chambres Troglodytes Supérieures - Confort moderne dans un cadre traditionnel"
+
+msgid "King Suite Cave Rooms - Spacious luxury with private terraces"
+msgstr "Chambres Troglodytes King Suite - Luxe spacieux avec terrasses privées"
+
+msgid "Queen Cave Rooms - Elegant design with authentic features"
+msgstr "Chambres Troglodytes Queen - Design élégant avec caractéristiques authentiques"
+
+msgid "Executive Cave Rooms - Business travel meets historic charm"
+msgstr "Chambres Troglodytes Executive - Voyage d'affaires rencontre charme historique"
+
+msgid "Presidential Suite - Ultimate luxury cave experience"
+msgstr "Suite Présidentielle - Expérience troglodyte de luxe ultime"
+
+msgid "Cave Honeymoon Suites - Romantic getaway accommodations"
+msgstr "Suites Lune de Miel Troglodytes - Hébergements d'escapade romantique"
+
+msgid "Turkish Hamam Cave Rooms - Traditional bath culture experience"
+msgstr "Chambres Troglodytes Hamam Turc - Expérience de culture de bain traditionnelle"
+
+msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
+msgstr "Hôtels Bain Turc - Expérience Bien-être et Culturelle"
+
+msgid "Turkish bath (hamam) hotels offer guests an authentic cultural experience combined with luxury accommodation. These hotels feature traditional Turkish baths integrated into modern hotel facilities, providing unique wellness experiences."
+msgstr "Les hôtels de bain turc (hamam) offrent aux clients une expérience culturelle authentique combinée à un hébergement de luxe. Ces hôtels disposent de bains turcs traditionnels intégrés dans des installations hôtelières modernes, offrant des expériences de bien-être uniques."
+
+msgid "Turkish Hamam Hotel Features"
+msgstr "Caractéristiques des Hôtels Hamam Turc"
+
+msgid "Authentic marble hamam with heated stone floors"
+msgstr "Hamam en marbre authentique avec sols en pierre chauffée"
+
+msgid "Professional hamam massage services"
+msgstr "Services de massage hamam professionnels"
+
+msgid "Traditional exfoliation (kese) and foam treatments"
+msgstr "Exfoliation traditionnelle (kese) et traitements à la mousse"
+
+msgid "Private hamam suites for couples"
+msgstr "Suites hamam privées pour couples"
+
+msgid "Modern spa facilities with traditional elements"
+msgstr "Installations spa modernes avec éléments traditionnels"
+
+msgid "Turkish bath culture education and experiences"
+msgstr "Éducation et expériences de la culture du bain turc"
+
+msgid "Turkey Tourism Information"
+msgstr "Informations Tourisme Turquie"
+
+msgid "WhatsApp Support"
+msgstr "Support WhatsApp"
+
+msgid "5.0 Turkey Hotel Rating"
+msgstr "5.0 Évaluation Hôtel Turquie"
+
+msgid "Cappadocia, Turkey"
+msgstr "Cappadoce, Turquie"
+
+msgid "Turkish Hamam Suites"
+msgstr "Suites Hamam Turc"
+
+msgid "Cave Hotel Experience"
+msgstr "Expérience Hôtel Troglodyte"
+
+msgid "Turkey Hotel Types"
+msgstr "Types d'Hôtels Turquie"
+
+msgid "Cave Hotels with Jacuzzi"
+msgstr "Hôtels Troglodytes avec Jacuzzi"
+
+msgid "Turkish Bath Suite Rooms"
+msgstr "Chambres Suites Bain Turc"
+
+msgid "Balloon Tour Hotels"
+msgstr "Hôtels Tours Montgolfière"
+
+msgid "Luxury Cave Accommodations"
+msgstr "Hébergements Troglodytes de Luxe"
+
+msgid "Turkey Hotel Reviews"
+msgstr "Avis Hôtels Turquie"
+
+msgid "Turkey Tourism Contact"
+msgstr "Contact Tourisme Turquie"
+
+msgid "Popular Turkey Destinations"
+msgstr "Destinations Populaires Turquie"

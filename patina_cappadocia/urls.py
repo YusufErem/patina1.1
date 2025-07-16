@@ -65,9 +65,9 @@ urlpatterns = [
     path('sitemap.xml', sitemap_view, name='sitemap'),
 ]
 
-# Statik dosyalar için URL desenleri
+# Static ve media dosyaları için development modunda
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # Çoklu dil desteği için URL desenleri

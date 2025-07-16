@@ -15,6 +15,9 @@ def about(request):
 def rooms(request):
     return render(request, 'rooms.html')
 
+def blog(request):
+    return render(request, 'blog.html')
+
 def ping(request):
     return HttpResponse("pong")
 

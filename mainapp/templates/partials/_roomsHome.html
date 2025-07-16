@@ -93,6 +93,20 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="room_item">
+                    <div class="room_img">
+                        <img src="{% static 'img/rooms/turkishhamam1.jpeg' %}" alt="{% trans 'Türk Hamamlı Mağara Oda' %}" loading="lazy">
+                        <div class="room_hover">
+                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
+                        </div>
+                    </div>
+                    <div class="room_info">
+                        <h4>{% trans "Türk Hamamlı Mağara Oda" %}</h4>
+                        <p>{% trans "Geleneksel Türk hamam deneyimi ile lüks konaklama" %}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -393,6 +407,14 @@ const galleryImages = {
         '{% static "img/rooms/CurveHoneymoon2.jpeg" %}',
         '{% static "img/rooms/CurveHoneymoon3.jpeg" %}',
         '{% static "img/about/71.jpg" %}'
+    ],
+    'turkishhamam': [
+        '{% static "img/rooms/turkishhamam1.jpeg" %}',
+        '{% static "img/rooms/turkishhamam2.jpeg" %}',
+        '{% static "img/rooms/turkishhamam3.jpeg" %}',
+        '{% static "img/rooms/turkishhamam4.jpeg" %}',
+        '{% static "img/rooms/turkishhamam5.jpeg" %}',
+        '{% static "img/rooms/turkishhamam6.jpeg" %}'
     ]
 };
 

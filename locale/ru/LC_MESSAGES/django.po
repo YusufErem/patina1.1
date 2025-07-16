@@ -453,3 +453,104 @@ msgstr "o-nas/"
 
 msgid "odalar/"
 msgstr "nomera/"
+
+# Turkish Hamam Cave Room
+msgid "Türk Hamamlı Mağara Oda"
+msgstr "Пещерный номер с турецким хаммамом"
+
+msgid "Geleneksel Hamam Deneyimi"
+msgstr "Традиционный опыт хаммама"
+
+msgid "Türk Hamamlı Mağara Odamız, geleneksel Türk hamam kültürünü modern lüksle buluşturuyor. Otantik mağara atmosferinde, özel tasarım Türk hamamı, sıcak taş döşeme ve geleneksel mimari detaylarla unutulmaz bir deneyim sunuyor."
+msgstr "Наш пещерный номер с турецким хаммамом сочетает традиционную культуру турецкого хаммама с современной роскошью. В аутентичной пещерной атмосфере он предлагает незабываемый опыт со специально спроектированным турецким хаммамом, полами с подогревом из камня и традиционными архитектурными деталями."
+
+msgid "Özel Türk Hamamı"
+msgstr "Частный турецкий хаммам"
+
+msgid "Sıcak Taş Döşeme"
+msgstr "Полы с подогревом из камня"
+
+msgid "Doğal Mağara Duvarları"
+msgstr "Натуральные пещерные стены"
+
+msgid "Hamam Masaj Alanı"
+msgstr "Массажная зона хаммама"
+
+msgid "Geleneksel Şömine"
+msgstr "Традиционный камин"
+
+msgid "Geleneksel Türk hamam deneyimi ile lüks konaklama"
+msgstr "Роскошное размещение с традиционным турецким хаммамом"
+
+msgid "Türk Hamamlı Mağara Oda Detay"
+msgstr "Детали пещерного номера с турецким хаммамом"
+
+msgid "Türk Hamamlı Mağara Oda Hamam"
+msgstr "Хаммам пещерного номера с турецким хаммамом"
+
+msgid "Türk Hamamlı Mağara Oda Banyo"
+msgstr "Ванная пещерного номера с турецким хаммамом"
+
+# Page Titles with Patina Cappadocia Brand
+msgid "Patina Cappadocia - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia - Пещерные Отели Турции | Люксы Турецкая Баня | Туризм Турция"
+
+msgid "Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All Room Types"
+msgstr "Patina Cappadocia Номера - Пещерные Отели Турции | Люксы Турецкая Баня | Все Типы Номеров"
+
+msgid "Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel Experience"
+msgstr "Patina Cappadocia О Нас - Отзывы Пещерные Отели Турции | Опыт Отель Турецкая Баня"
+
+msgid "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism"
+msgstr "Patina Cappadocia Гид - Отели Турции | Пещерные Отели Турецкая Баня | Туризм Турция"
+
+msgid "Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia Контакт - Пещерные Отели Турции | Люксы Турецкая Баня | Туризм Турция"
+
+msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+msgstr "Полный Гид Отели Турции - Лучшее Размещение Турция"
+
+msgid "Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey Tourism Guide"
+msgstr "Пещерные Отели, Люксы Турецкая Баня, Отели Туры Воздушный Шар - Полный Гид Туризм Турция"
+
+msgid "Best Hotels in Turkey - Complete Tourism Guide"
+msgstr "Лучшие Отели в Турции - Полный Туристический Гид"
+
+msgid "Turkish Hamam Cave Rooms - Traditional bath culture experience"
+msgstr "Пещерные Номера Турецкий Хаммам - Опыт традиционной банной культуры"
+
+msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
+msgstr "Отели Турецкая Баня - Велнес и Культурный Опыт"
+
+msgid "Turkey Tourism Information"
+msgstr "Информация Туризм Турция"
+
+msgid "WhatsApp Support"
+msgstr "Поддержка WhatsApp"
+
+msgid "5.0 Turkey Hotel Rating"
+msgstr "5.0 Рейтинг Отель Турция"
+
+msgid "Cappadocia, Turkey"
+msgstr "Каппадокия, Турция"
+
+msgid "Turkish Hamam Suites"
+msgstr "Люксы Турецкий Хаммам"
+
+msgid "Cave Hotel Experience"
+msgstr "Опыт Пещерный Отель"
+
+msgid "Turkey Hotel Types"
+msgstr "Типы Отелей Турция"
+
+msgid "Turkish Bath Suite Rooms"
+msgstr "Номера Люкс Турецкая Баня"
+
+msgid "Balloon Tour Hotels"
+msgstr "Отели Туры Воздушный Шар"
+
+msgid "Turkey Hotel Reviews"
+msgstr "Отзывы Отели Турция"
+
+msgid "Turkey Tourism Contact"
+msgstr "Контакт Туризм Турция"

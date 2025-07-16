@@ -273,7 +273,7 @@ msgstr "التفسير الحديث للعمارة التقليدية"
 msgid "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, geleneksel dokuyu ve modern lüksü mükemmel bir uyumla bir araya getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu bir konaklama deneyimi yaşatıyor."
 msgstr "يقع باتينا كابادوكيا بين المناظر الخلابة لمدينة أوتشيسار، حيث يدمج بشكل مثالي النسيج التقليدي والفخامة الحديثة. تعكس معمارنا المبني من الحجارة التراث الثقافي الغني للمنطقة، بينما توفر خدماتنا الحديثة تجربة إقامة مريحة."
 
-msgid "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Kapadokya, büyüleyici Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır."
+msgid "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Cappadocia, büyüleyici Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır."
 msgstr "سواء للمغامرين الذين يتطلعون لاكتشاف الطبيعة والتاريخ، أو الأزواج والعائلات الذين يبحثون عن السلام، يعد باتينا كابادوكيا نقطة انطلاق مثالية لاكتشاف كابادوكيا الساحرة."
 
 msgid "Daha Fazla"
@@ -453,3 +453,104 @@ msgstr "عنا/"
 
 msgid "odalar/"
 msgstr "الغرف/"
+
+# Turkish Hamam Cave Room
+msgid "Türk Hamamlı Mağara Oda"
+msgstr "غرفة الكهف مع الحمام التركي"
+
+msgid "Geleneksel Hamam Deneyimi"
+msgstr "تجربة الحمام التقليدية"
+
+msgid "Türk Hamamlı Mağara Odamız, geleneksel Türk hamam kültürünü modern lüksle buluşturuyor. Otantik mağara atmosferinde, özel tasarım Türk hamamı, sıcak taş döşeme ve geleneksel mimari detaylarla unutulmaz bir deneyim sunuyor."
+msgstr "تجمع غرفة الكهف مع الحمام التركي بين ثقافة الحمام التركي التقليدية والفخامة الحديثة. في أجواء كهف أصيلة، تقدم تجربة لا تُنسى مع حمام تركي مصمم خصيصاً وأرضيات حجرية مُدفأة وتفاصيل معمارية تقليدية."
+
+msgid "Özel Türk Hamamı"
+msgstr "حمام تركي خاص"
+
+msgid "Sıcak Taş Döşeme"
+msgstr "أرضيات حجرية مُدفأة"
+
+msgid "Doğal Mağara Duvarları"
+msgstr "جدران كهف طبيعية"
+
+msgid "Hamam Masaj Alanı"
+msgstr "منطقة مساج الحمام"
+
+msgid "Geleneksel Şömine"
+msgstr "مدفأة تقليدية"
+
+msgid "Geleneksel Türk hamam deneyimi ile lüks konaklama"
+msgstr "إقامة فاخرة مع تجربة الحمام التركي التقليدي"
+
+msgid "Türk Hamamlı Mağara Oda Detay"
+msgstr "تفاصيل غرفة الكهف مع الحمام التركي"
+
+msgid "Türk Hamamlı Mağara Oda Hamam"
+msgstr "حمام غرفة الكهف التركية"
+
+msgid "Türk Hamamlı Mağara Oda Banyo"
+msgstr "حمام غرفة الكهف مع الحمام التركي"
+
+# Page Titles with Patina Cappadocia Brand
+msgid "Patina Cappadocia - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia - فنادق كهفية تركيا | أجنحة حمام تركي | سياحة تركيا"
+
+msgid "Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All Room Types"
+msgstr "Patina Cappadocia غرف - فنادق كهفية تركيا | أجنحة حمام تركي | جميع أنواع الغرف"
+
+msgid "Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel Experience"
+msgstr "Patina Cappadocia حول - تقييمات فنادق كهفية تركيا | تجربة فندق حمام تركي"
+
+msgid "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism"
+msgstr "Patina Cappadocia دليل - فنادق تركيا | فنادق كهفية حمام تركي | سياحة تركيا"
+
+msgid "Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia اتصال - فنادق كهفية تركيا | أجنحة حمام تركي | سياحة تركيا"
+
+msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+msgstr "دليل كامل فنادق تركيا - أفضل إقامة تركيا"
+
+msgid "Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey Tourism Guide"
+msgstr "فنادق كهفية، أجنحة حمام تركي، فنادق جولات المنطاد - دليل سياحة تركيا كامل"
+
+msgid "Best Hotels in Turkey - Complete Tourism Guide"
+msgstr "أفضل فنادق في تركيا - دليل سياحي كامل"
+
+msgid "Turkish Hamam Cave Rooms - Traditional bath culture experience"
+msgstr "غرف كهفية حمام تركي - تجربة ثقافة الاستحمام التقليدية"
+
+msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
+msgstr "فنادق حمام تركي - تجربة العافية والثقافة"
+
+msgid "Turkey Tourism Information"
+msgstr "معلومات سياحة تركيا"
+
+msgid "WhatsApp Support"
+msgstr "دعم واتساب"
+
+msgid "5.0 Turkey Hotel Rating"
+msgstr "5.0 تقييم فندق تركيا"
+
+msgid "Cappadocia, Turkey"
+msgstr "كابادوكيا، تركيا"
+
+msgid "Turkish Hamam Suites"
+msgstr "أجنحة حمام تركي"
+
+msgid "Cave Hotel Experience"
+msgstr "تجربة فندق كهفي"
+
+msgid "Turkey Hotel Types"
+msgstr "أنواع فنادق تركيا"
+
+msgid "Turkish Bath Suite Rooms"
+msgstr "غرف أجنحة حمام تركي"
+
+msgid "Balloon Tour Hotels"
+msgstr "فنادق جولات المنطاد"
+
+msgid "Turkey Hotel Reviews"
+msgstr "تقييمات فنادق تركيا"
+
+msgid "Turkey Tourism Contact"
+msgstr "اتصال سياحة تركيا"

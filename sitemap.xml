@@ -54,6 +54,10 @@
             <image:loc>https://patinacappadocia.com/static/img/rooms/presidentialsuite1.jpeg</image:loc>
             <image:title>Presidential Suite</image:title>
         </image:image>
+        <image:image>
+            <image:loc>https://patinacappadocia.com/static/img/rooms/turkishhamam1.jpeg</image:loc>
+            <image:title>Türk Hamamlı Mağara Oda</image:title>
+        </image:image>
         <xhtml:link rel="alternate" hreflang="tr" href="https://patinacappadocia.com/tr/rooms/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://patinacappadocia.com/en/rooms/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://patinacappadocia.com/de/rooms/"/>

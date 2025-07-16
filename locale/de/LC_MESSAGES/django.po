@@ -180,13 +180,13 @@ msgstr "Unsere King Suite Zimmer bieten Ihnen ein unvergessliches Kappadokien-Er
 msgid "Konforlu ve Şık Tasarım"
 msgstr "Komfortables und elegantes Design"
 
-msgid "Queen odalarımız, şık tasarımı ve konforlu yaşam alanıyla misafirlerimize huzurlu bir konaklama sunuyor. Modern dokunuşlar ve geleneksel mimari detaylar mükemmel bir uyum içinde."
+msgid "Queen odalarımız, şık tasarımı ve konforlu yaşam alanıyla misafirlerimize huzurlu bir konaklama sunuyor. Modern dokunuşlar ve geleneksel mimari detaylar mükemmel ein uyum içinde."
 msgstr "Unsere Queen Zimmer bieten den Gästen eine friedliche Unterkunft mit elegantem Design und komfortablen Wohnbereichen. Moderne Akzente und traditionelle architektonische Details harmonieren perfekt."
 
 msgid "İş ve Konforun Buluşması"
 msgstr "Wo Arbeit auf Komfort trifft"
 
-msgid "Executive odalarımız, iş seyahatlerinizde konfor ve lüksü bir arada sunar. Çalışma alanı ve modern olanaklar ile donatılmış odalarımız, verimli bir konaklama deneyimi sağlar."
+msgid "Executive odalarımız, iş seyahatlerinizde konfor ve lüksü bir arada sunar. Çalışma alanı ve modern olanaklar ile donatılmış odalarımız, verimli ein konaklama deneyimi sağlar."
 msgstr "Unsere Executive Zimmer bieten Komfort und Luxus für Ihre Geschäftsreisen. Ausgestattet mit einem Arbeitsplatz und modernen Annehmlichkeiten, bieten sie eine effiziente Übernachtungserfahrung."
 
 msgid "Eşsiz Lüks ve Konfor"
@@ -272,10 +272,10 @@ msgstr "Unsere Geschichte"
 msgid "Geleneksel Mimarinin Modern Yorumu"
 msgstr "Moderne Interpretation traditioneller Architektur"
 
-msgid "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, geleneksel dokuyu ve modern lüksü mükemmel bir uyumla bir araya getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu bir konaklama deneyimi yaşatıyor."
+msgid "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, geleneksel dokuyu ve modern lüksü mükemmel ein uyumla bir araya getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu ein konaklama deneyimi yaşatıyor."
 msgstr "Patina Cappadocia, gelegen in den faszinierenden Ausblicken von Uçhisar, kombiniert traditionelle Texturen und modernen Luxus in perfekter Harmonie. Unsere Steinarchitektur spiegelt das reiche kulturelle Erbe der Region wider, während unsere modernen Annehmlichkeiten Ihnen ein komfortables Aufenthaltserlebnis bieten."
 
-msgid "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Kapadokya, büyüleyici Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır."
+msgid "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Kapadokya, büyüleyici Kapadokya'yı keşfetmek için mükemmel ein başlangıç noktasıdır."
 msgstr "Ob Abenteurer, die die Natur und Geschichte entdecken möchten, oder Paare und Familien, die nach Ruhe suchen, Patina Cappadocia ist der perfekte Ausgangspunkt, um das bezaubernde Kappadokien zu entdecken."
 
 msgid "Daha Fazla"
@@ -287,7 +287,7 @@ msgstr "Unsere Mission"
 msgid "Benzersiz Deneyimler Sunuyoruz"
 msgstr "Wir bieten einzigartige Erlebnisse"
 
-msgid "Misafirlerimize sadece bir konaklama değil, Kapadokya'nın büyülü atmosferini tam anlamıyla yaşayabilecekleri özel bir deneyim sunmayı hedefliyoruz. Profesyonel ekibimiz, size bölgenin en güzel yerlerini keşfetmeniz için rehberlik ederken, konforlu odalarımız ve özenle hazırlanan hizmetlerimizle unutulmaz anılar biriktirmenizi sağlıyoruz."
+msgid "Misafirlerimize sadece ein konaklama değil, Kapadokya'nın büyülü atmosferini vollständig erleben können. Profesyonel ekibimiz, size bölgenin en güzel yerlerini keşfetmeniz için rehberlik ederken, konforlu odalarımız und sorgfältig zubereiteten Dienstleistungen Ihnen helfen, unvergessliche Erinnerungen zu sammeln."
 msgstr "Unser Ziel ist es, unseren Gästen nicht nur eine Unterkunft, sondern ein besonderes Erlebnis zu bieten, bei dem sie die magische Atmosphäre von Kappadokien vollständig erleben können. Unser professionelles Team führt Sie zu den schönsten Orten der Region, während unsere komfortablen Zimmer und sorgfältig zubereiteten Dienstleistungen Ihnen helfen, unvergessliche Erinnerungen zu sammeln."
 
 msgid "Özel Tasarlanmış Odalar"
@@ -456,4 +456,190 @@ msgstr "ueber-uns/"
 
 msgid "odalar/"
 msgstr "zimmer/"
+
+# Turkish Hamam Cave Room
+msgid "Türk Hamamlı Mağara Oda"
+msgstr "Türkisches Hamam Höhlenzimmer"
+
+msgid "Geleneksel Hamam Deneyimi"
+msgstr "Traditionelles Hamam-Erlebnis"
+
+msgid "Türk Hamamlı Mağara Odamız, geleneksel Türk hamam kültürünü modern lüksle buluşturuyor. Otantik mağara atmosferinde, özel tasarım Türk hamamı, sıcak taş döşeme ve geleneksel mimari detaylarla unutulmaz ein deneyim sunuyor."
+msgstr "Unser türkisches Hamam-Höhlenzimmer verbindet traditionelle türkische Hamam-Kultur mit modernem Luxus. In authentischer Höhlenatmosphäre bietet es ein unvergessliches Erlebnis mit speziell gestaltetem türkischem Hamam, beheizten Steinböden und traditionellen architektonischen Details."
+
+msgid "Özel Türk Hamamı"
+msgstr "Privates Türkisches Hamam"
+
+msgid "Sıcak Taş Döşeme"
+msgstr "Beheizte Steinböden"
+
+msgid "Doğal Mağara Duvarları"
+msgstr "Natürliche Höhlenwände"
+
+msgid "Hamam Masaj Alanı"
+msgstr "Hamam-Massagebereich"
+
+msgid "Geleneksel Şömine"
+msgstr "Traditioneller Kamin"
+
+msgid "Geleneksel Türk hamam deneyimi ile lüks konaklama"
+msgstr "Luxuriöse Unterkunft mit traditionellem türkischem Hamam-Erlebnis"
+
+msgid "Türk Hamamlı Mağara Oda Detay"
+msgstr "Türkisches Hamam Höhlenzimmer Detail"
+
+msgid "Türk Hamamlı Mağara Oda Hamam"
+msgstr "Türkisches Hamam Höhlenzimmer Hamam"
+
+msgid "Türk Hamamlı Mağara Oda Banyo"
+msgstr "Türkisches Hamam Höhlenzimmer Badezimmer"
+
+# Page Titles with Patina Cappadocia Brand
+msgid "Patina Cappadocia - Turkey Cave Hotels | Turkish Bath Suites | Turkish Tourism"
+msgstr "Patina Cappadocia - Türkei Höhlenhotels | Türkisches Bad Suiten | Türkei Tourismus"
+
+msgid "Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All Room Types"
+msgstr "Patina Cappadocia Zimmer - Türkei Höhlenhotels | Türkisches Bad Suiten | Alle Zimmertypen"
+
+msgid "Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel Experience"
+msgstr "Patina Cappadocia Über Uns - Türkei Höhlenhotel Bewertungen | Türkisches Bad Hotel Erlebnis"
+
+msgid "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism"
+msgstr "Patina Cappadocia Reiseführer - Türkei Hotels | Höhlenhotels Türkisches Bad | Türkei Tourismus"
+
+msgid "Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia Kontakt - Türkei Höhlenhotels | Türkisches Bad Suiten | Türkei Tourismus"
+
+# Blog Content Translations
+msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+msgstr "Türkei Hotels Kompletter Reiseführer - Beste Unterkünfte Türkei"
+
+msgid "Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey Tourism Guide"
+msgstr "Höhlenhotels, Türkisches Bad Suiten, Ballonfahrt Hotels - Kompletter Türkei Tourismus Reiseführer"
+
+msgid "Best Hotels in Turkey - Complete Tourism Guide"
+msgstr "Beste Hotels in der Türkei - Kompletter Tourismus Reiseführer"
+
+msgid "Turkey offers some of the world's most unique accommodation experiences. From cave hotels in Cappadocia to luxury beach resorts in Antalya, boutique hotels in Istanbul to thermal spa hotels - Turkey tourism has it all. This comprehensive guide covers the best hotel experiences across Turkey."
+msgstr "Die Türkei bietet einige der einzigartigsten Unterkunftserlebnisse der Welt. Von Höhlenhotels in Kappadokien bis zu luxuriösen Strandresorts in Antalya, von Boutique-Hotels in Istanbul bis zu Thermal-Spa-Hotels - der Türkei-Tourismus hat alles. Dieser umfassende Reiseführer behandelt die besten Hotelerlebnisse in der Türkei."
+
+msgid "Why Choose Turkey for Your Next Holiday?"
+msgstr "Warum die Türkei für Ihren nächsten Urlaub wählen?"
+
+msgid "Unique cave hotel experiences in Cappadocia"
+msgstr "Einzigartige Höhlenhotel-Erlebnisse in Kappadokien"
+
+msgid "Turkish bath and spa hotel traditions"
+msgstr "Türkisches Bad und Spa-Hotel Traditionen"
+
+msgid "Hot air balloon tours from luxury hotels"
+msgstr "Heißluftballonfahrten von Luxushotels"
+
+msgid "Historic boutique hotels in Istanbul and Ankara"
+msgstr "Historische Boutique-Hotels in Istanbul und Ankara"
+
+msgid "Beach resort hotels in Mediterranean coast"
+msgstr "Strandresort-Hotels an der Mittelmeerküste"
+
+msgid "Thermal spa hotels for wellness tourism"
+msgstr "Thermal-Spa-Hotels für Wellness-Tourismus"
+
+msgid "Cave Hotels Turkey - Unique Accommodation Experience"
+msgstr "Höhlenhotels Türkei - Einzigartiges Unterkunftserlebnis"
+
+msgid "Cave hotels in Turkey, particularly in Cappadocia region, offer visitors a once-in-a-lifetime accommodation experience. These hotels are carved into natural rock formations, providing authentic atmosphere while maintaining modern luxury standards."
+msgstr "Höhlenhotels in der Türkei, besonders in der Region Kappadokien, bieten Besuchern ein einmaliges Unterkunftserlebnis. Diese Hotels sind in natürliche Felsformationen gehauen und bieten authentische Atmosphäre bei modernen Luxusstandards."
+
+msgid "Types of Cave Hotels in Turkey"
+msgstr "Arten von Höhlenhotels in der Türkei"
+
+msgid "Superior Cave Rooms - Modern comfort in traditional settings"
+msgstr "Superior Höhlenzimmer - Moderner Komfort in traditioneller Umgebung"
+
+msgid "King Suite Cave Rooms - Spacious luxury with private terraces"
+msgstr "King Suite Höhlenzimmer - Geräumiger Luxus mit privaten Terrassen"
+
+msgid "Queen Cave Rooms - Elegant design with authentic features"
+msgstr "Queen Höhlenzimmer - Elegantes Design mit authentischen Merkmalen"
+
+msgid "Executive Cave Rooms - Business travel meets historic charm"
+msgstr "Executive Höhlenzimmer - Geschäftsreisen treffen auf historischen Charme"
+
+msgid "Presidential Suite - Ultimate luxury cave experience"
+msgstr "Presidential Suite - Ultimatives Luxus-Höhlenerlebnis"
+
+msgid "Cave Honeymoon Suites - Romantic getaway accommodations"
+msgstr "Höhlen-Flitterwochen-Suiten - Romantische Fluchtunterkünfte"
+
+msgid "Turkish Hamam Cave Rooms - Traditional bath culture experience"
+msgstr "Türkisches Hamam Höhlenzimmer - Traditionelles Badkultur-Erlebnis"
+
+msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
+msgstr "Türkisches Bad Hotels - Wellness und Kulturerlebnis"
+
+msgid "Turkish bath (hamam) hotels offer guests an authentic cultural experience combined with luxury accommodation. These hotels feature traditional Turkish baths integrated into modern hotel facilities, providing unique wellness experiences."
+msgstr "Türkische Bad (Hamam) Hotels bieten Gästen ein authentisches kulturelles Erlebnis kombiniert mit luxuriöser Unterkunft. Diese Hotels verfügen über traditionelle türkische Bäder, die in moderne Hoteleinrichtungen integriert sind und einzigartige Wellness-Erlebnisse bieten."
+
+msgid "Turkish Hamam Hotel Features"
+msgstr "Türkisches Hamam Hotel Ausstattung"
+
+msgid "Authentic marble hamam with heated stone floors"
+msgstr "Authentisches Marmor-Hamam mit beheizten Steinböden"
+
+msgid "Professional hamam massage services"
+msgstr "Professionelle Hamam-Massage-Dienstleistungen"
+
+msgid "Traditional exfoliation (kese) and foam treatments"
+msgstr "Traditionelle Peeling (Kese) und Schaumbehandlungen"
+
+msgid "Private hamam suites for couples"
+msgstr "Private Hamam-Suiten für Paare"
+
+msgid "Modern spa facilities with traditional elements"
+msgstr "Moderne Spa-Einrichtungen mit traditionellen Elementen"
+
+msgid "Turkish bath culture education and experiences"
+msgstr "Türkische Badkultur Bildung und Erlebnisse"
+
+msgid "Turkey Tourism Information"
+msgstr "Türkei Tourismus Informationen"
+
+msgid "WhatsApp Support"
+msgstr "WhatsApp Unterstützung"
+
+msgid "5.0 Turkey Hotel Rating"
+msgstr "5.0 Türkei Hotel Bewertung"
+
+msgid "Cappadocia, Turkey"
+msgstr "Kappadokien, Türkei"
+
+msgid "Turkish Hamam Suites"
+msgstr "Türkisches Hamam Suiten"
+
+msgid "Cave Hotel Experience"
+msgstr "Höhlenhotel Erlebnis"
+
+msgid "Turkey Hotel Types"
+msgstr "Türkei Hotel Typen"
+
+msgid "Cave Hotels with Jacuzzi"
+msgstr "Höhlenhotels mit Jacuzzi"
+
+msgid "Turkish Bath Suite Rooms"
+msgstr "Türkisches Bad Suite Zimmer"
+
+msgid "Balloon Tour Hotels"
+msgstr "Ballonfahrt Hotels"
+
+msgid "Luxury Cave Accommodations"
+msgstr "Luxus Höhlen Unterkünfte"
+
+msgid "Turkey Hotel Reviews"
+msgstr "Türkei Hotel Bewertungen"
+
+msgid "Turkey Tourism Contact"
+msgstr "Türkei Tourismus Kontakt"
+
+msgid "Popular Turkey Destinations"
+msgstr "Beliebte Türkei Reiseziele"
 

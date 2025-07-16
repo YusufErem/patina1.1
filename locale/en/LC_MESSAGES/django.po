@@ -445,4 +445,370 @@ msgstr "Romantic Lighting"
 msgid "Lüks Mağara Odalarımız"
 msgstr "Luxury Cave Rooms"
 
+# Turkish Hamam Cave Room
+msgid "Türk Hamamlı Mağara Oda"
+msgstr "Turkish Hamam Cave Room"
+
+msgid "Geleneksel Hamam Deneyimi"
+msgstr "Traditional Hamam Experience"
+
+msgid "Türk Hamamlı Mağara Odamız, geleneksel Türk hamam kültürünü modern lüksle buluşturuyor. Otantik mağara atmosferinde, özel tasarım Türk hamamı, sıcak taş döşeme ve geleneksel mimari detaylarla unutulmaz bir deneyim sunuyor."
+msgstr "Our Turkish Hamam Cave Room combines traditional Turkish hamam culture with modern luxury. In an authentic cave atmosphere, it offers an unforgettable experience with specially designed Turkish hamam, heated stone floors, and traditional architectural details."
+
+msgid "Özel Türk Hamamı"
+msgstr "Private Turkish Hamam"
+
+msgid "Sıcak Taş Döşeme"
+msgstr "Heated Stone Flooring"
+
+msgid "Doğal Mağara Duvarları"
+msgstr "Natural Cave Walls"
+
+msgid "Hamam Masaj Alanı"
+msgstr "Hamam Massage Area"
+
+msgid "Geleneksel Şömine"
+msgstr "Traditional Fireplace"
+
+msgid "Geleneksel Türk hamam deneyimi ile lüks konaklama"
+msgstr "Luxury accommodation with traditional Turkish hamam experience"
+
+msgid "Türk Hamamlı Mağara Oda Detay"
+msgstr "Turkish Hamam Cave Room Detail"
+
+msgid "Türk Hamamlı Mağara Oda Hamam"
+msgstr "Turkish Hamam Cave Room Hamam"
+
+msgid "Türk Hamamlı Mağara Oda Banyo"
+msgstr "Turkish Hamam Cave Room Bathroom"
+
+# Page Titles with Patina Cappadocia Brand
+msgid "Patina Cappadocia - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+
+msgid "Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All Room Types"
+msgstr "Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All Room Types"
+
+msgid "Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel Experience"
+msgstr "Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel Experience"
+
+msgid "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism"
+msgstr "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism"
+
+msgid "Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+
+# Blog Content Translations
+msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+msgstr "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+
+msgid "Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey Tourism Guide"
+msgstr "Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey Tourism Guide"
+
+msgid "Best Hotels in Turkey - Complete Tourism Guide"
+msgstr "Best Hotels in Turkey - Complete Tourism Guide"
+
+msgid "Turkey offers some of the world's most unique accommodation experiences. From cave hotels in Cappadocia to luxury beach resorts in Antalya, boutique hotels in Istanbul to thermal spa hotels - Turkey tourism has it all. This comprehensive guide covers the best hotel experiences across Turkey."
+msgstr "Turkey offers some of the world's most unique accommodation experiences. From cave hotels in Cappadocia to luxury beach resorts in Antalya, boutique hotels in Istanbul to thermal spa hotels - Turkey tourism has it all. This comprehensive guide covers the best hotel experiences across Turkey."
+
+msgid "Why Choose Turkey for Your Next Holiday?"
+msgstr "Why Choose Turkey for Your Next Holiday?"
+
+msgid "Unique cave hotel experiences in Cappadocia"
+msgstr "Unique cave hotel experiences in Cappadocia"
+
+msgid "Turkish bath and spa hotel traditions"
+msgstr "Turkish bath and spa hotel traditions"
+
+msgid "Hot air balloon tours from luxury hotels"
+msgstr "Hot air balloon tours from luxury hotels"
+
+msgid "Historic boutique hotels in Istanbul and Ankara"
+msgstr "Historic boutique hotels in Istanbul and Ankara"
+
+msgid "Beach resort hotels in Mediterranean coast"
+msgstr "Beach resort hotels in Mediterranean coast"
+
+msgid "Thermal spa hotels for wellness tourism"
+msgstr "Thermal spa hotels for wellness tourism"
+
+msgid "Cave Hotels Turkey - Unique Accommodation Experience"
+msgstr "Cave Hotels Turkey - Unique Accommodation Experience"
+
+msgid "Cave hotels in Turkey, particularly in Cappadocia region, offer visitors a once-in-a-lifetime accommodation experience. These hotels are carved into natural rock formations, providing authentic atmosphere while maintaining modern luxury standards."
+msgstr "Cave hotels in Turkey, particularly in Cappadocia region, offer visitors a once-in-a-lifetime accommodation experience. These hotels are carved into natural rock formations, providing authentic atmosphere while maintaining modern luxury standards."
+
+msgid "Types of Cave Hotels in Turkey"
+msgstr "Types of Cave Hotels in Turkey"
+
+msgid "Superior Cave Rooms - Modern comfort in traditional settings"
+msgstr "Superior Cave Rooms - Modern comfort in traditional settings"
+
+msgid "King Suite Cave Rooms - Spacious luxury with private terraces"
+msgstr "King Suite Cave Rooms - Spacious luxury with private terraces"
+
+msgid "Queen Cave Rooms - Elegant design with authentic features"
+msgstr "Queen Cave Rooms - Elegant design with authentic features"
+
+msgid "Executive Cave Rooms - Business travel meets historic charm"
+msgstr "Executive Cave Rooms - Business travel meets historic charm"
+
+msgid "Presidential Suite - Ultimate luxury cave experience"
+msgstr "Presidential Suite - Ultimate luxury cave experience"
+
+msgid "Cave Honeymoon Suites - Romantic getaway accommodations"
+msgstr "Cave Honeymoon Suites - Romantic getaway accommodations"
+
+msgid "Turkish Hamam Cave Rooms - Traditional bath culture experience"
+msgstr "Turkish Hamam Cave Rooms - Traditional bath culture experience"
+
+msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
+msgstr "Turkish Bath Hotels - Wellness and Cultural Experience"
+
+msgid "Turkish bath (hamam) hotels offer guests an authentic cultural experience combined with luxury accommodation. These hotels feature traditional Turkish baths integrated into modern hotel facilities, providing unique wellness experiences."
+msgstr "Turkish bath (hamam) hotels offer guests an authentic cultural experience combined with luxury accommodation. These hotels feature traditional Turkish baths integrated into modern hotel facilities, providing unique wellness experiences."
+
+msgid "Turkish Hamam Hotel Features"
+msgstr "Turkish Hamam Hotel Features"
+
+msgid "Authentic marble hamam with heated stone floors"
+msgstr "Authentic marble hamam with heated stone floors"
+
+msgid "Professional hamam massage services"
+msgstr "Professional hamam massage services"
+
+msgid "Traditional exfoliation (kese) and foam treatments"
+msgstr "Traditional exfoliation (kese) and foam treatments"
+
+msgid "Private hamam suites for couples"
+msgstr "Private hamam suites for couples"
+
+msgid "Modern spa facilities with traditional elements"
+msgstr "Modern spa facilities with traditional elements"
+
+msgid "Turkish bath culture education and experiences"
+msgstr "Turkish bath culture education and experiences"
+
+msgid "Turkey Tourism Hotels by Region"
+msgstr "Turkey Tourism Hotels by Region"
+
+msgid "Turkey's diverse geography offers different hotel experiences in each region. From historic city hotels to beach resorts, mountain lodges to cave accommodations."
+msgstr "Turkey's diverse geography offers different hotel experiences in each region. From historic city hotels to beach resorts, mountain lodges to cave accommodations."
+
+msgid "Major Turkey Tourism Destinations"
+msgstr "Major Turkey Tourism Destinations"
+
+msgid "Cappadocia (Nevşehir, Göreme, Uçhisar) - Cave hotels and balloon tours"
+msgstr "Cappadocia (Nevşehir, Göreme, Uçhisar) - Cave hotels and balloon tours"
+
+msgid "Istanbul - Historic boutique hotels and luxury city accommodation"
+msgstr "Istanbul - Historic boutique hotels and luxury city accommodation"
+
+msgid "Ankara - Business hotels and modern accommodation"
+msgstr "Ankara - Business hotels and modern accommodation"
+
+msgid "Antalya - Beach resort hotels and Mediterranean luxury"
+msgstr "Antalya - Beach resort hotels and Mediterranean luxury"
+
+msgid "Bodrum - Luxury seaside hotels and marina accommodations"
+msgstr "Bodrum - Luxury seaside hotels and marina accommodations"
+
+msgid "Pamukkale - Thermal spa hotels and wellness resorts"
+msgstr "Pamukkale - Thermal spa hotels and wellness resorts"
+
+msgid "Ephesus (Selçuk) - Historic boutique hotels near ancient ruins"
+msgstr "Ephesus (Selçuk) - Historic boutique hotels near ancient ruins"
+
+msgid "Balloon Tour Hotels Turkey - Sky High Experiences"
+msgstr "Balloon Tour Hotels Turkey - Sky High Experiences"
+
+msgid "Hotels specializing in hot air balloon tours offer guests seamless balloon tour experiences. These hotels coordinate with the best balloon operators and provide optimal viewing locations."
+msgstr "Hotels specializing in hot air balloon tours offer guests seamless balloon tour experiences. These hotels coordinate with the best balloon operators and provide optimal viewing locations."
+
+msgid "Balloon Tour Hotel Services"
+msgstr "Balloon Tour Hotel Services"
+
+msgid "Pre-dawn pickup for sunrise balloon tours"
+msgstr "Pre-dawn pickup for sunrise balloon tours"
+
+msgid "Partnership with certified balloon operators"
+msgstr "Partnership with certified balloon operators"
+
+msgid "Post-flight celebration breakfast"
+msgstr "Post-flight celebration breakfast"
+
+msgid "Weather monitoring and rescheduling services"
+msgstr "Weather monitoring and rescheduling services"
+
+msgid "Photography packages and professional photos"
+msgstr "Photography packages and professional photos"
+
+msgid "Balloon tour viewing terraces from hotels"
+msgstr "Balloon tour viewing terraces from hotels"
+
+msgid "Luxury Hotels Turkey - Premium Accommodation Experiences"
+msgstr "Luxury Hotels Turkey - Premium Accommodation Experiences"
+
+msgid "Turkey's luxury hotel scene combines international standards with local cultural elements. From cave suite hotels in Cappadocia to beachfront resorts in Turkish Riviera."
+msgstr "Turkey's luxury hotel scene combines international standards with local cultural elements. From cave suite hotels in Cappadocia to beachfront resorts in Turkish Riviera."
+
+msgid "Features of Turkey Luxury Hotels"
+msgstr "Features of Turkey Luxury Hotels"
+
+msgid "Jacuzzi suite rooms with panoramic views"
+msgstr "Jacuzzi suite rooms with panoramic views"
+
+msgid "Private terraces overlooking fairy chimneys"
+msgstr "Private terraces overlooking fairy chimneys"
+
+msgid "Concierge services for exclusive experiences"
+msgstr "Concierge services for exclusive experiences"
+
+msgid "Gourmet restaurants featuring Turkish cuisine"
+msgstr "Gourmet restaurants featuring Turkish cuisine"
+
+msgid "Spa and wellness centers with Turkish treatments"
+msgstr "Spa and wellness centers with Turkish treatments"
+
+msgid "VIP transfer services from airports"
+msgstr "VIP transfer services from airports"
+
+msgid "Turkey Accommodation Booking Tips"
+msgstr "Turkey Accommodation Booking Tips"
+
+msgid "Planning your Turkey accommodation? Here are essential tips for booking the best hotels in Turkey for your specific needs and preferences."
+msgstr "Planning your Turkey accommodation? Here are essential tips for booking the best hotels in Turkey for your specific needs and preferences."
+
+msgid "Best Times to Visit Turkey Hotels"
+msgstr "Best Times to Visit Turkey Hotels"
+
+msgid "Spring (March-May) - Perfect weather for Cappadocia cave hotels"
+msgstr "Spring (March-May) - Perfect weather for Cappadocia cave hotels"
+
+msgid "Summer (June-August) - Beach resort hotels peak season"
+msgstr "Summer (June-August) - Beach resort hotels peak season"
+
+msgid "Autumn (September-November) - Ideal for city hotels and cultural tours"
+msgstr "Autumn (September-November) - Ideal for city hotels and cultural tours"
+
+msgid "Winter (December-February) - Thermal spa hotels and wellness retreats"
+msgstr "Winter (December-February) - Thermal spa hotels and wellness retreats"
+
+msgid "Book Turkey Hotel Experience"
+msgstr "Book Turkey Hotel Experience"
+
+msgid "Experience authentic cave hotel with Turkish hamam suite - unique in Turkey!"
+msgstr "Experience authentic cave hotel with Turkish hamam suite - unique in Turkey!"
+
+msgid "Book Now"
+msgstr "Book Now"
+
+msgid "Turkey Tourism Information"
+msgstr "Turkey Tourism Information"
+
+msgid "WhatsApp Support"
+msgstr "WhatsApp Support"
+
+msgid "5.0 Turkey Hotel Rating"
+msgstr "5.0 Turkey Hotel Rating"
+
+msgid "Cappadocia, Turkey"
+msgstr "Cappadocia, Turkey"
+
+msgid "Turkish Hamam Suites"
+msgstr "Turkish Hamam Suites"
+
+msgid "Cave Hotel Experience"
+msgstr "Cave Hotel Experience"
+
+msgid "Turkey Hotel Types"
+msgstr "Turkey Hotel Types"
+
+msgid "Cave Hotels with Jacuzzi"
+msgstr "Cave Hotels with Jacuzzi"
+
+msgid "Turkish Bath Suite Rooms"
+msgstr "Turkish Bath Suite Rooms"
+
+msgid "Balloon Tour Hotels"
+msgstr "Balloon Tour Hotels"
+
+msgid "Luxury Cave Accommodations"
+msgstr "Luxury Cave Accommodations"
+
+msgid "Turkey Hotel Reviews"
+msgstr "Turkey Hotel Reviews"
+
+msgid "Turkey Tourism Contact"
+msgstr "Turkey Tourism Contact"
+
+msgid "Popular Turkey Destinations"
+msgstr "Popular Turkey Destinations"
+
+# Homepage Title with Google Search Console Keywords
+msgid "Patina Cappadocia Yorumları - Nevşehir En İyi Otelleri | Jakuzili Cave Otel"
+msgstr "Patina Cappadocia Reviews - Best Hotels Nevşehir | Jacuzzi Cave Hotel"
+
+# Nevşehir Hotels Guide - New Content
+msgid "Nevşehir Otelleri Rehberi - En İyi Konaklama Seçenekleri"
+msgstr "Nevşehir Hotels Guide - Best Accommodation Options"
+
+msgid "Nevşehir, Kapadokya bölgesinin kalbinde yer alan ve en iyi cave hotel deneyimlerini sunan şehirdir. Nevşehir otelleri, jakuzili odalardan termal olanaklara kadar geniş bir yelpazede hizmet vermektedir."
+msgstr "Nevşehir is located in the heart of Cappadocia region and offers the best cave hotel experiences. Nevşehir hotels provide a wide range of services from jacuzzi rooms to thermal facilities."
+
+msgid "Nevşehir Otel Kategorileri"
+msgstr "Nevşehir Hotel Categories"
+
+msgid "Nevşehir Jakuzili Oteller - Romantik konaklama deneyimi"
+msgstr "Nevşehir Jacuzzi Hotels - Romantic accommodation experience"
+
+msgid "Uçhisar Cave Otelleri - Tarihi mağara mimarisi"
+msgstr "Uçhisar Cave Hotels - Historic cave architecture"
+
+msgid "Nevşehir Butik Otelleri - Özel tasarım ve lüks hizmet"
+msgstr "Nevşehir Boutique Hotels - Custom design and luxury service"
+
+msgid "Nevşehir Termal Oteller - Sağlık ve dinlenme"
+msgstr "Nevşehir Thermal Hotels - Health and relaxation"
+
+msgid "Nevşehir Bungalov Evleri - Aile dostu konaklama"
+msgstr "Nevşehir Bungalow Houses - Family-friendly accommodation"
+
+msgid "Nevşehir Balayı Otelleri - Özel çiftler için tasarlanmış"
+msgstr "Nevşehir Honeymoon Hotels - Designed for special couples"
+
+msgid "Nevşehir Otelleri En Yüksek Puan"
+msgstr "Nevşehir Hotels Highest Rating"
+
+msgid "Patina Cappadocia, Google yorumlarında 5.0 puan ile Nevşehir'in en yüksek puanlı oteli olarak öne çıkmaktadır. Misafirlerimizin yorumları, mükemmel hizmet kalitemizi ve eşsiz konaklama deneyimimizi doğrulamaktadır."
+msgstr "Patina Cappadocia stands out as Nevşehir's highest-rated hotel with 5.0 points on Google reviews. Our guests' reviews confirm our excellent service quality and unique accommodation experience."
+
+# Uçhisar Hotels Guide
+msgid "Uçhisar Otelleri - Kapadokya'nın En Güzel Manzarası"
+msgstr "Uçhisar Hotels - Cappadocia's Most Beautiful View"
+
+msgid "Uçhisar, Kapadokya'nın en yüksek noktasında yer alan ve panoramik peri bacası manzaraları sunan bölgedir. Uçhisar otelleri, cave mimari ve modern lüksü birleştiren özgün tasarımlarıyla tanınır."
+msgstr "Uçhisar is located at the highest point of Cappadocia and offers panoramic fairy chimney views. Uçhisar hotels are known for their unique designs that combine cave architecture with modern luxury."
+
+msgid "Uçhisar Otel Özellikleri"
+msgstr "Uçhisar Hotel Features"
+
+msgid "Panoramik balon izleme terasları"
+msgstr "Panoramic balloon viewing terraces"
+
+msgid "Doğal kaya formasyonları içinde odalar"
+msgstr "Rooms within natural rock formations"
+
+msgid "Peri bacaları manzaralı jakuzili süitler"
+msgstr "Jacuzzi suites with fairy chimney views"
+
+msgid "Sunrise balloon tour organizasyonu"
+msgstr "Sunrise balloon tour organization"
+
+msgid "Cave restaurant deneyimi"
+msgstr "Cave restaurant experience"
+
+msgid "Fotoğraf safari rehberliği"
+msgstr "Photography safari guidance"
+
 

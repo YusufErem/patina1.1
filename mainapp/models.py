@@ -8,9 +8,10 @@ class Room(models.Model):
         ('luxury', 'Luxury Oda'),
         ('executive', 'Executive Oda'),
         ('superior', 'Superior Oda'),
+        ('turkish_hamam_cave', 'Türk Hamamlı Mağara Oda'),
     ]
     room_number = models.CharField(max_length=10)
-    room_type = models.CharField(max_length=10, choices=ROOM_TYPES)
+    room_type = models.CharField(max_length=20, choices=ROOM_TYPES)
     capacity = models.IntegerField()
 
     def __str__(self):

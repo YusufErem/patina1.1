@@ -455,3 +455,104 @@ msgstr "sobre-nosotros/"
 msgid "odalar/"
 msgstr "habitaciones/"
 
+# Turkish Hamam Cave Room
+msgid "Türk Hamamlı Mağara Oda"
+msgstr "Habitación Cueva con Hamam Turco"
+
+msgid "Geleneksel Hamam Deneyimi"
+msgstr "Experiencia Hamam Tradicional"
+
+msgid "Türk Hamamlı Mağara Odamız, geleneksel Türk hamam kültürünü modern lüksle buluşturuyor. Otantik mağara atmosferinde, özel tasarım Türk hamamı, sıcak taş döşeme ve geleneksel mimari detaylarla unutulmaz bir deneyim sunuyor."
+msgstr "Nuestra habitación cueva con hamam turco combina la cultura tradicional del hamam turco con el lujo moderno. En una atmósfera auténtica de cueva, ofrece una experiencia inolvidable con hamam turco especialmente diseñado, suelos de piedra calefactados y detalles arquitectónicos tradicionales."
+
+msgid "Özel Türk Hamamı"
+msgstr "Hamam Turco Privado"
+
+msgid "Sıcak Taş Döşeme"
+msgstr "Suelo de Piedra Calefactado"
+
+msgid "Doğal Mağara Duvarları"
+msgstr "Paredes de Cueva Naturales"
+
+msgid "Hamam Masaj Alanı"
+msgstr "Área de Masaje del Hamam"
+
+msgid "Geleneksel Şömine"
+msgstr "Chimenea Tradicional"
+
+msgid "Geleneksel Türk hamam deneyimi ile lüks konaklama"
+msgstr "Alojamiento de lujo con experiencia hamam turco tradicional"
+
+msgid "Türk Hamamlı Mağara Oda Detay"
+msgstr "Detalle Habitación Cueva con Hamam Turco"
+
+msgid "Türk Hamamlı Mağara Oda Hamam"
+msgstr "Hamam de la Habitación Cueva Turca"
+
+msgid "Türk Hamamlı Mağara Oda Banyo"
+msgstr "Baño Habitación Cueva con Hamam Turco"
+
+# Page Titles with Patina Cappadocia Brand
+msgid "Patina Cappadocia - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia - Hoteles Cueva Turquía | Suites Baño Turco | Turismo Turquía"
+
+msgid "Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All Room Types"
+msgstr "Patina Cappadocia Habitaciones - Hoteles Cueva Turquía | Suites Baño Turco | Todos Tipos de Habitaciones"
+
+msgid "Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel Experience"
+msgstr "Patina Cappadocia Acerca - Reseñas Hoteles Cueva Turquía | Experiencia Hotel Baño Turco"
+
+msgid "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism"
+msgstr "Patina Cappadocia Guía - Hoteles Turquía | Hoteles Cueva Baño Turco | Turismo Turquía"
+
+msgid "Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
+msgstr "Patina Cappadocia Contacto - Hoteles Cueva Turquía | Suites Baño Turco | Turismo Turquía"
+
+msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+msgstr "Guía Completa Hoteles Turquía - Mejor Alojamiento Turquía"
+
+msgid "Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey Tourism Guide"
+msgstr "Hoteles Cueva, Suites Baño Turco, Hoteles Tours Globo - Guía Completa Turismo Turquía"
+
+msgid "Best Hotels in Turkey - Complete Tourism Guide"
+msgstr "Mejores Hoteles en Turquía - Guía Turismo Completa"
+
+msgid "Turkish Hamam Cave Rooms - Traditional bath culture experience"
+msgstr "Habitaciones Cueva Hamam Turco - Experiencia cultura baño tradicional"
+
+msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
+msgstr "Hoteles Baño Turco - Experiencia Bienestar y Cultural"
+
+msgid "Turkey Tourism Information"
+msgstr "Información Turismo Turquía"
+
+msgid "WhatsApp Support"
+msgstr "Soporte WhatsApp"
+
+msgid "5.0 Turkey Hotel Rating"
+msgstr "5.0 Calificación Hotel Turquía"
+
+msgid "Cappadocia, Turkey"
+msgstr "Capadocia, Turquía"
+
+msgid "Turkish Hamam Suites"
+msgstr "Suites Hamam Turco"
+
+msgid "Cave Hotel Experience"
+msgstr "Experiencia Hotel Cueva"
+
+msgid "Turkey Hotel Types"
+msgstr "Tipos de Hoteles Turquía"
+
+msgid "Turkish Bath Suite Rooms"
+msgstr "Habitaciones Suite Baño Turco"
+
+msgid "Balloon Tour Hotels"
+msgstr "Hoteles Tours Globo"
+
+msgid "Turkey Hotel Reviews"
+msgstr "Reseñas Hoteles Turquía"
+
+msgid "Turkey Tourism Contact"
+msgstr "Contacto Turismo Turquía"
+

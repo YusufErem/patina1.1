@@ -4,6 +4,7 @@ Allow: /
 Allow: /about
 Allow: /rooms
 Allow: /contact
+Allow: /blog
 Allow: /static/
 Allow: /media/
 

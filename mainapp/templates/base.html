@@ -204,13 +204,13 @@
     </script>
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://{{ request.get_host }}{{ request.path }}">
-    
+    <link rel="canonical" href="//{{ request.get_host }}{{ request.path }}">
+
     <!-- Alternate Language URLs -->
     {% get_available_languages as LANGUAGES %}
     {% get_language_info_list for LANGUAGES as languages %}
     {% for language in languages %}
-    <link rel="alternate" hreflang="{{ language.code }}" href="https://{{ request.get_host }}{% url 'set_language' %}?lang={{ language.code }}">
+    <link rel="alternate" hreflang="{{ language.code }}" href="//{{ request.get_host }}{% url 'set_language' %}?lang={{ language.code }}">
     {% endfor %}
     
     <!-- CSS here -->

@@ -159,3 +159,110 @@ class Reservation(models.Model):
 
     def __str__(self):
         return f"Rezervasyon: {self.guest_name} - {self.room}"
+
+
+class GoogleReview(models.Model):
+    """Google Places'den çekilen müşteri yorumları"""
+    google_id = models.CharField(max_length=500, unique=True, verbose_name="Google Review ID")
+    author_name = models.CharField(max_length=200, verbose_name="Yazar Adı")
+    author_url = models.URLField(max_length=500, verbose_name="Yazar URL", blank=True)
+    profile_photo_url = models.URLField(max_length=500, verbose_name="Profil Fotoğrafı", blank=True)
+    rating = models.IntegerField(verbose_name="Puan (1-5)")
+    text = models.TextField(verbose_name="Yorum")
+    published_at = models.DateTimeField(verbose_name="Yayın Tarihi")
+    language = models.CharField(max_length=10, default='tr', verbose_name="Dil")
+
+    # Sistema ait alanlar
+    synced_at = models.DateTimeField(auto_now=True, verbose_name="Senkronize Tarihi")
+    is_featured = models.BooleanField(default=False, verbose_name="Ana sayfada göster")
+    display_order = models.IntegerField(default=0, verbose_name="Sıralama")
+
+    class Meta:
+        ordering = ['-published_at']
+        verbose_name = "Google Yorum"
+        verbose_name_plural = "Google Yorumlar"
+
+    def __str__(self):
+        return f"{self.author_name} - {self.rating}⭐"
+
+    @property
+    def star_display(self):
+        """Yıldız gösterimi"""
+        return "⭐" * self.rating
+
+
+class HomePageImage(models.Model):
+    """Ana sayfa için dinamik resimler (hero, about, experiences, vb.)"""
+    SECTION_CHOICES = [
+        ('slider', 'Ana Sayfa Slider (Hero)'),
+        ('about', 'Hakkımızda Bölümü'),
+        ('experiences', 'Deneyimler Bölümü'),
+        ('activities', 'Aktiviteler Bölümü'),
+    ]
+
+    section = models.CharField(max_length=50, choices=SECTION_CHOICES, verbose_name="Bölüm")
+    title = models.CharField(max_length=200, verbose_name="Başlık")
+    image = models.ImageField(upload_to='homepage/', verbose_name="Resim")
+    caption = models.CharField(max_length=500, blank=True, verbose_name="Alt Yazı")
+
+    display_order = models.IntegerField(default=0, verbose_name="Sıralama")
+    is_active = models.BooleanField(default=True, verbose_name="Aktif")
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['section', 'display_order']
+        verbose_name = "Ana Sayfa Resimi"
+        verbose_name_plural = "Ana Sayfa Resimleri"
+
+    def __str__(self):
+        return f"{self.get_section_display()} - {self.title}"
+
+
+class AboutSection(models.Model):
+    """Hakkımızda sayfası içeriği (dinamik)"""
+    title_tr = models.CharField(max_length=200, verbose_name="Başlık (TR)")
+    title_en = models.CharField(max_length=200, verbose_name="Title (EN)")
+    title_de = models.CharField(max_length=200, verbose_name="Überschrift (DE)")
+    title_fr = models.CharField(max_length=200, verbose_name="Titre (FR)")
+    title_es = models.CharField(max_length=200, verbose_name="Título (ES)")
+    title_ru = models.CharField(max_length=200, verbose_name="Заголовок (RU)")
+    title_ar = models.CharField(max_length=200, verbose_name="العنوان (AR)")
+
+    content_tr = models.TextField(verbose_name="İçerik (TR)")
+    content_en = models.TextField(verbose_name="Content (EN)")
+    content_de = models.TextField(verbose_name="Inhalt (DE)")
+    content_fr = models.TextField(verbose_name="Contenu (FR)")
+    content_es = models.TextField(verbose_name="Contenido (ES)")
+    content_ru = models.TextField(verbose_name="Содержание (RU)")
+    content_ar = models.TextField(verbose_name="المحتوى (AR)")
+
+    image = models.ImageField(upload_to='about/', verbose_name="Resim")
+    image_position = models.CharField(
+        max_length=10,
+        choices=[('left', 'Sol'), ('right', 'Sağ')],
+        default='left',
+        verbose_name="Resim Pozisyonu"
+    )
+
+    display_order = models.IntegerField(default=0, verbose_name="Sıralama")
+    is_active = models.BooleanField(default=True, verbose_name="Aktif")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['display_order']
+        verbose_name = "Hakkımızda Bölümü"
+        verbose_name_plural = "Hakkımızda Bölümleri"
+
+    def __str__(self):
+        return self.title_tr
+
+    def get_title(self, language='tr'):
+        """Dile göre başlık"""
+        field_name = f'title_{language}'
+        return getattr(self, field_name, self.title_tr)
+
+    def get_content(self, language='tr'):
+        """Dile göre içerik"""
+        field_name = f'content_{language}'
+        return getattr(self, field_name, self.content_tr)

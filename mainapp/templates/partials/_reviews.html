@@ -14,8 +14,8 @@
                 <div class="swiper-slide">
                     <div class="review_card">
                         <div class="review_header">
-                            {% if review.author_photo %}
-                            <img src="{{ review.author_photo }}" alt="{{ review.author_name }}" class="reviewer_photo">
+                            {% if review.profile_photo_url %}
+                            <img src="{{ review.profile_photo_url }}" alt="{{ review.author_name }}" class="reviewer_photo">
                             {% else %}
                             <div class="reviewer_avatar">{{ review.author_name|make_list|first }}</div>
                             {% endif %}
@@ -30,11 +30,19 @@
                                         {% endif %}
                                     {% endfor %}
                                 </div>
-                                <span class="review_date">{{ review.time|date:"d M Y" }}</span>
+                                <span class="review_date">{{ review.published_at|date:"d M Y" }}</span>
                             </div>
                         </div>
                         <div class="review_content">
                             <p>{{ review.text }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="swiper-slide">
+                    <div class="review_card">
+                        <div class="review_content">
+                            <p style="text-align: center; color: #999;">{% trans "Henüz yorum bulunmamaktadır." %}</p>
                         </div>
                     </div>
                 </div>

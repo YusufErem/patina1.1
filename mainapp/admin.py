@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import RoomCategory, RoomImage, RoomFeature, Room, Reservation
+from .models import RoomCategory, RoomImage, RoomFeature, Room, Reservation, GoogleReview, HomePageImage, AboutSection
 
 
 class RoomImageInline(admin.TabularInline):
@@ -100,3 +100,74 @@ class ReservationAdmin(admin.ModelAdmin):
     list_display = ['guest_name', 'room', 'start_date', 'end_date']
     list_filter = ['start_date', 'end_date']
     search_fields = ['guest_name', 'room__room_number']
+
+
+@admin.register(GoogleReview)
+class GoogleReviewAdmin(admin.ModelAdmin):
+    list_display = ['author_name', 'rating', 'published_at', 'is_featured', 'display_order']
+    list_editable = ['is_featured', 'display_order']
+    list_filter = ['rating', 'is_featured', 'published_at', 'language']
+    search_fields = ['author_name', 'text']
+    readonly_fields = ['google_id', 'author_url', 'profile_photo_url', 'synced_at', 'published_at']
+
+    fieldsets = (
+        ('Yorum Bilgileri', {
+            'fields': ('author_name', 'rating', 'text', 'language')
+        }),
+        ('Google Verisi', {
+            'fields': ('google_id', 'author_url', 'profile_photo_url', 'published_at', 'synced_at'),
+            'classes': ('collapse',)
+        }),
+        ('Ayarlar', {
+            'fields': ('is_featured', 'display_order')
+        }),
+    )
+
+
+@admin.register(HomePageImage)
+class HomePageImageAdmin(admin.ModelAdmin):
+    list_display = ['section', 'title', 'is_active', 'display_order', 'uploaded_at']
+    list_editable = ['is_active', 'display_order']
+    list_filter = ['section', 'is_active', 'uploaded_at']
+    search_fields = ['title', 'caption']
+
+    fieldsets = (
+        ('Resim Bilgisi', {
+            'fields': ('section', 'title', 'image', 'caption')
+        }),
+        ('Ayarlar', {
+            'fields': ('is_active', 'display_order')
+        }),
+        ('Bilgi', {
+            'fields': ('uploaded_at',),
+            'classes': ('collapse',)
+        }),
+    )
+
+
+@admin.register(AboutSection)
+class AboutSectionAdmin(admin.ModelAdmin):
+    list_display = ['title_tr', 'is_active', 'display_order', 'updated_at']
+    list_editable = ['is_active', 'display_order']
+    list_filter = ['is_active', 'updated_at']
+    search_fields = ['title_tr', 'title_en']
+
+    fieldsets = (
+        ('Başlıklar', {
+            'fields': ('title_tr', 'title_en', 'title_de', 'title_fr', 'title_es', 'title_ru', 'title_ar')
+        }),
+        ('İçerik', {
+            'fields': ('content_tr', 'content_en', 'content_de', 'content_fr', 'content_es', 'content_ru', 'content_ar')
+        }),
+        ('Resim', {
+            'fields': ('image', 'image_position')
+        }),
+        ('Ayarlar', {
+            'fields': ('is_active', 'display_order')
+        }),
+        ('Bilgi', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+    readonly_fields = ['created_at', 'updated_at']

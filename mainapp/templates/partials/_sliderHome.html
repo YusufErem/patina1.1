@@ -29,18 +29,38 @@
         }
     </style>
     <div class="slider_active owl-carousel">
-        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="slider_text text-center">
-                            <h3>{% trans "Patina Cappadocia" %}</h3>
-                            <p>{% trans "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi" %}</p>
+        {% if slider_images %}
+            {% for image in slider_images %}
+            <div class="single_slider d-flex align-items-center justify-content-center" style="background-image: url('{{ image.image.url }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text text-center">
+                                <h3>{{ image.title }}</h3>
+                                {% if image.caption %}
+                                <p>{{ image.caption }}</p>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            {% endfor %}
+        {% else %}
+            <!-- Fallback to default slider -->
+            <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text text-center">
+                                <h3>{% trans "Patina Cappadocia" %}</h3>
+                                <p>{% trans "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi" %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
     </div>
 </div>
 

@@ -146,15 +146,19 @@ SECURE_HSTS_SECONDS = 0  # Disabled for development
 # SECURE_HSTS_INCLUDE_SUBDOMAINS = True  # Commented for development
 # SECURE_HSTS_PRELOAD = True  # Commented for development
 SECURE_BROWSER_XSS_FILTER = True
-SECURE_CONTENT_SECURITY_POLICY = {
-    'default-src': ("'self'",),
-    'script-src': ("'self'", "https://cdn.jsdelivr.net", "https://code.jquery.com", "https://www.googletagmanager.com", "https://www.google-analytics.com"),
-    'style-src': ("'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net", "https://fonts.googleapis.com"),
-    'font-src': ("'self'", "https://fonts.gstatic.com", "data:"),
-    'img-src': ("'self'", "data:", "https:", "blob:"),
-    'connect-src': ("'self'", "https:", "wss:"),
-    'frame-ancestors': ("'none'",),
-}
+# CSP disabled in development (causes HTTPS redirect attempts)
+if DEBUG:
+    SECURE_CONTENT_SECURITY_POLICY = None
+else:
+    SECURE_CONTENT_SECURITY_POLICY = {
+        'default-src': ("'self'",),
+        'script-src': ("'self'", "https://cdn.jsdelivr.net", "https://code.jquery.com", "https://www.googletagmanager.com", "https://www.google-analytics.com"),
+        'style-src': ("'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net", "https://fonts.googleapis.com"),
+        'font-src': ("'self'", "https://fonts.gstatic.com", "data:"),
+        'img-src': ("'self'", "data:", "https:", "blob:"),
+        'connect-src': ("'self'", "https:", "wss:"),
+        'frame-ancestors': ("'none'",),
+    }
 X_FRAME_OPTIONS = 'DENY'
 # Development settings - Disabled for HTTP dev server
 CSRF_COOKIE_SECURE = False  # Allow HTTP in development

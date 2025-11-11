@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-dev-key-for-development-only')
 
-DEBUG = os.environ.get('DEBUG', 'False').lower() == 'True'
+DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost 127.0.0.1').split(' ')
 
@@ -139,7 +139,8 @@ LANGUAGE_COOKIE_HTTPONLY = True
 LANGUAGE_COOKIE_SAMESITE = 'Lax'
 
 # Security Headers
-SECURE_SSL_REDIRECT = not DEBUG  # Force HTTPS in production only
+# SECURE_SSL_REDIRECT = not DEBUG  # Force HTTPS in production only (disabled in development)
+SECURE_SSL_REDIRECT = False  # Disabled for development server
 SECURE_HSTS_SECONDS = 31536000  # 1 year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True

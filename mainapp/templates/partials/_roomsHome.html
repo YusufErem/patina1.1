@@ -9,104 +9,62 @@
             <h3>{% trans "Odalarımız" %}</h3>
         </div>
         <div class="row">
+            {% for room in rooms %}
             <div class="col-xl-4 col-md-6">
                 <div class="room_item">
                     <div class="room_img">
-                        <img src="{% static 'img/rooms/superior1.jpg' %}" alt="{% trans 'Superior Oda' %}" loading="lazy">
+                        {% if room.featured_image %}
+                        <img src="{{ room.featured_image.image.url }}" alt="{{ room.featured_image.alt_text }}" loading="lazy">
+                        {% else %}
+                        <img src="{% static 'img/placeholder.jpg' %}" alt="{{ room.name_tr }}" loading="lazy">
+                        {% endif %}
                         <div class="room_hover">
                             <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
                         </div>
                     </div>
                     <div class="room_info">
-                        <h4>{% trans "Superior Oda" %}</h4>
-                        <p>{% trans "Kapadokya manzaralı, özel teraslı lüks odalarımız" %}</p>
+                        <h4>
+                            {% if LANGUAGE_CODE == 'tr' %}
+                                {{ room.name_tr }}
+                            {% elif LANGUAGE_CODE == 'en' %}
+                                {{ room.name_en }}
+                            {% elif LANGUAGE_CODE == 'de' %}
+                                {{ room.name_de }}
+                            {% elif LANGUAGE_CODE == 'fr' %}
+                                {{ room.name_fr }}
+                            {% elif LANGUAGE_CODE == 'es' %}
+                                {{ room.name_es }}
+                            {% elif LANGUAGE_CODE == 'ru' %}
+                                {{ room.name_ru }}
+                            {% elif LANGUAGE_CODE == 'ar' %}
+                                {{ room.name_ar }}
+                            {% else %}
+                                {{ room.name_tr }}
+                            {% endif %}
+                        </h4>
+                        <p>
+                            {% if LANGUAGE_CODE == 'tr' %}
+                                {{ room.description_tr|truncatewords:15 }}
+                            {% elif LANGUAGE_CODE == 'en' %}
+                                {{ room.description_en|truncatewords:15 }}
+                            {% elif LANGUAGE_CODE == 'de' %}
+                                {{ room.description_de|truncatewords:15 }}
+                            {% elif LANGUAGE_CODE == 'fr' %}
+                                {{ room.description_fr|truncatewords:15 }}
+                            {% elif LANGUAGE_CODE == 'es' %}
+                                {{ room.description_es|truncatewords:15 }}
+                            {% elif LANGUAGE_CODE == 'ru' %}
+                                {{ room.description_ru|truncatewords:15 }}
+                            {% elif LANGUAGE_CODE == 'ar' %}
+                                {{ room.description_ar|truncatewords:15 }}
+                            {% else %}
+                                {{ room.description_tr|truncatewords:15 }}
+                            {% endif %}
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="room_item">
-                    <div class="room_img">
-                        <img src="{% static 'img/rooms/kingsuite1.jpeg' %}" alt="{% trans 'King Suite' %}" loading="lazy">
-                        <div class="room_hover">
-                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
-                        </div>
-                    </div>
-                    <div class="room_info">
-                        <h4>{% trans "King Suite" %}</h4>
-                        <p>{% trans "Geniş ve konforlu, modern donanımlı odalarımız" %}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="room_item">
-                    <div class="room_img">
-                        <img src="{% static 'img/rooms/queen1.jpeg' %}" alt="{% trans 'Queen Oda' %}" loading="lazy">
-                        <div class="room_hover">
-                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
-                        </div>
-                    </div>
-                    <div class="room_info">
-                        <h4>{% trans "Queen Oda" %}</h4>
-                        <p>{% trans "Şık tasarımlı, konforlu odalarımız" %}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="room_item">
-                    <div class="room_img">
-                        <img src="{% static 'img/rooms/executive1.jpeg' %}" alt="{% trans 'Executive Oda' %}" loading="lazy">
-                        <div class="room_hover">
-                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
-                        </div>
-                    </div>
-                    <div class="room_info">
-                        <h4>{% trans "Executive Oda" %}</h4>
-                        <p>{% trans "İş seyahatleri için ideal, konforlu odalarımız" %}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="room_item">
-                    <div class="room_img">
-                        <img src="{% static 'img/rooms/presidentialsuite1.jpeg' %}" alt="{% trans 'Presidential Suite' %}" loading="lazy">
-                        <div class="room_hover">
-                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
-                        </div>
-                    </div>
-                    <div class="room_info">
-                        <h4>{% trans "Presidential Suite" %}</h4>
-                        <p>{% trans "En lüks ve geniş suit odamız" %}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="room_item">
-                    <div class="room_img">
-                        <img src="{% static 'img/rooms/CurveHoneymoon1.jpeg' %}" alt="{% trans 'Cave Honeymoon' %}" loading="lazy">
-                        <div class="room_hover">
-                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
-                        </div>
-                    </div>
-                    <div class="room_info">
-                        <h4>{% trans "Cave Honeymoon" %}</h4>
-                        <p>{% trans "Balayı çiftleri için özel tasarlanmış suit odamız" %}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="room_item">
-                    <div class="room_img">
-                        <img src="{% static 'img/rooms/turkishhamam1.jpeg' %}" alt="{% trans 'Türk Hamamlı Mağara Oda' %}" loading="lazy">
-                        <div class="room_hover">
-                            <a href="{% url 'rooms' %}" class="book_now">{% trans "Detayları Gör" %}</a>
-                        </div>
-                    </div>
-                    <div class="room_info">
-                        <h4>{% trans "Türk Hamamlı Mağara Oda" %}</h4>
-                        <p>{% trans "Geleneksel Türk hamam deneyimi ile lüks konaklama" %}</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

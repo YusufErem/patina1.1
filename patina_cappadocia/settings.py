@@ -20,11 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-dev-key-for-development-only')
 
-DEBUG = os.environ.get('DEBUG', 'False').lower() == 'True'  
+DEBUG = os.environ.get('DEBUG', 'False').lower() == 'True'
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(' ')
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost 127.0.0.1').split(' ')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -134,9 +134,29 @@ LANGUAGE_COOKIE_NAME = 'django_language'
 LANGUAGE_COOKIE_AGE = None  # Tarayıcı kapanana kadar
 LANGUAGE_COOKIE_DOMAIN = None
 LANGUAGE_COOKIE_PATH = '/'
-LANGUAGE_COOKIE_SECURE = False
+LANGUAGE_COOKIE_SECURE = True  # HTTPS only (set to True in production)
 LANGUAGE_COOKIE_HTTPONLY = True
 LANGUAGE_COOKIE_SAMESITE = 'Lax'
+
+# Security Headers
+SECURE_SSL_REDIRECT = not DEBUG  # Force HTTPS in production only
+SECURE_HSTS_SECONDS = 31536000  # 1 year
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_SECURITY_POLICY = {
+    'default-src': ("'self'",),
+    'script-src': ("'self'", "https://cdn.jsdelivr.net", "https://code.jquery.com", "https://www.googletagmanager.com", "https://www.google-analytics.com"),
+    'style-src': ("'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net", "https://fonts.googleapis.com"),
+    'font-src': ("'self'", "https://fonts.gstatic.com", "data:"),
+    'img-src': ("'self'", "data:", "https:", "blob:"),
+    'connect-src': ("'self'", "https:", "wss:"),
+    'frame-ancestors': ("'none'",),
+}
+X_FRAME_OPTIONS = 'DENY'
+CSRF_COOKIE_SECURE = True  # Only send over HTTPS
+CSRF_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SECURE = True  # Only send over HTTPS
 
 # Cache control settings
 CACHE_MIDDLEWARE_SECONDS = 0  # Disable caching for development

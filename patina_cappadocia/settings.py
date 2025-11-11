@@ -129,21 +129,22 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-# Dil algılama ayarları
+# Language detection settings (development)
 LANGUAGE_COOKIE_NAME = 'django_language'
-LANGUAGE_COOKIE_AGE = None  # Tarayıcı kapanana kadar
+LANGUAGE_COOKIE_AGE = None  # Until browser closes
 LANGUAGE_COOKIE_DOMAIN = None
 LANGUAGE_COOKIE_PATH = '/'
-LANGUAGE_COOKIE_SECURE = True  # HTTPS only (set to True in production)
+LANGUAGE_COOKIE_SECURE = False  # Allow HTTP in development (set to True in production)
 LANGUAGE_COOKIE_HTTPONLY = True
 LANGUAGE_COOKIE_SAMESITE = 'Lax'
 
 # Security Headers
 # SECURE_SSL_REDIRECT = not DEBUG  # Force HTTPS in production only (disabled in development)
 SECURE_SSL_REDIRECT = False  # Disabled for development server
-SECURE_HSTS_SECONDS = 31536000  # 1 year
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_HSTS_PRELOAD = True
+# HSTS disabled in development (prevents HTTPS redirect)
+SECURE_HSTS_SECONDS = 0  # Disabled for development
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True  # Commented for development
+# SECURE_HSTS_PRELOAD = True  # Commented for development
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_SECURITY_POLICY = {
     'default-src': ("'self'",),
@@ -155,9 +156,10 @@ SECURE_CONTENT_SECURITY_POLICY = {
     'frame-ancestors': ("'none'",),
 }
 X_FRAME_OPTIONS = 'DENY'
-CSRF_COOKIE_SECURE = True  # Only send over HTTPS
+# Development settings - Disabled for HTTP dev server
+CSRF_COOKIE_SECURE = False  # Allow HTTP in development
 CSRF_COOKIE_HTTPONLY = True
-SESSION_COOKIE_SECURE = True  # Only send over HTTPS
+SESSION_COOKIE_SECURE = False  # Allow HTTP in development
 
 # Cache control settings
 CACHE_MIDDLEWARE_SECONDS = 0  # Disable caching for development

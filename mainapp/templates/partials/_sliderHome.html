@@ -7,6 +7,23 @@
             position: relative;
             height: 100vh;
         }
+
+        .slider_active {
+            height: 100vh;
+            position: relative;
+        }
+
+        .single_slider {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+
         .slider_text h3 {
             font-size: 4.5rem;
             font-weight: 600;
@@ -20,6 +37,14 @@
             margin-bottom: 30px;
         }
         @media (max-width: 768px) {
+            .slider_active {
+                height: 60vh;
+            }
+
+            .single_slider {
+                height: 60vh;
+            }
+
             .slider_text h3 {
                 font-size: 2.5rem;
             }

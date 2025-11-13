@@ -61,23 +61,20 @@ def custom_500(request, exception=None):
         'LANGUAGE_CODE': current_language,
     }, status=500)
 
-# Favicon view
+# Favicon view - serve logo.png as favicon
 def favicon_view(request):
-    # Try STATIC_ROOT first (production)
-    if settings.STATIC_ROOT:
-        favicon_path = os.path.join(settings.STATIC_ROOT, 'img', 'favicon.ico')
-        if os.path.exists(favicon_path):
-            return FileResponse(open(favicon_path, 'rb'), content_type='image/x-icon')
-    
-    # Fallback to STATICFILES_DIRS (development)
-    if settings.STATICFILES_DIRS:
-        favicon_path = os.path.join(settings.STATICFILES_DIRS[0], 'img', 'favicon.ico')
-        if os.path.exists(favicon_path):
-            return FileResponse(open(favicon_path, 'rb'), content_type='image/x-icon')
-    
-    # Last resort: redirect to static URL
-    from django.http import HttpResponseRedirect
-    return HttpResponseRedirect(staticfiles_storage.url('img/favicon.ico'))
+    from django.contrib.staticfiles import finders
+    # Use logo.png as favicon (better quality)
+    logo_path = finders.find('img/logo.png')
+    if logo_path:
+        return FileResponse(open(logo_path, 'rb'), content_type='image/png')
+    # Fallback: try favicon.ico
+    favicon_path = finders.find('img/favicon.ico')
+    if favicon_path:
+        return FileResponse(open(favicon_path, 'rb'), content_type='image/x-icon')
+    # Last resort: return 404
+    from django.http import HttpResponseNotFound
+    return HttpResponseNotFound()
 
 # Temel URL desenleri
 # Admin paneli kapalı (güvenlik için)

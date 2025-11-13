@@ -63,12 +63,21 @@ def custom_500(request, exception=None):
 
 # Favicon view
 def favicon_view(request):
-    favicon_path = os.path.join(settings.STATIC_ROOT or settings.STATICFILES_DIRS[0], 'img', 'favicon.ico')
-    if os.path.exists(favicon_path):
-        return FileResponse(open(favicon_path, 'rb'), content_type='image/x-icon')
-    else:
-        # Fallback to staticfiles storage
-        return RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))(request)
+    # Try STATIC_ROOT first (production)
+    if settings.STATIC_ROOT:
+        favicon_path = os.path.join(settings.STATIC_ROOT, 'img', 'favicon.ico')
+        if os.path.exists(favicon_path):
+            return FileResponse(open(favicon_path, 'rb'), content_type='image/x-icon')
+    
+    # Fallback to STATICFILES_DIRS (development)
+    if settings.STATICFILES_DIRS:
+        favicon_path = os.path.join(settings.STATICFILES_DIRS[0], 'img', 'favicon.ico')
+        if os.path.exists(favicon_path):
+            return FileResponse(open(favicon_path, 'rb'), content_type='image/x-icon')
+    
+    # Last resort: redirect to static URL
+    from django.http import HttpResponseRedirect
+    return HttpResponseRedirect(staticfiles_storage.url('img/favicon.ico'))
 
 # Temel URL desenleri
 # Admin paneli kapalı (güvenlik için)

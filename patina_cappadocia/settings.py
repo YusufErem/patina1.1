@@ -46,8 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mainapp',
-        
+    'mainapp.apps.MainappConfig',  # AppConfig ile scheduled tasks aktif
 
 ]
 

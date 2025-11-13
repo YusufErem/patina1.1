@@ -6,6 +6,7 @@
         <div class="section_title text-center mb-5">
             <span>{% trans "Özel Organizasyonlar" %}</span>
             <h3>{% trans "Balayı ve Nikah Organizasyonları" %}</h3>
+            <p class="special_customers_text">{% trans "Müşterilerimize Özel" %}</p>
         </div>
         
         <div class="row align-items-center">
@@ -161,6 +162,21 @@
     height: 4px;
     background: linear-gradient(90deg, var(--primary), #FF6B9D);
     border-radius: 2px;
+}
+
+.special_customers_text {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: linear-gradient(135deg, rgba(0, 157, 255, 0.1), rgba(255, 107, 157, 0.1));
+    border-radius: 50px;
+    border: 2px solid var(--primary);
 }
 
 .organization_content {

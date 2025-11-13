@@ -25,8 +25,11 @@ from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 from django.middleware.csrf import get_token
 from django.utils import translation
-from django.http import HttpResponse
+from django.http import HttpResponse, FileResponse
 from django.views.decorators.cache import cache_page
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.static import serve
+import os
 
 @cache_page(60 * 15)  # Cache for 15 minutes
 def sitemap_view(request):
@@ -58,11 +61,21 @@ def custom_500(request, exception=None):
         'LANGUAGE_CODE': current_language,
     }, status=500)
 
+# Favicon view
+def favicon_view(request):
+    favicon_path = os.path.join(settings.STATIC_ROOT or settings.STATICFILES_DIRS[0], 'img', 'favicon.ico')
+    if os.path.exists(favicon_path):
+        return FileResponse(open(favicon_path, 'rb'), content_type='image/x-icon')
+    else:
+        # Fallback to staticfiles storage
+        return RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))(request)
+
 # Temel URL desenleri
 # Admin paneli kapalı (güvenlik için)
 urlpatterns = [
     # Admin paneli devre dışı - güvenlik için
     # path('patina-secret-admin-2024/', admin.site.urls),  # Admin kapalı
+    path('favicon.ico', favicon_view, name='favicon'),
     path('i18n/', include('django.conf.urls.i18n')),
     path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
     path('sitemap.xml', sitemap_view, name='sitemap'),

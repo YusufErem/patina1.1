@@ -20,13 +20,18 @@
     <meta name="csrf-token" content="{{ csrf_token }}">
     
     <!-- Favicon -->
-    {% url 'favicon' as favicon_url %}
-    <link rel="shortcut icon" type="image/png" href="{% if favicon_url %}{{ request.scheme }}://{{ request.get_host }}{{ favicon_url }}{% else %}{% static 'img/logo.png' %}?v=3{% endif %}">
-    <link rel="icon" type="image/png" href="{% if favicon_url %}{{ request.scheme }}://{{ request.get_host }}{{ favicon_url }}{% else %}{% static 'img/logo.png' %}?v=3{% endif %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% if favicon_url %}{{ request.scheme }}://{{ request.get_host }}{{ favicon_url }}{% else %}{% static 'img/logo.png' %}?v=3{% endif %}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'img/logo.png' %}?v=3">
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/logo.png' %}?v=3">
-    <meta name="msapplication-TileImage" content="{% static 'img/logo.png' %}">
+    {% load static %}
+    {% static 'img/logo.png' as logo_favicon %}
+    {% static 'img/favicon.ico' as ico_favicon %}
+    {% static 'img/favicon.png' as png_favicon %}
+    {% with cache_buster='?v=4' %}
+    <link rel="shortcut icon" href="/favicon.ico{{ cache_buster }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ logo_favicon }}{{ cache_buster }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ logo_favicon }}{{ cache_buster }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ logo_favicon }}{{ cache_buster }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ logo_favicon }}{{ cache_buster }}">
+    <meta name="msapplication-TileImage" content="{{ logo_favicon }}">
+    {% endwith %}
     
     <!-- Title -->
     {% with title_suffix=LANGUAGE_CODE|default:"en" %}

@@ -219,7 +219,18 @@ STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Whitenoise configuration for media files in production
 WHITENOISE_MEDIA_ROOTS = [MEDIA_ROOT]
+WHITENOISE_MIMETYPES = {
+    '.woff': 'font/woff',
+    '.woff2': 'font/woff2',
+    '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
+    '.png': 'image/png',
+    '.gif': 'image/gif',
+    '.webp': 'image/webp',
+}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

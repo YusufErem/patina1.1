@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 // mobile_menu
 var menu = $('ul#navigation');
-if(menu.length){
+if(menu.length && typeof $.fn.slicknav !== 'undefined'){
 	menu.slicknav({
 		prependTo: ".mobile_menu",
 		closedSymbol: '+',

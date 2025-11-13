@@ -16,6 +16,8 @@
     
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% csrf_token %}
+    <meta name="csrf-token" content="{{ csrf_token }}">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'img/logo.png' %}">
@@ -138,7 +140,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "36"
+        "reviewCount": "{{ total_reviews_count|default:0 }}"
       },
       "priceRange": "₺₺₺₺",
       "address": {
@@ -222,15 +224,15 @@
     <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
-    <!-- Nice Select CSS from CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nice-select/1.1.0/nice-select.min.css">
+    <!-- Nice Select CSS from CDN - Optional -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nice-select@1.1.0/dist/css/nice-select.min.css"> -->
     <!-- Flaticon CSS (assuming it's in local static) -->
     <!-- <link rel="stylesheet" href="{% static 'css/flaticon.css' %}"> -->
-    <!-- Gijgo CSS from CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.14/gijgo.min.css">
+    <!-- Gijgo CSS from CDN - Optional -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.14/css/gijgo.min.css"> -->
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-    <!-- Slicknav CSS from CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-slicknav/1.0.10/slicknav.min.css">
+    <!-- Slicknav CSS from CDN - Optional -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slicknav@1.0.10/dist/slicknav.min.css"> -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     
@@ -289,8 +291,53 @@
         form.method = 'post';
         form.action = '/i18n/setlang/';
         
-        // Add CSRF token
-        let csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        // Add CSRF token - try multiple methods
+        let csrfToken = null;
+        
+        // Method 1: Try to get from hidden input (en güvenilir)
+        const csrfInputElement = document.querySelector('[name=csrfmiddlewaretoken]');
+        if (csrfInputElement && csrfInputElement.value) {
+            csrfToken = csrfInputElement.value.trim();
+        }
+        
+        // Method 2: Try to get from cookie (Django'nun varsayılan yöntemi)
+        if (!csrfToken || csrfToken.length < 32) {
+            const cookies = document.cookie.split(';');
+            for (let cookie of cookies) {
+                const trimmed = cookie.trim();
+                if (trimmed.startsWith('csrftoken=')) {
+                    csrfToken = trimmed.substring('csrftoken='.length);
+                    // URL decode yap
+                    try {
+                        csrfToken = decodeURIComponent(csrfToken);
+                    } catch(e) {
+                        // Decode başarısız olursa olduğu gibi kullan
+                    }
+                    break;
+                }
+            }
+        }
+        
+        // Method 3: Try to get from meta tag
+        if (!csrfToken || csrfToken.length < 32) {
+            const metaTag = document.querySelector('meta[name=csrf-token]');
+            if (metaTag) {
+                csrfToken = metaTag.getAttribute('content');
+            }
+        }
+        
+        // Method 4: Try to get from Django's csrf_token template tag (if available in global scope)
+        if ((!csrfToken || csrfToken.length < 32) && typeof window.csrfToken !== 'undefined') {
+            csrfToken = window.csrfToken;
+        }
+        
+        if (!csrfToken || csrfToken.length < 32) {
+            console.error('CSRF token bulunamadı veya geçersiz uzunlukta:', csrfToken ? csrfToken.length : 'null');
+            // Sayfayı yeniden yükle
+            window.location.reload();
+            return;
+        }
+        
         let csrfInput = document.createElement('input');
         csrfInput.type = 'hidden';
         csrfInput.name = 'csrfmiddlewaretoken';
@@ -442,17 +489,23 @@
             background: transparent !important;
         }
 
-        .google-reviews-badge {
+        .badges-container {
             position: fixed;
             bottom: 30px;
             right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .google-reviews-badge {
             background: white;
             border-radius: 15px;
             padding: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.15);
             text-decoration: none;
             color: #333;
-            z-index: 1000;
             transition: all 0.3s ease;
             max-width: 280px;
         }
@@ -534,16 +587,55 @@
             color: white;
         }
 
+        /* WhatsApp Badge Styles */
+        .whatsapp-badge {
+            background: #25D366;
+            border-radius: 50px;
+            padding: 12px 20px;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+        .whatsapp-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .whatsapp-badge i {
+            font-size: 24px;
+        }
+
         @media (max-width: 768px) {
-            .google-reviews-badge {
+            .badges-container {
                 bottom: 20px;
                 right: 20px;
-                padding: 12px;
-                max-width: 240px;
-                z-index: 999;
+                gap: 12px;
             }
 
-            .mobile-menu.active ~ .google-reviews-badge {
+            .google-reviews-badge {
+                padding: 12px;
+                max-width: 240px;
+            }
+
+            .whatsapp-badge {
+                padding: 10px 18px;
+                font-size: 14px;
+            }
+
+            .whatsapp-badge i {
+                font-size: 20px;
+            }
+
+            .mobile-menu.active ~ .badges-container {
                 display: none;
             }
 
@@ -572,18 +664,25 @@
         }
 
         @media (max-width: 480px) {
-            .google-reviews-badge {
+            .badges-container {
                 bottom: 15px;
                 right: 15px;
                 left: 15px;
+            }
+
+            .google-reviews-badge {
                 max-width: none;
+            }
+
+            .whatsapp-badge {
+                width: 100%;
+                justify-content: center;
             }
         }
     </style>
 </head>
 
 <body>
-    {% csrf_token %}
     <!-- header-start -->
     {% include 'partials/_header.html' %}
     <!-- header-end -->
@@ -594,40 +693,61 @@
     {% include 'partials/_footer.html' %}
     <!-- footer-end -->
 
-    <!-- Google Reviews Badge -->
-    <a href="https://g.page/r/CUkZXwE1knwbEAE/review" target="_blank" class="google-reviews-badge">
-        <div class="badge-content">
-            <div class="google-logo">
-                <i class="fab fa-google"></i>
-            </div>
-            <div class="rating-info">
-                <div class="rating">
-                    <span class="rating-score">5.0</span>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
+    <!-- Badges Container -->
+    <div class="badges-container">
+        <!-- WhatsApp Badge -->
+        <a href="https://wa.me/905424685050" target="_blank" class="whatsapp-badge" title="{% trans 'WhatsApp ile Hızlı İletişim' %}">
+            <i class="fab fa-whatsapp"></i>
+            <span>{% trans "WhatsApp" %}</span>
+        </a>
+
+        <!-- Google Reviews Badge -->
+        <a href="{% url 'reviews' %}" class="google-reviews-badge">
+            <div class="badge-content">
+                <div class="google-logo">
+                    <i class="fab fa-google"></i>
                 </div>
-                <div class="review-count"> {% trans " 36 Değerlendirme" %}</div>
+                <div class="rating-info">
+                    <div class="rating">
+                        <span class="rating-score">{{ avg_rating|default:"5.0" }}</span>
+                        <div class="stars">
+                            {% for i in "12345"|make_list %}
+                                {% if forloop.counter <= avg_rating|floatformat:0|add:"0" %}
+                                <i class="fas fa-star"></i>
+                                {% else %}
+                                <i class="far fa-star"></i>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="review-count"> {% trans "Değerlendirme" %}: {{ total_reviews_count|default:0 }}</div>
+                </div>
             </div>
-        </div>
-        <div class="badge-cta">
-            {% trans "Değerlendir" %}
-            <i class="fas fa-chevron-right"></i>
-        </div>
-    </a>
+            <div class="badge-cta">
+                {% trans "Değerlendir" %}
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+    </div>
 
     <!-- JS here -->
+    <!-- jQuery MUST be loaded first for all other scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // jQuery yüklendiğini kontrol et ve fallback ekle
+        if (typeof jQuery === 'undefined') {
+            console.error('jQuery yüklenemedi, fallback deneniyor...');
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js';
+            document.head.appendChild(script);
+        }
+    </script>
     <script src="{% static 'js/popper.min.js' %}"></script>
     <!-- Owl Carousel JS from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
     <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
     <script src="{% static 'js/ajax-form.js' %}"></script>
     <script src="{% static 'js/waypoints.min.js' %}"></script>
@@ -636,14 +756,14 @@
     <script src="{% static 'js/scrollIt.js' %}"></script>
     <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
     <script src="{% static 'js/wow.min.js' %}"></script>
-    <!-- Nice Select JS from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-    <!-- Slicknav JS from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-slicknav/1.0.10/jquery.slicknav.min.js"></script>
+    <!-- Nice Select JS from CDN - Optional -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/nice-select@1.1.0/dist/js/jquery.nice-select.min.js"></script> -->
+    <!-- Slicknav JS from CDN - Optional -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/slicknav@1.0.10/dist/jquery.slicknav.min.js"></script> -->
     <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'js/plugins.js' %}"></script>
-    <!-- Gijgo JS from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.14/gijgo.min.js"></script>
+    <!-- Gijgo JS from CDN - Optional -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.14/js/gijgo.min.js"></script> -->
     <script src="{% static 'js/contact.js' %}"></script>
     <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
     <script src="{% static 'js/jquery.form.js' %}"></script>

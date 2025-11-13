@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 12:00+0000\n"
+"POT-Creation-Date: 2025-11-12 23:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,232 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# Navigation
-msgid "Ana Sayfa"
-msgstr "الصفحة الرئيسية"
-
-msgid "Odalar"
-msgstr "الغرف"
-
-msgid "Hakkımızda"
-msgstr "عنّا"
-
-msgid "İletişim"
-msgstr "اتصال"
-
-msgid "Rezervasyon"
-msgstr "الحجز"
-
-# Home Page
-msgid "Kapadokya'nın En Lüks Mağara Oteli"
-msgstr "أفخم فندق كهف في كابادوكيا"
-
-msgid "Özel Havuzlu Odalar"
-msgstr "غرف مع حمامات سباحة خاصة"
-
-msgid "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
-msgstr "تجربة إقامة لا تُنسى في قلب كابادوكيا الساحرة"
-
-# Rooms Section
-msgid "Konforlu Odalar"
-msgstr "غرف مريحة"
-
-msgid "Odalarımız"
-msgstr "غرفنا"
-
-msgid "Detayları Gör"
-msgstr "عرض التفاصيل"
-
-msgid "Superior Oda"
-msgstr "غرفة سوبيريور"
-
-msgid "Kapadokya manzaralı, özel teraslı lüks odalarımız"
-msgstr "غرفنا الفاخرة مع تراسات خاصة وإطلالة على كابادوكيا"
-
-msgid "King Suite"
-msgstr "جناح كينغ"
-
-msgid "Geniş ve konforlu, modern donanımlı odalarımız"
-msgstr "غرف واسعة ومريحة مجهزة تجهيزا حديثا"
-
-msgid "Queen Oda"
-msgstr "غرفة كوين"
-
-msgid "Şık tasarımlı, konforlu odalarımız"
-msgstr "غرفنا الأنيقة والمريحة"
-
-msgid "Executive Oda"
-msgstr "غرفة إدارية"
-
-msgid "İş seyahatleri için ideal, konforlu odalarımız"
-msgstr "غرف مريحة ومثالية لرحلات العمل"
-
-msgid "Presidential Suite"
-msgstr "الجناح الرئاسي"
-
-msgid "En lüks ve geniş suit odamız"
-msgstr "أفخم وأكبر جناح لدينا"
-
-msgid "Cave Honeymoon"
-msgstr "جناح العسل الكهفي"
-
-msgid "Balayı çiftleri için özel tasarlanmış suit odamız"
-msgstr "جناحنا المصمم خصيصًا لزوجين في شهر العسل"
-
-# Gallery Modal
-msgid "Kapat"
-msgstr "إغلاق"
-
-msgid "Önceki"
-msgstr "السابق"
-
-msgid "Sonraki"
-msgstr "التالي"
-
-msgid "Galeri Görüntüsü"
-msgstr "عرض المعرض"
-
-# Room Features
-msgid "Oda Özellikleri"
-msgstr "مميزات الغرفة"
-
-msgid "King Size Yatak"
-msgstr "سرير كينغ سايز"
-
-msgid "Queen Size Yatak"
-msgstr "سرير كوين سايز"
-
-msgid "Özel Tasarım Banyo"
-msgstr "حمام بتصميم خاص"
-
-msgid "Smart TV"
-msgstr "تلفاز ذكي"
-
-msgid "Ücretsiz Wi-Fi"
-msgstr "واي فاي مجاني"
-
-msgid "Mini Bar"
-msgstr "ميني بار"
-
-msgid "Klima"
-msgstr "تكييف هواء"
-
-msgid "Oturma Alanı"
-msgstr "منطقة الجلوس"
-
-msgid "Özel Teras"
-msgstr "تراس خاص"
-
-msgid "Jakuzili Banyo"
-msgstr "حمام مع جاكوزي"
-
-msgid "Çalışma Masası"
-msgstr "مكتب عمل"
-
-msgid "Yüksek Hızlı Wi-Fi"
-msgstr "واي فاي عالي السرعة"
-
-msgid "Lüks Banyo"
-msgstr "حمام فاخر"
-
-msgid "Kahve Makinesi"
-msgstr "آلة قهوة"
-
-msgid "Şömine"
-msgstr "مدفأة"
-
-msgid "Mini Mutfak"
-msgstr "مطبخ صغير"
-
-msgid "Özel Jakuzi"
-msgstr "جاكوزي خاص"
-
-msgid "Şampanya Servisi"
-msgstr "خدمة الشمبانيا"
-
-# Room Descriptions
-msgid "Kapadokya'nın Doğal Dokusunda Modern Konfor"
-msgstr "راحة حديثة في نسيج كابادوكيا الطبيعي"
-
-msgid "Modern Konforun Doğal Dokuyla Buluşması"
-msgstr "الراحة الحديثة تلتقي بالنسيج الطبيعي"
-
-msgid "Superior odalarımız, Kapadokya'nın eşsiz mağara mimarisini modern konforla buluşturuyor. Her odamız özenle restore edilmiş olup, bölgenin tarihi dokusunu yaşatırken size konforlu bir konaklama deneyimi sunuyor."
-msgstr "غرفنا سوبيريور تجمع بين الهندسة المعمارية الفريدة لكهوف كابادوكيا والراحة الحديثة. كل غرفة تم تجديدها بعناية وتحتفظ بالطابع التاريخي للمنطقة مع توفير تجربة إقامة مريحة."
-
-msgid "Tarihi Atmosferde Lüks Deneyim"
-msgstr "تجربة فاخرة في جو تاريخي"
-
-msgid "King Suite odalarımız, geniş yaşam alanı ve özel terası ile size unutulmaz bir Kapadokya deneyimi sunuyor. Tarihi doku modern tasarım öğeleriyle harmanlanarak benzersiz bir atmosfer yaratıyor."
-msgstr "غرف جناح كينغ تقدم لك تجربة لا تُنسى في كابادوكيا مع مساحات معيشة واسعة وتراس خاص. يتم مزج الطابع التاريخي مع العناصر الحديثة لإنشاء جو فريد."
-
-msgid "Konforlu ve Şık Tasarım"
-msgstr "تصميم مريح وأنيق"
-
-msgid "Queen odalarımız, şık tasarımı ve konforlu yaşam alanıyla misafirlerimize huzurlu bir konaklama sunuyor. Modern dokunuşlar ve geleneksel mimari detaylar mükemmel bir uyum içinde."
-msgstr "غرف كوين توفر إقامة هادئة لضيوفنا بتصميم أنيق ومساحة معيشة مريحة. اللمسات الحديثة والتفاصيل المعمارية التقليدية تنسجم بشكل مثالي."
-
-msgid "İş ve Konforun Buluşması"
-msgstr "حيث يلتقي العمل بالراحة"
-
-msgid "Executive odalarımız, iş seyahatlerinizde konfor ve lüksü bir arada sunar. Çalışma alanı ve modern olanaklar ile donatılmış odalarımız, verimli bir konaklama deneyimi sağlar."
-msgstr "غرفنا التنفيذية تقدم الراحة والفخامة لرحلات العمل. الغرف مجهزة بمساحة للعمل ووسائل الراحة الحديثة لتوفير تجربة إقامة فعالة."
-
-msgid "Eşsiz Lüks ve Konfor"
-msgstr "فخامة وراحة لا مثيل لها"
-
-msgid "Presidential Suite, en üst düzey konfor ve lüksü arayanlar için tasarlandı. Geniş yaşam alanı, özel teras ve jakuzi gibi ayrıcalıklı olanaklar sunan süitimiz, unutulmaz bir konaklama deneyimi vadediyor."
-msgstr "الجناح الرئاسي مصمم لأولئك الذين يبحثون عن أقصى درجات الراحة والفخامة. جناحنا يقدم مساحة معيشة واسعة وتراس خاص مع جاكوزي لتجربة إقامة لا تُنسى."
-
-msgid "Romantik Kaçamak"
-msgstr "ملاذ رومانسي"
-
-msgid "Cave Honeymoon Suite, balayı çiftleri için özel olarak tasarlanmış romantik bir kaçamak sunuyor. Özel jakuzi, şömine ve büyüleyici manzarasıyla unutulmaz anlar yaşayacağınız bir mekan."
-msgstr "جناح العسل الكهفي يقدم ملاذًا رومانسيًا مصممًا خصيصًا لزوجين في شهر العسل. مع جاكوزي خاص ومدفأة ومناظر ساحرة، إنه مكان لتجربة لحظات لا تُنسى."
-
-# Contact Information
-msgid "Adres"
-msgstr "العنوان"
-
-msgid "Telefon"
-msgstr "الهاتف"
-
-msgid "E-posta"
-msgstr "البريد الإلكتروني"
-
-# Activities
-msgid "Vadi Yürüyüşü"
-msgstr "جولة في الوادي"
-
-msgid "Balon Turu"
-msgstr "جولة بالبالون الهوائي"
-
-msgid "Yeraltı Şehri"
-msgstr "المدينة تحت الأرض"
-
-msgid "Peri Bacaları"
-msgstr "مداخن الجنيات"
-
-# Experiences Section
-msgid "Eşsiz Deneyimler"
-msgstr "تجارب فريدة"
-
-msgid "Kapadokya'da Unutulmaz Deneyimler"
-msgstr "تجارب لا تُنسى في كابادوكيا"
-
-msgid "Güneşin doğuşunu gökyüzünden izleyin"
-msgstr "شاهد شروق الشمس من السماء"
-
-msgid "Eşsiz vadileri keşfedin"
-msgstr "اكتشف الأودية الفريدة"
-
-msgid "Büyüleyici peri bacalarını keşfedin"
-msgstr "اكتشف مداخن الجنيات الساحرة"
-
-# Social Media
-msgid "Instagram'da Bizi Takip Edin"
-msgstr "تابعنا على إنستغرام"
-
 # Error Pages
 msgid "Sayfa Bulunamadı - 404"
 msgstr "الصفحة غير موجودة - 404"
@@ -251,15 +25,27 @@ msgstr "الصفحة غير موجودة - 404"
 msgid "Aradığınız Sayfa Bulunamadı"
 msgstr "الصفحة التي تبحث عنها غير موجودة"
 
-msgid "Üzgünüz, aradığınız sayfaya ulaşılamıyor. Ana sayfaya dönüp tekrar deneyebilirsiniz."
-msgstr "عذرًا، لا يمكن الوصول إلى الصفحة التي تبحث عنها. يمكنك العودة إلى الصفحة الرئيسية والمحاولة مرة أخرى."
+msgid ""
+"Üzgünüz, aradığınız sayfaya ulaşılamıyor. Ana sayfaya dönüp tekrar "
+"deneyebilirsiniz."
+msgstr ""
+"عذرًا، لا يمكن الوصول إلى الصفحة التي تبحث عنها. يمكنك العودة إلى الصفحة "
+"الرئيسية والمحاولة مرة أخرى."
 
 msgid "Ana Sayfaya Dön"
 msgstr "العودة إلى الصفحة الرئيسية"
 
-# About Page
-msgid "Hakkımızda - Patina Cappadocia"
-msgstr "عنّا - باتينا كابادوكيا"
+msgid ""
+"Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel "
+"Experience"
+msgstr ""
+"Patina Cappadocia حول - تقييمات فنادق كهفية تركيا | تجربة فندق حمام تركي"
+
+# Contact Page
+#, fuzzy
+#| msgid "İletişim - Patina Cappadocia"
+msgid "Patina Cappadocia"
+msgstr "اتصال - باتينا كابادوكيا"
 
 msgid "Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
 msgstr "تجربة إقامة لا تُنسى في قلب كابادوكيا"
@@ -270,14 +56,19 @@ msgstr "تاريخنا"
 msgid "Geleneksel Mimarinin Modern Yorumu"
 msgstr "التفسير الحديث للعمارة التقليدية"
 
-msgid "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, geleneksel dokuyu ve modern lüksü mükemmel bir uyumla bir araya getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu bir konaklama deneyimi yaşatıyor."
-msgstr "يقع باتينا كابادوكيا بين المناظر الخلابة لمدينة أوتشيسار، حيث يدمج بشكل مثالي النسيج التقليدي والفخامة الحديثة. تعكس معمارنا المبني من الحجارة التراث الثقافي الغني للمنطقة، بينما توفر خدماتنا الحديثة تجربة إقامة مريحة."
+msgid ""
+"Patina Cappadocia, Uçhisar'ın tarihi dokusunu modern konforla buluşturan "
+"özel bir butik oteldir. Bölgenin doğal taş yapılarını koruyarak restore "
+"edilen otelimiz, misafirlerine özgün bir konaklama deneyimi sunmaktadır."
+msgstr ""
 
-msgid "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Cappadocia, büyüleyici Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır."
-msgstr "سواء للمغامرين الذين يتطلعون لاكتشاف الطبيعة والتاريخ، أو الأزواج والعائلات الذين يبحثون عن السلام، يعد باتينا كابادوكيا نقطة انطلاق مثالية لاكتشاف كابادوكيا الساحرة."
-
-msgid "Daha Fazla"
-msgstr "تعرف أكثر"
+msgid ""
+"Her odamız, Kapadokya'nın eşsiz manzarasına açılan özel terasları ve "
+"geleneksel mimariyi yansıtan detaylarıyla benzersiz bir atmosfer "
+"yaratmaktadır. Modern konfor ve lüks anlayışını, bölgenin otantik ruhuyla "
+"harmanlayan tasarım anlayışımız, size unutulmaz bir konaklama deneyimi vaat "
+"ediyor."
+msgstr ""
 
 msgid "Misyonumuz"
 msgstr "مهمتنا"
@@ -285,8 +76,16 @@ msgstr "مهمتنا"
 msgid "Benzersiz Deneyimler Sunuyoruz"
 msgstr "نقدم تجارب فريدة"
 
-msgid "Misafirlerimize sadece bir konaklama değil, Kapadokya'nın büyülü atmosferini tam anlamıyla yaşayabilecekleri özel bir deneyim sunmayı hedefliyoruz. Profesyonel ekibimiz, size bölgenin en güzel yerlerini keşfetmeniz için rehberlik ederken, konforlu odalarımız ve özenle hazırlanan hizmetlerimizle unutulmaz anılar biriktirmenizi sağlıyoruz."
-msgstr "هدفنا هو تقديم تجربة خاصة لضيوفنا حيث يمكنهم الاستمتاع بجو كابادوكيا الساحر بشكل كامل. بينما يوجههم فريقنا المحترف لاكتشاف أجمل الأماكن في المنطقة، نقدم لهم إقامة مريحة وخدمات معدة بعناية لتجميع ذكريات لا تُنسى."
+msgid ""
+"Misafirlerimize sadece bir konaklama değil, Kapadokya'nın büyülü atmosferini "
+"tam anlamıyla yaşayabilecekleri özel bir deneyim sunmayı hedefliyoruz. "
+"Profesyonel ekibimiz, size bölgenin en güzel yerlerini keşfetmeniz için "
+"rehberlik ederken, konforlu odalarımız ve özenle hazırlanan hizmetlerimizle "
+"unutulmaz anılar biriktirmenizi sağlıyoruz."
+msgstr ""
+"هدفنا هو تقديم تجربة خاصة لضيوفنا حيث يمكنهم الاستمتاع بجو كابادوكيا الساحر "
+"بشكل كامل. بينما يوجههم فريقنا المحترف لاكتشاف أجمل الأماكن في المنطقة، نقدم "
+"لهم إقامة مريحة وخدمات معدة بعناية لتجميع ذكريات لا تُنسى."
 
 msgid "Özel Tasarlanmış Odalar"
 msgstr "غرف مصممة خصيصًا"
@@ -306,8 +105,14 @@ msgstr "خدماتنا"
 msgid "Size Özel Ayrıcalıklar"
 msgstr "امتيازات خاصة لك"
 
-msgid "Patina Cappadocia'da konaklama deneyiminizi özel kılan pek çok hizmet sunuyoruz. Balon turlarından vadi yürüyüşlerine, özel restoran rezervasyonlarından bölge turlarına kadar tüm ihtiyaçlarınızı karşılıyoruz."
-msgstr "نقدم العديد من الخدمات التي تجعل تجربتك في باتينا كابادوكيا مميزة. من جولات البالون إلى جولات الوادي، من حجوزات المطاعم الخاصة إلى الجولات الإقليمية، نحن نوفر لك جميع احتياجاتك."
+msgid ""
+"Patina Cappadocia'da konaklama deneyiminizi özel kılan pek çok hizmet "
+"sunuyoruz. Balon turlarından vadi yürüyüşlerine, özel restoran "
+"rezervasyonlarından bölge turlarına kadar tüm ihtiyaçlarınızı karşılıyoruz."
+msgstr ""
+"نقدم العديد من الخدمات التي تجعل تجربتك في باتينا كابادوكيا مميزة. من جولات "
+"البالون إلى جولات الوادي، من حجوزات المطاعم الخاصة إلى الجولات الإقليمية، "
+"نحن نوفر لك جميع احتياجاتك."
 
 msgid "7/24 Concierge"
 msgstr "خدمة الكونسيرج على مدار الساعة"
@@ -327,9 +132,563 @@ msgstr "معرض الصور"
 msgid "Patina'dan Kareler"
 msgstr "لحظات من باتينا"
 
+msgid "WhatsApp ile Hızlı İletişim"
+msgstr "اتصال سريع عبر واتساب"
+
+msgid "WhatsApp"
+msgstr "واتساب"
+
+msgid "Değerlendirme"
+msgstr "التقييمات"
+
+msgid "Değerlendir"
+msgstr "قيمنا"
+
+# Navigation
+msgid "Ana Sayfa"
+msgstr "الصفحة الرئيسية"
+
+msgid "Rehber"
+msgstr "دليل"
+
+msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+msgstr "دليل كامل فنادق تركيا - أفضل إقامة تركيا"
+
+msgid ""
+"Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey "
+"Tourism Guide"
+msgstr ""
+"فنادق كهفية، أجنحة حمام تركي، فنادق جولات المنطاد - دليل سياحة تركيا كامل"
+
+msgid "Best Hotels in Turkey - Complete Tourism Guide"
+msgstr "أفضل فنادق في تركيا - دليل سياحي كامل"
+
+msgid ""
+"Turkey offers some of the world's most unique accommodation experiences. "
+"From cave hotels in Cappadocia to luxury beach resorts in Antalya, boutique "
+"hotels in Istanbul to thermal spa hotels - Turkey tourism has it all. This "
+"comprehensive guide covers the best hotel experiences across Turkey."
+msgstr ""
+
+msgid "Why Choose Turkey for Your Next Holiday?"
+msgstr ""
+
+msgid "Unique cave hotel experiences in Cappadocia"
+msgstr ""
+
+msgid "Turkish bath and spa hotel traditions"
+msgstr ""
+
+msgid "Hot air balloon tours from luxury hotels"
+msgstr ""
+
+msgid "Historic boutique hotels in Istanbul and Ankara"
+msgstr ""
+
+msgid "Beach resort hotels in Mediterranean coast"
+msgstr ""
+
+msgid "Thermal spa hotels for wellness tourism"
+msgstr ""
+
+msgid "Cave Hotels Turkey - Unique Accommodation Experience"
+msgstr ""
+
+msgid ""
+"Cave hotels in Turkey, particularly in Cappadocia region, offer visitors a "
+"once-in-a-lifetime accommodation experience. These hotels are carved into "
+"natural rock formations, providing authentic atmosphere while maintaining "
+"modern luxury standards."
+msgstr ""
+
+msgid "Types of Cave Hotels in Turkey"
+msgstr ""
+
+msgid "Superior Cave Rooms - Modern comfort in traditional settings"
+msgstr ""
+
+msgid "King Suite Cave Rooms - Spacious luxury with private terraces"
+msgstr ""
+
+msgid "Queen Cave Rooms - Elegant design with authentic features"
+msgstr ""
+
+msgid "Executive Cave Rooms - Business travel meets historic charm"
+msgstr ""
+
+msgid "Presidential Suite - Ultimate luxury cave experience"
+msgstr ""
+
+msgid "Cave Honeymoon Suites - Romantic getaway accommodations"
+msgstr ""
+
+msgid "Turkish Hamam Cave Rooms - Traditional bath culture experience"
+msgstr "غرف كهفية حمام تركي - تجربة ثقافة الاستحمام التقليدية"
+
+msgid "Nevşehir Otelleri Rehberi - En İyi Konaklama Seçenekleri"
+msgstr ""
+
+msgid ""
+"Nevşehir, Kapadokya bölgesinin kalbinde yer alan ve en iyi cave hotel "
+"deneyimlerini sunan şehirdir. Nevşehir otelleri, jakuzili odalardan termal "
+"olanaklara kadar geniş bir yelpazede hizmet vermektedir."
+msgstr ""
+
+msgid "Nevşehir Otel Kategorileri"
+msgstr ""
+
+msgid "Nevşehir Jakuzili Oteller - Romantik konaklama deneyimi"
+msgstr ""
+
+msgid "Uçhisar Cave Otelleri - Tarihi mağara mimarisi"
+msgstr ""
+
+msgid "Nevşehir Butik Otelleri - Özel tasarım ve lüks hizmet"
+msgstr ""
+
+msgid "Nevşehir Termal Oteller - Sağlık ve dinlenme"
+msgstr ""
+
+msgid "Nevşehir Bungalov Evleri - Aile dostu konaklama"
+msgstr ""
+
+#, fuzzy
+#| msgid "Balayı çiftleri için özel tasarlanmış suit odamız"
+msgid "Nevşehir Balayı Otelleri - Özel çiftler için tasarlanmış"
+msgstr "جناحنا المصمم خصيصًا لزوجين في شهر العسل"
+
+msgid "Nevşehir Otelleri En Yüksek Puan"
+msgstr ""
+
+msgid ""
+"Patina Cappadocia, Google yorumlarında 5.0 puan ile Nevşehir'in en yüksek "
+"puanlı oteli olarak öne çıkmaktadır. Misafirlerimizin yorumları, mükemmel "
+"hizmet kalitemizi ve eşsiz konaklama deneyimimizi doğrulamaktadır."
+msgstr ""
+
+msgid "Uçhisar Otelleri - Kapadokya'nın En Güzel Manzarası"
+msgstr ""
+
+msgid ""
+"Uçhisar, Kapadokya'nın en yüksek noktasında yer alan ve panoramik peri "
+"bacası manzaraları sunan bölgedir. Uçhisar otelleri, cave mimari ve modern "
+"lüksü birleştiren özgün tasarımlarıyla tanınır."
+msgstr ""
+
+# Room Features
+#, fuzzy
+#| msgid "Oda Özellikleri"
+msgid "Uçhisar Otel Özellikleri"
+msgstr "مميزات الغرفة"
+
+#, fuzzy
+#| msgid "Panoramik Manzara"
+msgid "Panoramik balon izleme terasları"
+msgstr "إطلالة بانورامية"
+
+msgid "Doğal kaya formasyonları içinde odalar"
+msgstr ""
+
+msgid "Peri bacaları manzaralı jakuzili süitler"
+msgstr ""
+
+msgid "Sunrise balloon tour organizasyonu"
+msgstr ""
+
+msgid "Cave restaurant deneyimi"
+msgstr ""
+
+msgid "Fotoğraf safari rehberliği"
+msgstr ""
+
+msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
+msgstr "فنادق حمام تركي - تجربة العافية والثقافة"
+
+msgid ""
+"Turkish bath (hamam) hotels offer guests an authentic cultural experience "
+"combined with luxury accommodation. These hotels feature traditional Turkish "
+"baths integrated into modern hotel facilities, providing unique wellness "
+"experiences."
+msgstr ""
+
+#, fuzzy
+#| msgid "Turkish Hamam Suites"
+msgid "Turkish Hamam Hotel Features"
+msgstr "أجنحة حمام تركي"
+
+msgid "Authentic marble hamam with heated stone floors"
+msgstr ""
+
+msgid "Professional hamam massage services"
+msgstr ""
+
+msgid "Traditional exfoliation (kese) and foam treatments"
+msgstr ""
+
+msgid "Private hamam suites for couples"
+msgstr ""
+
+msgid "Modern spa facilities with traditional elements"
+msgstr ""
+
+#, fuzzy
+#| msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
+msgid "Turkish bath culture education and experiences"
+msgstr "فنادق حمام تركي - تجربة العافية والثقافة"
+
+#, fuzzy
+#| msgid "Turkey Tourism Information"
+msgid "Turkey Tourism Hotels by Region"
+msgstr "معلومات سياحة تركيا"
+
+msgid ""
+"Turkey's diverse geography offers different hotel experiences in each "
+"region. From historic city hotels to beach resorts, mountain lodges to cave "
+"accommodations."
+msgstr ""
+
+#, fuzzy
+#| msgid "Turkey Tourism Information"
+msgid "Major Turkey Tourism Destinations"
+msgstr "معلومات سياحة تركيا"
+
+msgid "Cappadocia (Nevşehir, Göreme, Uçhisar) - Cave hotels and balloon tours"
+msgstr ""
+
+msgid "Istanbul - Historic boutique hotels and luxury city accommodation"
+msgstr ""
+
+msgid "Ankara - Business hotels and modern accommodation"
+msgstr ""
+
+msgid "Antalya - Beach resort hotels and Mediterranean luxury"
+msgstr ""
+
+msgid "Bodrum - Luxury seaside hotels and marina accommodations"
+msgstr ""
+
+msgid "Pamukkale - Thermal spa hotels and wellness resorts"
+msgstr ""
+
+msgid "Ephesus (Selçuk) - Historic boutique hotels near ancient ruins"
+msgstr ""
+
+msgid "Balloon Tour Hotels Turkey - Sky High Experiences"
+msgstr ""
+
+msgid ""
+"Hotels specializing in hot air balloon tours offer guests seamless balloon "
+"tour experiences. These hotels coordinate with the best balloon operators "
+"and provide optimal viewing locations."
+msgstr ""
+
+#, fuzzy
+#| msgid "Balloon Tour Hotels"
+msgid "Balloon Tour Hotel Services"
+msgstr "فنادق جولات المنطاد"
+
+msgid "Pre-dawn pickup for sunrise balloon tours"
+msgstr ""
+
+msgid "Partnership with certified balloon operators"
+msgstr ""
+
+msgid "Post-flight celebration breakfast"
+msgstr ""
+
+msgid "Weather monitoring and rescheduling services"
+msgstr ""
+
+msgid "Photography packages and professional photos"
+msgstr ""
+
+msgid "Balloon tour viewing terraces from hotels"
+msgstr ""
+
+#, fuzzy
+#| msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
+msgid "Luxury Hotels Turkey - Premium Accommodation Experiences"
+msgstr "دليل كامل فنادق تركيا - أفضل إقامة تركيا"
+
+msgid ""
+"Turkey's luxury hotel scene combines international standards with local "
+"cultural elements. From cave suite hotels in Cappadocia to beachfront "
+"resorts in Turkish Riviera."
+msgstr ""
+
+msgid "Features of Turkey Luxury Hotels"
+msgstr ""
+
+msgid "Jacuzzi suite rooms with panoramic views"
+msgstr ""
+
+msgid "Private terraces overlooking fairy chimneys"
+msgstr ""
+
+msgid "Concierge services for exclusive experiences"
+msgstr ""
+
+msgid "Gourmet restaurants featuring Turkish cuisine"
+msgstr ""
+
+msgid "Spa and wellness centers with Turkish treatments"
+msgstr ""
+
+msgid "VIP transfer services from airports"
+msgstr ""
+
+msgid "Turkey Accommodation Booking Tips"
+msgstr ""
+
+msgid ""
+"Planning your Turkey accommodation? Here are essential tips for booking the "
+"best hotels in Turkey for your specific needs and preferences."
+msgstr ""
+
+msgid "Best Times to Visit Turkey Hotels"
+msgstr ""
+
+msgid "Spring (March-May) - Perfect weather for Cappadocia cave hotels"
+msgstr ""
+
+msgid "Summer (June-August) - Beach resort hotels peak season"
+msgstr ""
+
+msgid "Autumn (September-November) - Ideal for city hotels and cultural tours"
+msgstr ""
+
+msgid "Winter (December-February) - Thermal spa hotels and wellness retreats"
+msgstr ""
+
+msgid "Göreme Hotels - Heart of Cappadocia Tourism"
+msgstr ""
+
+msgid ""
+"Göreme, located in the center of Cappadocia, is one of the most popular "
+"destinations for cave hotel experiences. Göreme hotels offer authentic cave "
+"architecture combined with modern amenities."
+msgstr ""
+
+msgid "Göreme Hotel Features"
+msgstr ""
+
+msgid "Historic cave rooms with modern facilities"
+msgstr ""
+
+msgid "Walking distance to Göreme Open Air Museum"
+msgstr ""
+
+msgid "Traditional Turkish breakfast with local products"
+msgstr ""
+
+msgid "Cave restaurants serving authentic Turkish cuisine"
+msgstr ""
+
+msgid "Easy access to hiking trails and valleys"
+msgstr ""
+
+msgid "Balloon tour pickup services"
+msgstr ""
+
+msgid "Cappadocia Travel Tips - Complete Visitor Guide"
+msgstr ""
+
+msgid ""
+"Planning your Cappadocia trip? Here are essential tips to make the most of "
+"your visit to this magical region."
+msgstr ""
+
+msgid "What to See in Cappadocia"
+msgstr ""
+
+msgid "Hot air balloon rides at sunrise"
+msgstr ""
+
+msgid "Göreme Open Air Museum - UNESCO World Heritage Site"
+msgstr ""
+
+msgid "Underground cities (Kaymaklı, Derinkuyu)"
+msgstr ""
+
+msgid "Fairy chimneys and rock formations"
+msgstr ""
+
+msgid "Valley hiking trails (Love Valley, Rose Valley, Red Valley)"
+msgstr ""
+
+msgid "Traditional pottery workshops in Avanos"
+msgstr ""
+
+msgid "Sunset viewing points (Sunset Point, Uçhisar Castle)"
+msgstr ""
+
 # Contact Page
-msgid "İletişim - Patina Cappadocia"
+#, fuzzy
+#| msgid "İletişim - Patina Cappadocia"
+msgid "Best Activities in Cappadocia"
 msgstr "اتصال - باتينا كابادوكيا"
+
+msgid "Hot air balloon tours (book in advance)"
+msgstr ""
+
+msgid "ATV tours through valleys"
+msgstr ""
+
+msgid "Horseback riding tours"
+msgstr ""
+
+msgid "Turkish night shows with traditional dances"
+msgstr ""
+
+msgid "Wine tasting at local wineries"
+msgstr ""
+
+msgid "Photography tours for Instagram-worthy shots"
+msgstr ""
+
+msgid "Frequently Asked Questions - Cappadocia Hotels"
+msgstr ""
+
+msgid "What is the best cave hotel in Nevşehir?"
+msgstr ""
+
+msgid ""
+"Patina Cappadocia is the highest-rated cave hotel in Nevşehir with a 5.0 "
+"rating on Google reviews. It offers unique accommodation with Turkish hamam "
+"suite rooms, jacuzzi suites, and panoramic fairy chimney views. The hotel "
+"combines authentic cave architecture with modern luxury amenities."
+msgstr ""
+
+msgid "Which hotel is best for balloon tours in Cappadocia?"
+msgstr ""
+
+msgid ""
+"Hotels in Uçhisar region offer the best location for balloon tours. Patina "
+"Cappadocia provides unforgettable experiences with panoramic balloon viewing "
+"terraces and professional balloon tour organization. The hotel coordinates "
+"with certified balloon operators and offers early morning pickup services."
+msgstr ""
+
+msgid "Are there jacuzzi hotels in Cappadocia?"
+msgstr ""
+
+msgid ""
+"Yes, there are several jacuzzi cave hotels in Cappadocia. Patina Cappadocia "
+"offers romantic accommodation with jacuzzi suites overlooking fairy chimneys "
+"and private terraces. These suites are perfect for honeymooners and couples "
+"seeking a romantic getaway."
+msgstr ""
+
+msgid "What is the best time to visit Cappadocia?"
+msgstr ""
+
+msgid ""
+"The best times to visit Cappadocia are spring (March-May) and autumn "
+"(September-November) when the weather is mild and perfect for outdoor "
+"activities. Summer can be hot, while winter offers a unique experience with "
+"snow-covered fairy chimneys, though some activities may be limited."
+msgstr ""
+
+msgid "How far in advance should I book a cave hotel in Cappadocia?"
+msgstr ""
+
+msgid ""
+"It's recommended to book at least 2-3 months in advance, especially for peak "
+"seasons (spring and autumn) and if you want specific room types like jacuzzi "
+"suites or Turkish hamam rooms. During balloon festival periods, hotels can "
+"be fully booked months in advance."
+msgstr ""
+
+msgid "What amenities do cave hotels in Cappadocia offer?"
+msgstr ""
+
+msgid ""
+"Cave hotels in Cappadocia typically offer modern amenities including WiFi, "
+"air conditioning, private bathrooms, and sometimes jacuzzis or Turkish hamam "
+"facilities. Many hotels also provide terraces with panoramic views, "
+"traditional Turkish breakfast, and assistance with booking tours and "
+"activities."
+msgstr ""
+
+msgid "Is it safe to stay in a cave hotel?"
+msgstr ""
+
+msgid ""
+"Yes, cave hotels in Cappadocia are completely safe. They are professionally "
+"designed and maintained, meeting all safety standards. The caves are "
+"reinforced and equipped with modern safety systems including fire alarms, "
+"emergency exits, and proper ventilation."
+msgstr ""
+
+#, fuzzy
+#| msgid "Cave Hotel Experience"
+msgid "Book Turkey Hotel Experience"
+msgstr "تجربة فندق كهفي"
+
+msgid ""
+"Experience authentic cave hotel with Turkish hamam suite - unique in Turkey!"
+msgstr ""
+
+msgid "Book Now"
+msgstr ""
+
+msgid "Turkey Tourism Information"
+msgstr "معلومات سياحة تركيا"
+
+msgid "Turkey Hotel Types"
+msgstr "أنواع فنادق تركيا"
+
+msgid "Cave Hotels with Jacuzzi"
+msgstr ""
+
+msgid "Turkish Bath Suite Rooms"
+msgstr "غرف أجنحة حمام تركي"
+
+msgid "Balloon Tour Hotels"
+msgstr "فنادق جولات المنطاد"
+
+msgid "Luxury Cave Accommodations"
+msgstr ""
+
+msgid "Turkey Hotel Reviews"
+msgstr "تقييمات فنادق تركيا"
+
+msgid "Turkey Tourism Contact"
+msgstr "اتصال سياحة تركيا"
+
+msgid "Popular Turkey Destinations"
+msgstr ""
+
+msgid "Related Pages"
+msgstr ""
+
+#, fuzzy
+#| msgid "Cave Honeymoon"
+msgid "Cave Hotel Rooms"
+msgstr "جناح العسل الكهفي"
+
+#, fuzzy
+#| msgid "Turkey Hotel Reviews"
+msgid "Guest Reviews"
+msgstr "تقييمات فنادق تركيا"
+
+# Contact Page
+#, fuzzy
+#| msgid "İletişim - Patina Cappadocia"
+msgid "About Patina Cappadocia"
+msgstr "اتصال - باتينا كابادوكيا"
+
+msgid "Contact Us"
+msgstr ""
+
+msgid ""
+"Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | "
+"Turkey Tourism"
+msgstr ""
+"Patina Cappadocia اتصال - فنادق كهفية تركيا | أجنحة حمام تركي | سياحة تركيا"
+
+msgid "İletişim"
+msgstr "اتصال"
 
 msgid "Size Yardımcı Olmaktan Mutluluk Duyarız"
 msgstr "يسعدنا مساعدتك"
@@ -343,8 +702,15 @@ msgstr "أرسل رسالة عبر واتساب"
 msgid "Yol Tarifi Al"
 msgstr "احصل على الاتجاهات"
 
+# Contact Information
+msgid "Adres"
+msgstr "العنوان"
+
 msgid "Yol Tarifi"
 msgstr "الاتجاهات"
+
+msgid "Telefon"
+msgstr "الهاتف"
 
 msgid "Çalışma Saatleri"
 msgstr "ساعات العمل"
@@ -364,7 +730,9 @@ msgstr "الأسئلة الشائعة"
 msgid "Rezervasyon nasıl yapabilirim?"
 msgstr "كيف يمكنني إجراء حجز؟"
 
-msgid "Rezervasyon için bizi telefonla arayabilir, WhatsApp üzerinden mesaj gönderebilir veya"
+msgid ""
+"Rezervasyon için bizi telefonla arayabilir, WhatsApp üzerinden mesaj "
+"gönderebilir veya"
 msgstr "يمكنك الاتصال بنا عبر الهاتف، إرسال رسالة عبر واتساب، أو"
 
 msgid "rezervasyon sitemizden"
@@ -376,30 +744,183 @@ msgstr "إجراء الحجز."
 msgid "Otele nasıl ulaşabilirim?"
 msgstr "كيف يمكنني الوصول إلى الفندق؟"
 
-msgid "Nevşehir Havalimanı'ndan otelimize transfer hizmeti sunuyoruz. Ayrıca Göreme merkeze yakın konumumuz sayesinde toplu taşıma ile de kolayca ulaşabilirsiniz."
-msgstr "نحن نقدم خدمة النقل من مطار نيفشهير إلى فندقنا. بالإضافة إلى ذلك، يمكنك الوصول إلينا بسهولة باستخدام وسائل النقل العامة بفضل موقعنا القريب من مركز جوريم."
+msgid ""
+"Nevşehir Havalimanı'ndan otelimize transfer hizmeti sunuyoruz. Ayrıca Göreme "
+"merkeze yakın konumumuz sayesinde toplu taşıma ile de kolayca "
+"ulaşabilirsiniz."
+msgstr ""
+"نحن نقدم خدمة النقل من مطار نيفشهير إلى فندقنا. بالإضافة إلى ذلك، يمكنك "
+"الوصول إلينا بسهولة باستخدام وسائل النقل العامة بفضل موقعنا القريب من مركز "
+"جوريم."
 
 msgid "Balon turu rezervasyonu yapabilir miyim?"
 msgstr "هل يمكنني حجز جولة بالبالون؟"
 
-msgid "Evet, otelimiz üzerinden balon turu rezervasyonu yapabilirsiniz. En iyi fiyat garantisi ve güvenilir balon şirketleriyle çalışıyoruz."
-msgstr "نعم، يمكنك حجز جولة بالبالون من خلال فندقنا. نحن نتعامل مع شركات بالونات موثوقة ونقدم ضمان أفضل الأسعار."
+msgid ""
+"Evet, otelimiz üzerinden balon turu rezervasyonu yapabilirsiniz. En iyi "
+"fiyat garantisi ve güvenilir balon şirketleriyle çalışıyoruz."
+msgstr ""
+"نعم، يمكنك حجز جولة بالبالون من خلال فندقنا. نحن نتعامل مع شركات بالونات "
+"موثوقة ونقدم ضمان أفضل الأسعار."
 
 msgid "Oda özellikleri nelerdir?"
 msgstr "ما هي مميزات الغرفة؟"
 
-msgid "Tüm odalarımızda ücretsiz Wi-Fi, klima, minibar, LED TV, özel banyo ve lüks banyo malzemeleri bulunmaktadır. Detaylı bilgi için odalar sayfamızı inceleyebilirsiniz."
-msgstr "جميع غرفنا تحتوي على واي فاي مجاني، تكييف، ميني بار، تلفزيون LED، حمام خاص، ومواد حمام فاخرة. لمزيد من التفاصيل، يمكنك الاطلاع على صفحة الغرف لدينا."
+msgid ""
+"Tüm odalarımızda ücretsiz Wi-Fi, klima, minibar, LED TV, özel banyo ve lüks "
+"banyo malzemeleri bulunmaktadır. Detaylı bilgi için odalar sayfamızı "
+"inceleyebilirsiniz."
+msgstr ""
+"جميع غرفنا تحتوي على واي فاي مجاني، تكييف، ميني بار، تلفزيون LED، حمام خاص، "
+"ومواد حمام فاخرة. لمزيد من التفاصيل، يمكنك الاطلاع على صفحة الغرف لدينا."
+
+# Contact Page
+#, fuzzy
+#| msgid "İletişim - Patina Cappadocia"
+msgid "Patina Cappadocia Galeri"
+msgstr "اتصال - باتينا كابادوكيا"
+
+msgid "Hakkımızda"
+msgstr "عنّا"
+
+#, fuzzy
+#| msgid ""
+#| "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, "
+#| "geleneksel dokuyu ve modern lüksü mükemmel bir uyumla bir araya "
+#| "getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin "
+#| "kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu "
+#| "bir konaklama deneyimi yaşatıyor."
+msgid ""
+"Patina Cappadocia, Kapadokya'nın eşsiz doğal güzelliklerini ve tarihi "
+"dokusunu modern konforla buluşturan özel bir butik oteldir. Uçhisar'ın "
+"büyüleyici manzaraları içerisinde yer alan otelimiz, geleneksel taş "
+"işçiliğiyle inşa edilmiş mimarisiyle bölgenin zengin kültürel mirasını "
+"yansıtırken, sunduğumuz çağdaş imkanlar size unutulmaz bir konaklama "
+"deneyimi yaşatıyor."
+msgstr ""
+"يقع باتينا كابادوكيا بين المناظر الخلابة لمدينة أوتشيسار، حيث يدمج بشكل "
+"مثالي النسيج التقليدي والفخامة الحديثة. تعكس معمارنا المبني من الحجارة "
+"التراث الثقافي الغني للمنطقة، بينما توفر خدماتنا الحديثة تجربة إقامة مريحة."
+
+msgid ""
+"Otelimiz, ister doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister "
+"huzur arayan çiftler ve aileler için Kapadokya'yı keşfetmek için mükemmel "
+"bir başlangıç noktasıdır. Balon turları, vadiler arası yürüyüşler, yeraltı "
+"şehirleri ve peri bacaları gibi bölgenin en önemli turistik noktalarına "
+"yakın konumumuz sayesinde, misafirlerimiz Kapadokya'nın tüm güzelliklerini "
+"kolayca keşfedebilir."
+msgstr ""
+
+msgid ""
+"Patina Cappadocia is a special boutique hotel that combines Cappadocia's "
+"unique natural beauty and historical texture with modern comfort. Located in "
+"the enchanting landscapes of Uçhisar, our hotel reflects the region's rich "
+"cultural heritage with its traditional stone architecture, while the "
+"contemporary facilities we offer provide you with an unforgettable "
+"accommodation experience."
+msgstr ""
+
+msgid ""
+"Our hotel is the perfect starting point for exploring Cappadocia, whether "
+"for adventure seekers who want to explore nature and history, or for couples "
+"and families seeking tranquility. Thanks to our proximity to the region's "
+"most important tourist attractions such as balloon tours, valley walks, "
+"underground cities and fairy chimneys, our guests can easily discover all "
+"the beauties of Cappadocia."
+msgstr ""
+
+msgid ""
+"Patina Cappadocia is a special boutique hotel that combines Cappadocia's "
+"unique natural beauty and historical texture with modern comfort."
+msgstr ""
+
+msgid "Daha Fazla"
+msgstr "تعرف أكثر"
+
+msgid "Patina Cappadocia Dış Görünüm"
+msgstr ""
+
+msgid "Kapadokya'da Unutulmaz Deneyimler"
+msgstr "تجارب لا تُنسى في كابادوكيا"
+
+# Activities
+#, fuzzy
+#| msgid "Vadi Yürüyüşü"
+msgid "Kapadokya Vadi Yürüyüşü"
+msgstr "جولة في الوادي"
+
+# Activities
+msgid "Vadi Yürüyüşü"
+msgstr "جولة في الوادي"
+
+#, fuzzy
+#| msgid "Balon Turu"
+msgid "Kapadokya Balon Turu"
+msgstr "جولة بالبالون الهوائي"
+
+msgid "Balon Turu"
+msgstr "جولة بالبالون الهوائي"
+
+#, fuzzy
+#| msgid "Yeraltı Şehri"
+msgid "Kapadokya Yeraltı Şehri"
+msgstr "المدينة تحت الأرض"
+
+msgid "Yeraltı Şehri"
+msgstr "المدينة تحت الأرض"
+
+#, fuzzy
+#| msgid "Peri Bacaları"
+msgid "Kapadokya Peri Bacaları"
+msgstr "مداخن الجنيات"
+
+msgid "Peri Bacaları"
+msgstr "مداخن الجنيات"
+
+# Experiences Section
+msgid "Eşsiz Deneyimler"
+msgstr "تجارب فريدة"
+
+msgid "Güneşin doğuşunu gökyüzünden izleyin"
+msgstr "شاهد شروق الشمس من السماء"
+
+msgid "Eşsiz vadileri keşfedin"
+msgstr "اكتشف الأودية الفريدة"
+
+msgid "Büyüleyici peri bacalarını keşfedin"
+msgstr "اكتشف مداخن الجنيات الساحرة"
+
+msgid "Göreme, Nevşehir, Türkiye"
+msgstr "غوريمه، نيفشهير، تركيا"
 
 # Footer
 msgid "Hızlı Linkler"
 msgstr "روابط سريعة"
 
+msgid "Odalar"
+msgstr "الغرف"
+
+# Reviews
+msgid "Yorumlar"
+msgstr "التقييمات"
+
 msgid "Sosyal Medya"
 msgstr "وسائل التواصل الاجتماعي"
 
+msgid "Facebook"
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Instagram"
+msgstr ""
+
 msgid "Konum"
 msgstr "الموقع"
+
+msgid "Patina Cappadocia Konum Haritası"
+msgstr ""
 
 msgid "Copyright"
 msgstr "حقوق الطبع والنشر"
@@ -407,8 +928,72 @@ msgstr "حقوق الطبع والنشر"
 msgid "Tüm hakları saklıdır"
 msgstr "جميع الحقوق محفوظة"
 
-msgid "Göreme, Nevşehir, Türkiye"
-msgstr "غوريمه، نيفشهير، تركيا"
+msgid "Rezervasyon"
+msgstr "الحجز"
+
+msgid "Bizi Arayın"
+msgstr "اتصل بنا"
+
+# Booking
+msgid "Hemen Rezervasyon Yap"
+msgstr "احجز الآن"
+
+msgid "Özel Organizasyonlar"
+msgstr "مناسبات خاصة"
+
+msgid "Balayı ve Nikah Organizasyonları"
+msgstr "تنظيم شهر العسل والزفاف"
+
+msgid "Unutulmaz Anlar İçin"
+msgstr "لحظات لا تُنسى"
+
+#, fuzzy
+#| msgid ""
+#| "Balayınızı ve nikah organizasyonunuzu otelimizde balon ve vadi manzaralı "
+#| "terasımızda yapmak isterseniz organizasyonla ilgili otel numaralarından "
+#| "ve mail adresinden lütfen rezervasyon yaptırınız."
+msgid ""
+"Balayınızı ve nikah organizasyonunuzu otelimizde balon ve vadi manzaralı "
+"terasımızda yapmak isterseniz WhatsApp üzerinden bizimle iletişime geçerek "
+"rezervasyon yaptırabilirsiniz."
+msgstr ""
+"إذا كنت ترغب في تنظيم شهر العسل والزفاف في فندقنا على شرفتنا المطلة على "
+"المنطاد والوادي، يرجى الحجز من خلال أرقام هواتف الفندق وعنوان البريد "
+"الإلكتروني."
+
+msgid "Hızlı İletişim"
+msgstr "اتصال سريع"
+
+msgid "Balon ve Vadi Manzaralı Teras"
+msgstr "شرفة مطلة على المنطاد والوادي"
+
+msgid "Özel Dekorasyon Hizmeti"
+msgstr "خدمة ديكور مخصصة"
+
+msgid "Profesyonel Fotoğraf ve Video"
+msgstr "تصوير وفيديو احترافي"
+
+msgid "Özel Menü Seçenekleri"
+msgstr "خيارات قائمة مخصصة"
+
+msgid "Jakuzili Balayı Süitleri"
+msgstr "أجنحة شهر العسل مع جاكوزي"
+
+msgid "WhatsApp ile İletişime Geç"
+msgstr "تواصل عبر واتساب"
+
+msgid "Balayı ve Nikah Organizasyonu"
+msgstr "تنظيم شهر العسل والزفاف"
+
+msgid "Hayalinizdeki Organizasyon"
+msgstr "مناسبتك المثالية"
+
+msgid "Kapadokya'nın büyüleyici manzarası eşliğinde"
+msgstr "مصحوبة بمنظر كابادوكيا الساحر"
+
+# Social Media
+msgid "Instagram'da Bizi Takip Edin"
+msgstr "تابعنا على إنستغرام"
 
 # Reviews
 msgid "Misafir Yorumları"
@@ -417,140 +1002,127 @@ msgstr "تقييمات الضيوف"
 msgid "Google'da Bizi Değerlendirin"
 msgstr "قيمنا على جوجل"
 
+msgid "Toplam"
+msgstr ""
+
+msgid "Yorum fotoğrafı"
+msgstr ""
+
+msgid "Henüz yorum bulunmamaktadır."
+msgstr ""
+
+msgid "Tüm Yorumları Gör"
+msgstr ""
+
 msgid "Google'da Değerlendir"
 msgstr "قيم على جوجل"
 
-msgid " 36 Değerlendirme"
-msgstr " ٣٦ تقييم"
+# Rooms Section
+msgid "Konforlu Odalar"
+msgstr "غرف مريحة"
 
-msgid "Değerlendir"
-msgstr "قيم"
+msgid "Odalarımız"
+msgstr "غرفنا"
 
-# Booking
-msgid "Hemen Rezervasyon Yap"
-msgstr "احجز الآن"
+msgid "Detayları Gör"
+msgstr "عرض التفاصيل"
 
-msgid "Rezervasyon Yap"
-msgstr "احجز الآن"
+# Gallery Modal
+msgid "Kapat"
+msgstr "إغلاق"
 
-msgid "Bizi Arayın"
-msgstr "اتصل بنا"
+msgid "Önceki"
+msgstr "السابق"
 
-msgid "Özel Banyo"
-msgstr "حمام خاص"
+msgid "Galeri Görüntüsü"
+msgstr "عرض المعرض"
 
-msgid "Romantik Aydınlatma"
-msgstr "إضاءة رومانسية"
+msgid "Sonraki"
+msgstr "التالي"
+
+msgid "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
+msgstr "تجربة إقامة لا تُنسى في قلب كابادوكيا الساحرة"
+
+msgid "Balayı & Nikah Organizasyonları"
+msgstr "تنظيم شهر العسل والزفاف"
+
+msgid "Balon Turu Organizasyonu"
+msgstr "تنظيم جولة المنطاد"
+
+msgid "Jakuzili Süitler"
+msgstr "أجنحة مع جاكوزي"
+
+msgid "Patina Cappadocia Yorumları - Misafir Değerlendirmeleri"
+msgstr ""
+
+msgid "Sizlerin Deneyimleri Bizim İçin Çok Değerli"
+msgstr ""
+
+msgid "Ortalama Puan"
+msgstr ""
+
+msgid "Toplam Yorum"
+msgstr ""
+
+msgid "Yıldız"
+msgstr ""
+
+msgid "Devamını Oku"
+msgstr ""
+
+msgid "Daha Az Göster"
+msgstr ""
+
+#, fuzzy
+#| msgid "Galeri Görüntüsü"
+msgid "Google'da Görüntüle"
+msgstr "عرض المعرض"
+
+msgid ""
+"Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All "
+"Room Types"
+msgstr ""
+"Patina Cappadocia غرف - فنادق كهفية تركيا | أجنحة حمام تركي | جميع أنواع "
+"الغرف"
 
 msgid "Lüks Mağara Odalarımız"
 msgstr "غرف الكهوف الفاخرة لدينا"
 
-msgid "iletisim/"
-msgstr "اتصل-بنا/"
+# Room Descriptions
+msgid "Kapadokya'nın Doğal Dokusunda Modern Konfor"
+msgstr "راحة حديثة في نسيج كابادوكيا الطبيعي"
 
-msgid "hakkimizda/"
-msgstr "عنا/"
+# Room Features
+msgid "Oda Özellikleri"
+msgstr "مميزات الغرفة"
 
-msgid "odalar/"
-msgstr "الغرف/"
+msgid "Rezervasyon Yap"
+msgstr "احجز الآن"
 
-# Turkish Hamam Cave Room
-msgid "Türk Hamamlı Mağara Oda"
-msgstr "غرفة الكهف مع الحمام التركي"
+#, fuzzy
+#~| msgid ""
+#~| "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur "
+#~| "arayan çiftler ve aileler için Patina Cappadocia, büyüleyici "
+#~| "Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır."
+#~ msgid ""
+#~ "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur "
+#~ "arayan çiftler ve aileler için Patina Kapadokya, büyüleyici Kapadokya'yı "
+#~ "keşfetmek için mükemmel bir başlangıç noktasıdır."
+#~ msgstr ""
+#~ "سواء للمغامرين الذين يتطلعون لاكتشاف الطبيعة والتاريخ، أو الأزواج "
+#~ "والعائلات الذين يبحثون عن السلام، يعد باتينا كابادوكيا نقطة انطلاق مثالية "
+#~ "لاكتشاف كابادوكيا الساحرة."
 
-msgid "Geleneksel Hamam Deneyimi"
-msgstr "تجربة الحمام التقليدية"
+#~ msgid "E-posta"
+#~ msgstr "البريد الإلكتروني"
 
-msgid "Türk Hamamlı Mağara Odamız, geleneksel Türk hamam kültürünü modern lüksle buluşturuyor. Otantik mağara atmosferinde, özel tasarım Türk hamamı, sıcak taş döşeme ve geleneksel mimari detaylarla unutulmaz bir deneyim sunuyor."
-msgstr "تجمع غرفة الكهف مع الحمام التركي بين ثقافة الحمام التركي التقليدية والفخامة الحديثة. في أجواء كهف أصيلة، تقدم تجربة لا تُنسى مع حمام تركي مصمم خصيصاً وأرضيات حجرية مُدفأة وتفاصيل معمارية تقليدية."
+# Contact Page
+#, fuzzy
+#~| msgid "İletişim - Patina Cappadocia"
+#~ msgid "Patina Cappadocia Detay"
+#~ msgstr "اتصال - باتينا كابادوكيا"
 
-msgid "Özel Türk Hamamı"
-msgstr "حمام تركي خاص"
-
-msgid "Sıcak Taş Döşeme"
-msgstr "أرضيات حجرية مُدفأة"
-
-msgid "Doğal Mağara Duvarları"
-msgstr "جدران كهف طبيعية"
-
-msgid "Hamam Masaj Alanı"
-msgstr "منطقة مساج الحمام"
-
-msgid "Geleneksel Şömine"
-msgstr "مدفأة تقليدية"
-
-msgid "Geleneksel Türk hamam deneyimi ile lüks konaklama"
-msgstr "إقامة فاخرة مع تجربة الحمام التركي التقليدي"
-
-msgid "Türk Hamamlı Mağara Oda Detay"
-msgstr "تفاصيل غرفة الكهف مع الحمام التركي"
-
-msgid "Türk Hamamlı Mağara Oda Hamam"
-msgstr "حمام غرفة الكهف التركية"
-
-msgid "Türk Hamamlı Mağara Oda Banyo"
-msgstr "حمام غرفة الكهف مع الحمام التركي"
-
-# Page Titles with Patina Cappadocia Brand
-msgid "Patina Cappadocia - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
-msgstr "Patina Cappadocia - فنادق كهفية تركيا | أجنحة حمام تركي | سياحة تركيا"
-
-msgid "Patina Cappadocia Rooms - Turkey Cave Hotels | Turkish Bath Suites | All Room Types"
-msgstr "Patina Cappadocia غرف - فنادق كهفية تركيا | أجنحة حمام تركي | جميع أنواع الغرف"
-
-msgid "Patina Cappadocia About - Turkey Cave Hotels Reviews | Turkish Bath Hotel Experience"
-msgstr "Patina Cappadocia حول - تقييمات فنادق كهفية تركيا | تجربة فندق حمام تركي"
-
-msgid "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism"
-msgstr "Patina Cappadocia دليل - فنادق تركيا | فنادق كهفية حمام تركي | سياحة تركيا"
-
-msgid "Patina Cappadocia Contact - Turkey Cave Hotels | Turkish Bath Suites | Turkey Tourism"
-msgstr "Patina Cappadocia اتصال - فنادق كهفية تركيا | أجنحة حمام تركي | سياحة تركيا"
-
-msgid "Turkey Hotels Complete Guide - Best Accommodation Turkey"
-msgstr "دليل كامل فنادق تركيا - أفضل إقامة تركيا"
-
-msgid "Cave Hotels, Turkish Bath Suites, Balloon Tour Hotels - Complete Turkey Tourism Guide"
-msgstr "فنادق كهفية، أجنحة حمام تركي، فنادق جولات المنطاد - دليل سياحة تركيا كامل"
-
-msgid "Best Hotels in Turkey - Complete Tourism Guide"
-msgstr "أفضل فنادق في تركيا - دليل سياحي كامل"
-
-msgid "Turkish Hamam Cave Rooms - Traditional bath culture experience"
-msgstr "غرف كهفية حمام تركي - تجربة ثقافة الاستحمام التقليدية"
-
-msgid "Turkish Bath Hotels - Wellness and Cultural Experience"
-msgstr "فنادق حمام تركي - تجربة العافية والثقافة"
-
-msgid "Turkey Tourism Information"
-msgstr "معلومات سياحة تركيا"
-
-msgid "WhatsApp Support"
-msgstr "دعم واتساب"
-
-msgid "5.0 Turkey Hotel Rating"
-msgstr "5.0 تقييم فندق تركيا"
-
-msgid "Cappadocia, Turkey"
-msgstr "كابادوكيا، تركيا"
-
-msgid "Turkish Hamam Suites"
-msgstr "أجنحة حمام تركي"
-
-msgid "Cave Hotel Experience"
-msgstr "تجربة فندق كهفي"
-
-msgid "Turkey Hotel Types"
-msgstr "أنواع فنادق تركيا"
-
-msgid "Turkish Bath Suite Rooms"
-msgstr "غرف أجنحة حمام تركي"
-
-msgid "Balloon Tour Hotels"
-msgstr "فنادق جولات المنطاد"
-
-msgid "Turkey Hotel Reviews"
-msgstr "تقييمات فنادق تركيا"
-
-msgid "Turkey Tourism Contact"
-msgstr "اتصال سياحة تركيا"
+#, fuzzy
+#~| msgid "Panoramik Manzara"
+#~ msgid "Patina Cappadocia Manzara"
+#~ msgstr "إطلالة بانورامية"

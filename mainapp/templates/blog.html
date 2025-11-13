@@ -2,7 +2,125 @@
 {% load static %}
 {% load i18n %}
 
-{% block title %}{% trans "Patina Cappadocia Guide - Turkey Hotels | Cave Hotels Turkish Bath | Turkey Tourism" %}{% endblock %}
+{% block title %}
+    {% if LANGUAGE_CODE == 'tr' %}
+        Nevşehir Otelleri Rehberi - En İyi Kapadokya Otelleri | Uçhisar Cave Otelleri | Patina Cappadocia
+    {% elif LANGUAGE_CODE == 'en' %}
+        Cappadocia Hotels Guide - Best Cave Hotels Turkey | Balloon Tour Hotels | Patina Cappadocia
+    {% elif LANGUAGE_CODE == 'de' %}
+        Kappadokien Hotels Reiseführer - Beste Höhlenhotels Türkei | Ballonfahrt Hotels | Patina Cappadocia
+    {% elif LANGUAGE_CODE == 'fr' %}
+        Guide Hôtels Cappadoce - Meilleurs Hôtels Troglodytes Turquie | Tours Montgolfière | Patina Cappadocia
+    {% elif LANGUAGE_CODE == 'es' %}
+        Guía Hoteles Capadocia - Mejores Hoteles Cueva Turquía | Tours Globo | Patina Cappadocia
+    {% elif LANGUAGE_CODE == 'ru' %}
+        Путеводитель Отели Каппадокия - Лучшие Пещерные Отели Турции | Туры Воздушный Шар | Patina Cappadocia
+    {% elif LANGUAGE_CODE == 'ar' %}
+        دليل فنادق كابادوكيا - أفضل الفنادق الكهفية تركيا | جولات المنطاد | Patina Cappadocia
+    {% else %}
+        Cappadocia Hotels Guide - Best Cave Hotels Turkey | Patina Cappadocia
+    {% endif %}
+{% endblock %}
+
+{% block extra_head %}
+    <!-- Blog Page Specific Meta Tags -->
+    {% if LANGUAGE_CODE == 'tr' %}
+    <meta name="description" content="⭐ Nevşehir Otelleri Rehberi - En İyi Kapadokya Otelleri | Uçhisar Cave Otelleri | Nevşehir Jakuzili Otel | Nevşehir Otelleri En Yüksek Puan | Mağara Otel Kapadokya | Türk Hamamlı Suit Odalar | Balon Turu Otelleri | Kapadokya Konaklama Rehberi">
+    <meta name="keywords" content="nevşehir otelleri rehberi, kapadokya otelleri rehberi, uçhisar otelleri, nevşehir jakuzili otel, nevşehir otelleri en yüksek puan, nevşehir cave oteller, uçhisar cave otelleri, kapadokya jakuzili oteller, nevşehir butik otel, uçhisar butik otelleri, nevşehir mağara otel, nevşehir balayı otelleri, uçhisar jakuzili oteller, kapadokya otelleri uçhisar, nevşehir konaklama, kapadokya rehber, balon turu otelleri, türk hamamlı oteller, kapadokya turizm rehberi">
+    {% elif LANGUAGE_CODE == 'en' %}
+    <meta name="description" content="⭐ Complete Cappadocia Hotels Guide - Best Cave Hotels Turkey | Balloon Tour Hotels | Turkish Bath Suite Rooms | Luxury Cave Accommodations | Cappadocia Travel Guide | Best Hotels in Cappadocia | Nevşehir Hotels | Uçhisar Hotels | Göreme Hotels">
+    <meta name="keywords" content="cappadocia hotels guide, cave hotels turkey, cappadocia travel guide, balloon tour hotels, turkish bath hotels, luxury cave hotels, nevşehir hotels, uçhisar hotels, göreme hotels, cappadocia accommodation, best hotels cappadocia, cappadocia tourism, cave suite turkey, jacuzzi hotels cappadocia, honeymoon hotels cappadocia, fairy chimney hotels, cappadocia boutique hotels">
+    {% elif LANGUAGE_CODE == 'de' %}
+    <meta name="description" content="⭐ Kompletter Kappadokien Hotels Reiseführer - Beste Höhlenhotels Türkei | Ballonfahrt Hotels | Türkisches Bad Suiten | Luxus Höhlenhotels | Kappadokien Reiseführer | Beste Hotels Kappadokien | Nevşehir Hotels | Uçhisar Hotels | Göreme Hotels">
+    <meta name="keywords" content="kappadokien hotels reiseführer, höhlenhotels türkei, kappadokien reiseführer, ballonfahrt hotels, türkisches bad hotels, luxus höhlenhotels, nevşehir hotels, uçhisar hotels, göreme hotels, kappadokien unterkünfte, beste hotels kappadokien, kappadokien tourismus, höhlen suite türkei, jacuzzi hotels kappadokien, flitterwochen hotels kappadokien, feenkamin hotels">
+    {% elif LANGUAGE_CODE == 'fr' %}
+    <meta name="description" content="⭐ Guide Complet Hôtels Cappadoce - Meilleurs Hôtels Troglodytes Turquie | Tours Montgolfière | Suites Bain Turc | Hôtels Troglodytes Luxe | Guide Voyage Cappadoce | Meilleurs Hôtels Cappadoce | Hôtels Nevşehir | Hôtels Uçhisar | Hôtels Göreme">
+    <meta name="keywords" content="guide hôtels cappadoce, hôtels troglodytes turquie, guide voyage cappadoce, hôtels montgolfière, bain turc hôtels, hôtels troglodytes luxe, hôtels nevşehir, hôtels uçhisar, hôtels göreme, hébergement cappadoce, meilleurs hôtels cappadoce, tourisme cappadoce, suite troglodyte turquie, hôtels jacuzzi cappadoce">
+    {% elif LANGUAGE_CODE == 'es' %}
+    <meta name="description" content="⭐ Guía Completa Hoteles Capadocia - Mejores Hoteles Cueva Turquía | Tours Globo | Suites Baño Turco | Hoteles Cueva Lujo | Guía Viaje Capadocia | Mejores Hoteles Capadocia | Hoteles Nevşehir | Hoteles Uçhisar | Hoteles Göreme">
+    <meta name="keywords" content="guía hoteles capadocia, hoteles cueva turquía, guía viaje capadocia, hoteles globo, baño turco hoteles, hoteles cueva lujo, hoteles nevşehir, hoteles uçhisar, hoteles göreme, alojamiento capadocia, mejores hoteles capadocia, turismo capadocia, suite cueva turquía, hoteles jacuzzi capadocia">
+    {% elif LANGUAGE_CODE == 'ru' %}
+    <meta name="description" content="⭐ Полный Путеводитель Отели Каппадокия - Лучшие Пещерные Отели Турции | Туры Воздушный Шар | Люксы Турецкая Баня | Роскошные Пещерные Отели | Путеводитель Каппадокия | Лучшие Отели Каппадокия | Отели Невшехир | Отели Учхисар | Отели Гёреме">
+    <meta name="keywords" content="путеводитель отели каппадокия, пещерные отели турция, путеводитель каппадокия, отели воздушный шар, турецкая баня отели, роскошные пещерные отели, отели невшехир, отели учхисар, отели гёреме, размещение каппадокия, лучшие отели каппадокия, туризм каппадокия, пещерный люкс турция, отели джакузи каппадокия">
+    {% elif LANGUAGE_CODE == 'ar' %}
+    <meta name="description" content="⭐ دليل شامل فنادق كابادوكيا - أفضل الفنادق الكهفية تركيا | جولات المنطاد | أجنحة حمام تركي | فنادق كهفية فاخرة | دليل سفر كابادوكيا | أفضل فنادق كابادوكيا | فنادق نوشهر | فنادق أوتشهيسار | فنادق جوريمي">
+    <meta name="keywords" content="دليل فنادق كابادوكيا، فنادق كهفية تركيا، دليل سفر كابادوكيا، فنادق المنطاد، حمام تركي فنادق، فنادق كهفية فاخرة، فنادق نوشهر، فنادق أوتشهيسار، فنادق جوريمي، إقامة كابادوكيا، أفضل فنادق كابادوكيا، سياحة كابادوكيا، جناح كهفي تركيا، فنادق جاكوزي كابادوكيا">
+    {% endif %}
+    
+    <!-- Open Graph for Blog -->
+    {% if LANGUAGE_CODE == 'tr' %}
+    <meta property="og:title" content="Nevşehir Otelleri Rehberi - En İyi Kapadokya Otelleri | Patina Cappadocia">
+    <meta property="og:description" content="Kapadokya'nın en kapsamlı otel rehberi. Cave oteller, jakuzili odalar, balon turu otelleri ve daha fazlası hakkında detaylı bilgiler.">
+    {% elif LANGUAGE_CODE == 'en' %}
+    <meta property="og:title" content="Complete Cappadocia Hotels Guide - Best Cave Hotels | Patina Cappadocia">
+    <meta property="og:description" content="The most comprehensive hotel guide for Cappadocia. Detailed information about cave hotels, jacuzzi rooms, balloon tour hotels and more.">
+    {% endif %}
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    
+    <!-- Structured Data for Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{% if LANGUAGE_CODE == 'tr' %}Nevşehir Otelleri Rehberi - En İyi Kapadokya Otelleri{% elif LANGUAGE_CODE == 'en' %}Complete Cappadocia Hotels Guide - Best Cave Hotels{% else %}Cappadocia Hotels Guide{% endif %}",
+      "description": "{% if LANGUAGE_CODE == 'tr' %}Kapadokya'nın en kapsamlı otel rehberi. Cave oteller, jakuzili odalar, balon turu otelleri hakkında detaylı bilgiler.{% elif LANGUAGE_CODE == 'en' %}The most comprehensive hotel guide for Cappadocia. Detailed information about cave hotels, jacuzzi rooms, balloon tour hotels.{% else %}Complete guide to Cappadocia hotels.{% endif %}",
+      "author": {
+        "@type": "Organization",
+        "name": "Patina Cappadocia"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Patina Cappadocia",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{% static 'img/logo.png' %}"
+        }
+      },
+      "datePublished": "2024-01-15",
+      "dateModified": "2024-01-15",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ request.build_absolute_uri }}"
+      },
+      "image": "{% static 'img/views/ballons.jpg' %}"
+    }
+    </script>
+    
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "{% if LANGUAGE_CODE == 'tr' %}Nevşehir'de en iyi cave otel hangisidir?{% elif LANGUAGE_CODE == 'en' %}What is the best cave hotel in Nevşehir?{% else %}Best cave hotel in Nevşehir?{% endif %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% if LANGUAGE_CODE == 'tr' %}Patina Cappadocia, Google yorumlarında 5.0 puan ile Nevşehir'in en yüksek puanlı cave otelidir. Türk hamamlı suit odalar, jakuzili süitler ve peri bacaları manzarası ile eşsiz bir konaklama deneyimi sunmaktadır.{% elif LANGUAGE_CODE == 'en' %}Patina Cappadocia is the highest-rated cave hotel in Nevşehir with a 5.0 rating on Google. It offers unique accommodation with Turkish hamam suite rooms, jacuzzi suites, and fairy chimney views.{% else %}Patina Cappadocia is the best cave hotel in Nevşehir.{% endif %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% if LANGUAGE_CODE == 'tr' %}Kapadokya'da balon turu için hangi otel en iyisidir?{% elif LANGUAGE_CODE == 'en' %}Which hotel is best for balloon tours in Cappadocia?{% else %}Best hotel for balloon tours?{% endif %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% if LANGUAGE_CODE == 'tr' %}Uçhisar bölgesindeki oteller, balon turu için en uygun konumdadır. Patina Cappadocia, panoramik balon izleme terasları ve profesyonel balon tur organizasyonu ile misafirlerine unutulmaz bir deneyim sunmaktadır.{% elif LANGUAGE_CODE == 'en' %}Hotels in Uçhisar region offer the best location for balloon tours. Patina Cappadocia provides unforgettable experiences with panoramic balloon viewing terraces and professional balloon tour organization.{% else %}Uçhisar hotels are best for balloon tours.{% endif %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% if LANGUAGE_CODE == 'tr' %}Kapadokya'da jakuzili otel var mı?{% elif LANGUAGE_CODE == 'en' %}Are there jacuzzi hotels in Cappadocia?{% else %}Jacuzzi hotels in Cappadocia?{% endif %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% if LANGUAGE_CODE == 'tr' %}Evet, Kapadokya'da jakuzili cave oteller bulunmaktadır. Patina Cappadocia, peri bacaları manzaralı jakuzili süitler ve özel teraslar ile romantik bir konaklama deneyimi sunmaktadır.{% elif LANGUAGE_CODE == 'en' %}Yes, there are jacuzzi cave hotels in Cappadocia. Patina Cappadocia offers romantic accommodation with jacuzzi suites overlooking fairy chimneys and private terraces.{% else %}Yes, jacuzzi cave hotels are available in Cappadocia.{% endif %}"
+          }
+        }
+      ]
+    }
+    </script>
+{% endblock %}
 
 {% block content %}
 <div class="blog_page">
@@ -167,6 +285,89 @@
                             <li>{% trans "Winter (December-February) - Thermal spa hotels and wellness retreats" %}</li>
                         </ul>
                     </article>
+
+                    <!-- Göreme Hotels Guide -->
+                    <article class="blog_article">
+                        <h2>{% trans "Göreme Hotels - Heart of Cappadocia Tourism" %}</h2>
+                        <p>{% trans "Göreme, located in the center of Cappadocia, is one of the most popular destinations for cave hotel experiences. Göreme hotels offer authentic cave architecture combined with modern amenities." %}</p>
+                        
+                        <h3>{% trans "Göreme Hotel Features" %}</h3>
+                        <ul>
+                            <li>{% trans "Historic cave rooms with modern facilities" %}</li>
+                            <li>{% trans "Walking distance to Göreme Open Air Museum" %}</li>
+                            <li>{% trans "Traditional Turkish breakfast with local products" %}</li>
+                            <li>{% trans "Cave restaurants serving authentic Turkish cuisine" %}</li>
+                            <li>{% trans "Easy access to hiking trails and valleys" %}</li>
+                            <li>{% trans "Balloon tour pickup services" %}</li>
+                        </ul>
+                    </article>
+
+                    <!-- Cappadocia Travel Tips -->
+                    <article class="blog_article">
+                        <h2>{% trans "Cappadocia Travel Tips - Complete Visitor Guide" %}</h2>
+                        <p>{% trans "Planning your Cappadocia trip? Here are essential tips to make the most of your visit to this magical region." %}</p>
+                        
+                        <h3>{% trans "What to See in Cappadocia" %}</h3>
+                        <ul>
+                            <li>{% trans "Hot air balloon rides at sunrise" %}</li>
+                            <li>{% trans "Göreme Open Air Museum - UNESCO World Heritage Site" %}</li>
+                            <li>{% trans "Underground cities (Kaymaklı, Derinkuyu)" %}</li>
+                            <li>{% trans "Fairy chimneys and rock formations" %}</li>
+                            <li>{% trans "Valley hiking trails (Love Valley, Rose Valley, Red Valley)" %}</li>
+                            <li>{% trans "Traditional pottery workshops in Avanos" %}</li>
+                            <li>{% trans "Sunset viewing points (Sunset Point, Uçhisar Castle)" %}</li>
+                        </ul>
+                        
+                        <h3>{% trans "Best Activities in Cappadocia" %}</h3>
+                        <ul>
+                            <li>{% trans "Hot air balloon tours (book in advance)" %}</li>
+                            <li>{% trans "ATV tours through valleys" %}</li>
+                            <li>{% trans "Horseback riding tours" %}</li>
+                            <li>{% trans "Turkish night shows with traditional dances" %}</li>
+                            <li>{% trans "Wine tasting at local wineries" %}</li>
+                            <li>{% trans "Photography tours for Instagram-worthy shots" %}</li>
+                        </ul>
+                    </article>
+
+                    <!-- FAQ Section -->
+                    <article class="blog_article faq_section">
+                        <h2>{% trans "Frequently Asked Questions - Cappadocia Hotels" %}</h2>
+                        
+                        <div class="faq_item">
+                            <h3>{% trans "What is the best cave hotel in Nevşehir?" %}</h3>
+                            <p>{% trans "Patina Cappadocia is the highest-rated cave hotel in Nevşehir with a 5.0 rating on Google reviews. It offers unique accommodation with Turkish hamam suite rooms, jacuzzi suites, and panoramic fairy chimney views. The hotel combines authentic cave architecture with modern luxury amenities." %}</p>
+                        </div>
+
+                        <div class="faq_item">
+                            <h3>{% trans "Which hotel is best for balloon tours in Cappadocia?" %}</h3>
+                            <p>{% trans "Hotels in Uçhisar region offer the best location for balloon tours. Patina Cappadocia provides unforgettable experiences with panoramic balloon viewing terraces and professional balloon tour organization. The hotel coordinates with certified balloon operators and offers early morning pickup services." %}</p>
+                        </div>
+
+                        <div class="faq_item">
+                            <h3>{% trans "Are there jacuzzi hotels in Cappadocia?" %}</h3>
+                            <p>{% trans "Yes, there are several jacuzzi cave hotels in Cappadocia. Patina Cappadocia offers romantic accommodation with jacuzzi suites overlooking fairy chimneys and private terraces. These suites are perfect for honeymooners and couples seeking a romantic getaway." %}</p>
+                        </div>
+
+                        <div class="faq_item">
+                            <h3>{% trans "What is the best time to visit Cappadocia?" %}</h3>
+                            <p>{% trans "The best times to visit Cappadocia are spring (March-May) and autumn (September-November) when the weather is mild and perfect for outdoor activities. Summer can be hot, while winter offers a unique experience with snow-covered fairy chimneys, though some activities may be limited." %}</p>
+                        </div>
+
+                        <div class="faq_item">
+                            <h3>{% trans "How far in advance should I book a cave hotel in Cappadocia?" %}</h3>
+                            <p>{% trans "It's recommended to book at least 2-3 months in advance, especially for peak seasons (spring and autumn) and if you want specific room types like jacuzzi suites or Turkish hamam rooms. During balloon festival periods, hotels can be fully booked months in advance." %}</p>
+                        </div>
+
+                        <div class="faq_item">
+                            <h3>{% trans "What amenities do cave hotels in Cappadocia offer?" %}</h3>
+                            <p>{% trans "Cave hotels in Cappadocia typically offer modern amenities including WiFi, air conditioning, private bathrooms, and sometimes jacuzzis or Turkish hamam facilities. Many hotels also provide terraces with panoramic views, traditional Turkish breakfast, and assistance with booking tours and activities." %}</p>
+                        </div>
+
+                        <div class="faq_item">
+                            <h3>{% trans "Is it safe to stay in a cave hotel?" %}</h3>
+                            <p>{% trans "Yes, cave hotels in Cappadocia are completely safe. They are professionally designed and maintained, meeting all safety standards. The caves are reinforced and equipped with modern safety systems including fire alarms, emergency exits, and proper ventilation." %}</p>
+                        </div>
+                    </article>
                 </div>
 
                 <!-- Sidebar -->
@@ -219,6 +420,17 @@
                                 <li><i class="fas fa-map-pin"></i> Bodrum Luxury Hotels</li>
                             </ul>
                         </div>
+
+                        <!-- Related Articles Widget -->
+                        <div class="sidebar_widget related_widget">
+                            <h4>{% trans "Related Pages" %}</h4>
+                            <ul>
+                                <li><a href="{% url 'rooms' %}">{% trans "Cave Hotel Rooms" %}</a></li>
+                                <li><a href="{% url 'reviews' %}">{% trans "Guest Reviews" %}</a></li>
+                                <li><a href="{% url 'about' %}">{% trans "About Patina Cappadocia" %}</a></li>
+                                <li><a href="{% url 'contact' %}">{% trans "Contact Us" %}</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,19 +444,25 @@
     min-height: 100vh;
 }
 
+
 .blog_hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("{% static 'img/views/ballons.jpg' %}");
-    background-size: cover;
-    background-position: center;
-    padding: 120px 0 80px;
-    color: #fff;
+    background: linear-gradient(135deg, #F5F1EB 0%, #E6DFD3 100%);
+    padding: 100px 0 60px;
     text-align: center;
+    border-bottom: 1px solid #D4C5B0;
 }
 
-.blog_hero h1 {
-    font-size: 3rem;
-    font-weight: 600;
+.blog_hero .hero_content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 20px;
+    color: #5C4A37;
+}
+
+.blog_hero .hero_content .lead {
+    font-size: 1.5rem;
+    color: #7D6E3C;
+    font-weight: 300;
 }
 
 .blog_content {
@@ -369,14 +587,52 @@
     color: var(--primary);
 }
 
+/* FAQ Section Styles */
+.faq_section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.faq_item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.faq_item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq_item h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.faq_item p {
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+}
+
 @media (max-width: 991px) {
     .blog_sidebar {
         padding-left: 0;
         margin-top: 40px;
     }
     
-    .blog_hero h1 {
-        font-size: 2rem;
+    .blog_hero {
+        padding: 80px 0 40px;
+    }
+    
+    .blog_hero .hero_content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .blog_hero .hero_content .lead {
+        font-size: 1.2rem;
     }
     
     .blog_article {

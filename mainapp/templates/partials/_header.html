@@ -15,6 +15,7 @@
                 <li><a href="{% url 'rooms' %}">{% trans "Odalar" %}</a></li>
                 <li><a href="{% url 'blog' %}">{% trans "Rehber" %}</a></li>
                 <li><a href="{% url 'about' %}">{% trans "Hakkımızda" %}</a></li>
+                <li><a href="{% url 'reviews' %}">{% trans "Yorumlar" %}</a></li>
                 <li><a href="{% url 'contact' %}">{% trans "İletişim" %}</a></li>
             </ul>
         </nav>
@@ -51,6 +52,7 @@
                 <li><a href="{% url 'rooms' %}">{% trans "Odalar" %}</a></li>
                 <li><a href="{% url 'blog' %}">{% trans "Rehber" %}</a></li>
                 <li><a href="{% url 'about' %}">{% trans "Hakkımızda" %}</a></li>
+                <li><a href="{% url 'reviews' %}">{% trans "Yorumlar" %}</a></li>
                 <li><a href="{% url 'contact' %}">{% trans "İletişim" %}</a></li>
             </ul>
         </nav>
@@ -397,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
-    const reviewsBadge = document.querySelector('.google-reviews-badge');
+    const badgesContainer = document.querySelector('.badges-container');
     const body = document.body;
 
     // Scroll effect
@@ -415,8 +417,8 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.toggle('active');
         body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
         
-        if (reviewsBadge) {
-            reviewsBadge.style.display = mobileMenu.classList.contains('active') ? 'none' : '';
+        if (badgesContainer) {
+            badgesContainer.style.display = mobileMenu.classList.contains('active') ? 'none' : '';
         }
     });
 
@@ -449,52 +451,6 @@ function getCookie(name) {
     return cookieValue;
 }
 
-function changeLang(lang) {
-    const csrftoken = getCookie('csrftoken');
-    
-    // Tüm dil seçicileri devre dışı bırak
-    document.querySelectorAll('.lang-select select').forEach(select => {
-        select.disabled = true;
-    });
-
-    fetch('{% url "set_language" %}', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'X-CSRFToken': csrftoken
-        },
-        body: new URLSearchParams({
-            'language': lang,
-            'next': window.location.pathname
-        })
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Dil değiştirme başarısız oldu');
-        }
-        // URL'yi güncelle ve sayfayı yeniden yükle
-        const currentPath = window.location.pathname;
-        const pathParts = currentPath.split('/');
-        
-        // İlk parça boş string (/) ve ikinci parça dil kodu olacak
-        if (pathParts.length > 1) {
-            // Mevcut dil kodunu yenisiyle değiştir
-            pathParts[1] = lang;
-            const newPath = pathParts.join('/');
-            window.location.href = newPath;
-        } else {
-            // Eğer URL'de dil kodu yoksa, yeni dil koduyla birlikte yönlendir
-            window.location.href = '/' + lang + currentPath;
-        }
-    })
-    .catch(error => {
-        console.error('Hata:', error);
-        // Hata durumunda seçicileri tekrar etkinleştir
-        document.querySelectorAll('.lang-select select').forEach(select => {
-            select.disabled = false;
-            select.value = '{{ CURRENT_LANGUAGE }}';
-        });
-    });
-}
+// changeLang fonksiyonu base.html'de tanımlı, burada override etmiyoruz
 </script>
 

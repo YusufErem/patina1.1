@@ -3,14 +3,40 @@
 
 {% if about_sections %}
     {% for section in about_sections %}
-    <div class="about_area">
-        <div class="container">
-            <div class="row align-items-center">
-                {% if section.image_position == 'left' %}
+        {% if forloop.first %}
+        <div class="about_area">
+            <div class="container">
+                <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="about_thumb">
                             <div class="main_img">
-                                <img src="{{ section.image.url }}" alt="{{ section.title_tr }}" class="img-fluid">
+                                <img src="/media/gallery/patina-1.jpg" alt="{% if LANGUAGE_CODE == 'tr' %}{{ section.title_tr }}{% elif LANGUAGE_CODE == 'en' %}{{ section.title_en }}{% else %}Patina Cappadocia{% endif %}" class="img-fluid">
+                            </div>
+                            <div class="gallery_grid">
+                                <div class="gallery_item">
+                                    <img src="{{ section.image.url }}" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                                </div>
+                                <div class="gallery_item">
+                                    <img src="/media/gallery/patina-2.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                                </div>
+                                <div class="gallery_item">
+                                    <img src="/media/gallery/patina-3.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                                </div>
+                                <div class="gallery_item">
+                                    <img src="/media/gallery/patina-4.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                                </div>
+                                <div class="gallery_item">
+                                    <img src="/media/gallery/patina-5.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                                </div>
+                                <div class="gallery_item">
+                                    <img src="/media/gallery/patina-6.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                                </div>
+                                <div class="gallery_item">
+                                    <img src="/media/gallery/patina-7.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                                </div>
+                                <div class="gallery_item">
+                                    <img src="/media/gallery/patina-8.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -38,86 +64,43 @@
                                     {% endif %}
                                 </h3>
                             </div>
-                            <p>
-                                {% if LANGUAGE_CODE == 'tr' %}
-                                    {{ section.content_tr }}
-                                {% elif LANGUAGE_CODE == 'en' %}
-                                    {{ section.content_en }}
-                                {% elif LANGUAGE_CODE == 'de' %}
-                                    {{ section.content_de }}
-                                {% elif LANGUAGE_CODE == 'fr' %}
-                                    {{ section.content_fr }}
-                                {% elif LANGUAGE_CODE == 'es' %}
-                                    {{ section.content_es }}
-                                {% elif LANGUAGE_CODE == 'ru' %}
-                                    {{ section.content_ru }}
-                                {% elif LANGUAGE_CODE == 'ar' %}
-                                    {{ section.content_ar }}
-                                {% else %}
-                                    {{ section.content_tr }}
-                                {% endif %}
-                            </p>
-                            <a href="{% url 'about' %}" class="line-button">{% trans "Daha Fazla" %}</a>
-                        </div>
-                    </div>
-                {% else %}
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="about_info">
-                            <div class="section_title mb-20px">
-                                <span>{% trans "Hakkımızda" %}</span>
-                                <h3>
+                            <div class="about_content">
+                                <p>
                                     {% if LANGUAGE_CODE == 'tr' %}
-                                        {{ section.title_tr }}
+                                        {{ section.content_tr }}
                                     {% elif LANGUAGE_CODE == 'en' %}
-                                        {{ section.title_en }}
+                                        {{ section.content_en }}
                                     {% elif LANGUAGE_CODE == 'de' %}
-                                        {{ section.title_de }}
+                                        {{ section.content_de }}
                                     {% elif LANGUAGE_CODE == 'fr' %}
-                                        {{ section.title_fr }}
+                                        {{ section.content_fr }}
                                     {% elif LANGUAGE_CODE == 'es' %}
-                                        {{ section.title_es }}
+                                        {{ section.content_es }}
                                     {% elif LANGUAGE_CODE == 'ru' %}
-                                        {{ section.title_ru }}
+                                        {{ section.content_ru }}
                                     {% elif LANGUAGE_CODE == 'ar' %}
-                                        {{ section.title_ar }}
+                                        {{ section.content_ar }}
                                     {% else %}
-                                        {{ section.title_tr }}
+                                        {{ section.content_tr }}
                                     {% endif %}
-                                </h3>
-                            </div>
-                            <p>
+                                </p>
                                 {% if LANGUAGE_CODE == 'tr' %}
-                                    {{ section.content_tr }}
+                                <p>{% trans "Patina Cappadocia, Kapadokya'nın eşsiz doğal güzelliklerini ve tarihi dokusunu modern konforla buluşturan özel bir butik oteldir. Uçhisar'ın büyüleyici manzaraları içerisinde yer alan otelimiz, geleneksel taş işçiliğiyle inşa edilmiş mimarisiyle bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size unutulmaz bir konaklama deneyimi yaşatıyor." %}</p>
+                                <p>{% trans "Otelimiz, ister doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır. Balon turları, vadiler arası yürüyüşler, yeraltı şehirleri ve peri bacaları gibi bölgenin en önemli turistik noktalarına yakın konumumuz sayesinde, misafirlerimiz Kapadokya'nın tüm güzelliklerini kolayca keşfedebilir." %}</p>
                                 {% elif LANGUAGE_CODE == 'en' %}
-                                    {{ section.content_en }}
-                                {% elif LANGUAGE_CODE == 'de' %}
-                                    {{ section.content_de }}
-                                {% elif LANGUAGE_CODE == 'fr' %}
-                                    {{ section.content_fr }}
-                                {% elif LANGUAGE_CODE == 'es' %}
-                                    {{ section.content_es }}
-                                {% elif LANGUAGE_CODE == 'ru' %}
-                                    {{ section.content_ru }}
-                                {% elif LANGUAGE_CODE == 'ar' %}
-                                    {{ section.content_ar }}
+                                <p>{% trans "Patina Cappadocia is a special boutique hotel that combines Cappadocia's unique natural beauty and historical texture with modern comfort. Located in the enchanting landscapes of Uçhisar, our hotel reflects the region's rich cultural heritage with its traditional stone architecture, while the contemporary facilities we offer provide you with an unforgettable accommodation experience." %}</p>
+                                <p>{% trans "Our hotel is the perfect starting point for exploring Cappadocia, whether for adventure seekers who want to explore nature and history, or for couples and families seeking tranquility. Thanks to our proximity to the region's most important tourist attractions such as balloon tours, valley walks, underground cities and fairy chimneys, our guests can easily discover all the beauties of Cappadocia." %}</p>
                                 {% else %}
-                                    {{ section.content_tr }}
+                                <p>{% trans "Patina Cappadocia is a special boutique hotel that combines Cappadocia's unique natural beauty and historical texture with modern comfort." %}</p>
                                 {% endif %}
-                            </p>
+                            </div>
                             <a href="{% url 'about' %}" class="line-button">{% trans "Daha Fazla" %}</a>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="about_thumb">
-                            <div class="main_img">
-                                <img src="{{ section.image.url }}" alt="{{ section.title_tr }}" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                {% endif %}
+                </div>
             </div>
         </div>
-    </div>
+        {% endif %}
     {% endfor %}
 {% else %}
     <!-- Fallback to static content -->
@@ -127,14 +110,32 @@
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="about_thumb">
                         <div class="main_img">
-                            <img src="{% static 'img/about/51.jpg' %}" alt="{% trans 'Patina Cappadocia Dış Görünüm' %}" class="img-fluid">
+                            <img src="/media/gallery/patina-1.jpg" alt="{% trans 'Patina Cappadocia Dış Görünüm' %}" class="img-fluid">
                         </div>
-                        <div class="small_img_group">
-                            <div class="small_img">
-                                <img src="{% static 'img/about/58.jpg' %}" alt="{% trans 'Patina Cappadocia Detay' %}" class="img-fluid">
+                        <div class="gallery_grid">
+                            <div class="gallery_item">
+                                <img src="{% static 'img/about/51.jpg' %}" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
                             </div>
-                            <div class="small_img">
-                                <img src="{% static 'img/about/65.jpg' %}" alt="{% trans 'Patina Cappadocia Manzara' %}" class="img-fluid">
+                            <div class="gallery_item">
+                                <img src="/media/gallery/patina-2.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                            </div>
+                            <div class="gallery_item">
+                                <img src="/media/gallery/patina-3.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                            </div>
+                            <div class="gallery_item">
+                                <img src="/media/gallery/patina-4.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                            </div>
+                            <div class="gallery_item">
+                                <img src="/media/gallery/patina-5.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                            </div>
+                            <div class="gallery_item">
+                                <img src="/media/gallery/patina-6.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                            </div>
+                            <div class="gallery_item">
+                                <img src="/media/gallery/patina-7.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
+                            </div>
+                            <div class="gallery_item">
+                                <img src="/media/gallery/patina-8.jpg" alt="{% trans 'Patina Cappadocia Galeri' %}" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -145,8 +146,10 @@
                             <span>{% trans "Hakkımızda" %}</span>
                             <h3>{% trans "Patina Cappadocia" %}</h3>
                         </div>
-                        <p>{% trans "Uçhisar'ın büyüleyici manzaraları içerisinde yer alan Patina Kapadokya, geleneksel dokuyu ve modern lüksü mükemmel bir uyumla bir araya getiriyor. Taş işçiliğiyle inşa edilen mimarimiz, bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size konforlu bir konaklama deneyimi yaşatıyor." %}</p>
-                        <p>{% trans "İster doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Patina Kapadokya, büyüleyici Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır." %}</p>
+                        <div class="about_content">
+                            <p>{% trans "Patina Cappadocia, Kapadokya'nın eşsiz doğal güzelliklerini ve tarihi dokusunu modern konforla buluşturan özel bir butik oteldir. Uçhisar'ın büyüleyici manzaraları içerisinde yer alan otelimiz, geleneksel taş işçiliğiyle inşa edilmiş mimarisiyle bölgenin zengin kültürel mirasını yansıtırken, sunduğumuz çağdaş imkanlar size unutulmaz bir konaklama deneyimi yaşatıyor." %}</p>
+                            <p>{% trans "Otelimiz, ister doğa ve tarih keşfine çıkmak isteyen maceraperestler, ister huzur arayan çiftler ve aileler için Kapadokya'yı keşfetmek için mükemmel bir başlangıç noktasıdır. Balon turları, vadiler arası yürüyüşler, yeraltı şehirleri ve peri bacaları gibi bölgenin en önemli turistik noktalarına yakın konumumuz sayesinde, misafirlerimiz Kapadokya'nın tüm güzelliklerini kolayca keşfedebilir." %}</p>
+                        </div>
                         <a href="{% url 'about' %}" class="line-button">{% trans "Daha Fazla" %}</a>
                     </div>
                 </div>
@@ -159,52 +162,71 @@
 .about_area {
     position: relative;
     background: #fff;
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .about_thumb {
     position: relative;
-    padding-right: 30px;
+    padding-right: 15px;
 }
 
 .main_img {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .main_img img {
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-    height: 400px;
+    height: 350px;
     object-fit: cover;
 }
 
-.small_img_group {
-    display: flex;
-    gap: 20px;
+.gallery_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 15px;
 }
 
-.small_img {
+.gallery_item {
     flex: 1;
-    border-radius: 15px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.small_img img {
+.gallery_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.gallery_item img {
     width: 100%;
-    height: 200px;
+    height: 120px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.small_img:hover img {
+.gallery_item:hover img {
     transform: scale(1.1);
+}
+
+.about_content {
+    margin-bottom: 1.5rem;
+}
+
+.about_content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.9;
 }
 
 .about_info {
     padding-left: 30px;
+    padding-right: 15px;
 }
 
 .section_title span {
@@ -218,7 +240,7 @@
     font-size: 2.5rem;
     font-weight: 600;
     color: #2C3E50;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     position: relative;
     display: inline-block;
 }
@@ -237,7 +259,7 @@
     font-size: 1.1rem;
     line-height: 1.8;
     color: #666;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .line-button {
@@ -270,8 +292,13 @@
         height: 300px;
     }
     
-    .small_img img {
-        height: 150px;
+    .gallery_item img {
+        height: 100px;
+    }
+
+    .gallery_grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
     }
     
     .about_info {
@@ -302,8 +329,13 @@
         height: 250px;
     }
     
-    .small_img img {
-        height: 120px;
+    .gallery_item img {
+        height: 80px;
+    }
+
+    .gallery_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
     }
 }
 </style>

@@ -52,4 +52,14 @@
         <priority>0.9</priority>
     </url>
     {% endfor %}
+
+    <!-- Yorumlar/Reviews Sayfası -->
+    {% for lang_code, lang_name in LANGUAGES %}
+    <url>
+        <loc>https://{{ request.get_host }}/{{ lang_code }}/reviews/</loc>
+        <lastmod>{% now "Y-m-d" %}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    {% endfor %}
 </urlset> 

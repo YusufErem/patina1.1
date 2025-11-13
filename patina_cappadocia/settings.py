@@ -20,9 +20,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-dev-key-for-development-only')
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.environ.get('SECRET_KEY')
+if not SECRET_KEY:
+    if DEBUG:
+        # Only allow fallback in DEBUG mode (local development)
+        SECRET_KEY = 'django-insecure-dev-key-for-local-development-only'
+        import warnings
+        warnings.warn("SECRET_KEY not set! Using insecure default for local development only.")
+    else:
+        raise ValueError("SECRET_KEY environment variable must be set for production!")
 
-DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost 127.0.0.1').split(' ')
 
@@ -63,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'mainapp.context_processors.google_reviews_context',
             ],
         },
     },
@@ -76,12 +87,19 @@ WSGI_APPLICATION = 'patina_cappadocia.wsgi.application'
 
 import dj_database_url
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Use PostgreSQL on Render.com, SQLite for local development
+DATABASE_URL = os.environ.get('DATABASE_URL')
+if DATABASE_URL:
+    DATABASES = {
+        'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600)
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 
@@ -129,27 +147,33 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-# Language detection settings (development)
+# Language detection settings
 LANGUAGE_COOKIE_NAME = 'django_language'
 LANGUAGE_COOKIE_AGE = None  # Until browser closes
 LANGUAGE_COOKIE_DOMAIN = None
 LANGUAGE_COOKIE_PATH = '/'
-LANGUAGE_COOKIE_SECURE = False  # Allow HTTP in development (set to True in production)
+LANGUAGE_COOKIE_SECURE = not DEBUG  # HTTPS only in production
 LANGUAGE_COOKIE_HTTPONLY = True
 LANGUAGE_COOKIE_SAMESITE = 'Lax'
 
 # Security Headers
-# SECURE_SSL_REDIRECT = not DEBUG  # Force HTTPS in production only (disabled in development)
-SECURE_SSL_REDIRECT = False  # Disabled for development server
-# HSTS disabled in development (prevents HTTPS redirect)
-SECURE_HSTS_SECONDS = 0  # Disabled for development
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True  # Commented for development
-# SECURE_HSTS_PRELOAD = True  # Commented for development
-SECURE_BROWSER_XSS_FILTER = True
-# CSP disabled in development (causes HTTPS redirect attempts)
-if DEBUG:
-    SECURE_CONTENT_SECURITY_POLICY = None
+# Force HTTPS in production
+SECURE_SSL_REDIRECT = not DEBUG
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# HSTS (HTTP Strict Transport Security)
+if not DEBUG:
+    SECURE_HSTS_SECONDS = 31536000  # 1 year
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
 else:
+    SECURE_HSTS_SECONDS = 0
+
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+# Content Security Policy (disabled in development for easier debugging)
+if not DEBUG:
     SECURE_CONTENT_SECURITY_POLICY = {
         'default-src': ("'self'",),
         'script-src': ("'self'", "https://cdn.jsdelivr.net", "https://code.jquery.com", "https://www.googletagmanager.com", "https://www.google-analytics.com"),
@@ -159,14 +183,19 @@ else:
         'connect-src': ("'self'", "https:", "wss:"),
         'frame-ancestors': ("'none'",),
     }
+
 X_FRAME_OPTIONS = 'DENY'
-# Development settings - Disabled for HTTP dev server
-CSRF_COOKIE_SECURE = False  # Allow HTTP in development
+
+# CSRF and Session Security
+CSRF_COOKIE_SECURE = not DEBUG  # HTTPS only in production
 CSRF_COOKIE_HTTPONLY = True
-SESSION_COOKIE_SECURE = False  # Allow HTTP in development
+SESSION_COOKIE_SECURE = not DEBUG  # HTTPS only in production
 
 # Cache control settings
-CACHE_MIDDLEWARE_SECONDS = 0  # Disable caching for development
+if DEBUG:
+    CACHE_MIDDLEWARE_SECONDS = 0  # Disable caching for development
+else:
+    CACHE_MIDDLEWARE_SECONDS = 3600  # 1 hour cache in production
 CACHE_MIDDLEWARE_KEY_PREFIX = ''
 
 # Session settings
@@ -193,16 +222,17 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Ping endpoint'i için rate limiting ekleyin
+# Rate limiting (production only)
 if not DEBUG:
-    MIDDLEWARE += [
-        'django.middleware.common.CommonMiddleware',
-    ]
-
     # Rate limiting settings
     RATELIMIT_ENABLE = True
     RATELIMIT_USE_CACHE = 'default'
-    RATELIMIT_VIEW = '5/m'  # Dakikada 5 istek
+    RATELIMIT_VIEW = '5/m'  # 5 requests per minute
 
-# Admin panelini devre dışı bırakıyoruz
+# Admin paneli kapalı (güvenlik için)
 ADMIN_ENABLED = False
+
+# RapidAPI Configuration
+# RapidAPI key'i environment variable'dan al (güvenlik için)
+# Kullanım: export RAPIDAPI_KEY="your-rapidapi-key"
+RAPIDAPI_KEY = os.environ.get('RAPIDAPI_KEY', None)

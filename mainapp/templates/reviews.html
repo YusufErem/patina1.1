@@ -1,0 +1,794 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Patina Cappadocia Yorumları - Misafir Değerlendirmeleri" %}{% endblock %}
+
+{% block content %}
+<div class="reviews_page">
+    <!-- Hero Section -->
+    <div class="reviews_hero">
+        <div class="container">
+            <div class="hero_content text-center">
+                <h1>{% trans "Misafir Yorumları" %}</h1>
+                <p class="lead">{% trans "Sizlerin Deneyimleri Bizim İçin Çok Değerli" %}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="reviews_summary_section">
+        <div class="container">
+            <div class="summary_card">
+                <div class="summary_item">
+                    <div class="summary_value">{{ avg_rating|default:"5.0" }}</div>
+                    <div class="summary_stars">
+                        {% for i in "12345"|make_list %}
+                            {% if forloop.counter <= avg_rating|floatformat:0|add:"0" %}
+                            <i class="fas fa-star"></i>
+                            {% else %}
+                            <i class="far fa-star"></i>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="summary_label">{% trans "Ortalama Puan" %}</div>
+                </div>
+                <div class="summary_item">
+                    <div class="summary_value">{{ total_count|default:0 }}</div>
+                    <div class="summary_label">{% trans "Toplam Yorum" %}</div>
+                </div>
+                <div class="summary_item">
+                    <a href="https://g.page/r/CRvHwSQUxJ7CEBE/review" target="_blank" class="review_btn_primary">
+                        <i class="fab fa-google"></i>
+                        {% trans "Google'da Değerlendir" %}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Rating Distribution -->
+            {% if rating_distribution %}
+            <div class="rating_distribution">
+                {% for dist in rating_distribution %}
+                <div class="rating_bar_item">
+                    <div class="rating_label">{{ dist.rating }} {% trans "Yıldız" %}</div>
+                    <div class="rating_bar">
+                        <div class="rating_bar_fill" style="width: {% widthratio dist.count total_count 100 %}%"></div>
+                    </div>
+                    <div class="rating_count">{{ dist.count }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Reviews List -->
+    <div class="reviews_list_section">
+        <div class="container">
+            {% if reviews %}
+            <div class="reviews_grid">
+                {% for review in reviews %}
+                <div class="review_card_full" data-review-id="{{ review.id }}">
+                    <div class="review_header_full">
+                        {% if review.profile_photo_url %}
+                        <img src="{{ review.profile_photo_url }}" alt="{{ review.author_name }}" class="reviewer_photo_full">
+                        {% else %}
+                        <div class="reviewer_avatar_full">{{ review.author_name|make_list|first }}</div>
+                        {% endif %}
+                        <div class="reviewer_info_full">
+                            <h4>{{ review.author_name }}</h4>
+                            <div class="rating_full">
+                                {% for i in "12345"|make_list %}
+                                    {% if forloop.counter <= review.rating %}
+                                    <i class="fas fa-star"></i>
+                                    {% else %}
+                                    <i class="far fa-star"></i>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                            <span class="review_date_full">{{ review.published_at|date:"d F Y" }}</span>
+                        </div>
+                    </div>
+                    <div class="review_content_full" id="review_content_{{ review.id }}">
+                        <p>{{ review.text }}</p>
+                        {% if review.text|length > 300 %}
+                        <span class="read_more_btn" onclick="toggleReview({{ review.id }})">
+                            <span class="read_more_text">{% trans "Devamını Oku" %}</span>
+                            <span class="read_less_text" style="display: none;">{% trans "Daha Az Göster" %}</span>
+                        </span>
+                        {% endif %}
+                    </div>
+                    {% if review.review_photos %}
+                    <div class="review_photos_full">
+                        <div class="photos_grid">
+                            {% for photo_url in review.review_photos|slice:":4" %}
+                            <div class="photo_item">
+                                <img src="{{ photo_url }}" alt="{% trans 'Yorum fotoğrafı' %}" onclick="openPhotoModal('{{ photo_url }}')">
+                            </div>
+                            {% endfor %}
+                            {% if review.review_photos|length > 4 %}
+                            <div class="photo_item photo_more" onclick="openAllPhotos({{ review.id }})">
+                                <div class="photo_more_overlay">
+                                    <span class="photo_more_text">+{{ review.review_photos|length|add:"-4" }}</span>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if review.author_url %}
+                    <div class="review_footer_full">
+                        <a href="{{ review.author_url }}" target="_blank" class="review_link">
+                            <i class="fab fa-google"></i> {% trans "Google'da Görüntüle" %}
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            
+            <!-- Pagination -->
+            {% if reviews.has_other_pages %}
+            <div class="pagination_wrapper">
+                <nav aria-label="{% trans 'Sayfa navigasyonu' %}">
+                    <ul class="pagination">
+                        {% if reviews.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page=1" aria-label="{% trans 'İlk Sayfa' %}">
+                                <span aria-hidden="true">&laquo;&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ reviews.previous_page_number }}" aria-label="{% trans 'Önceki' %}">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link">&laquo;&laquo;</span>
+                        </li>
+                        <li class="page-item disabled">
+                            <span class="page-link">&laquo;</span>
+                        </li>
+                        {% endif %}
+                        
+                        {% for num in reviews.paginator.page_range %}
+                            {% if reviews.number == num %}
+                            <li class="page-item active">
+                                <span class="page-link">{{ num }}</span>
+                            </li>
+                            {% elif num > reviews.number|add:'-3' and num < reviews.number|add:'3' %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% if reviews.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ reviews.next_page_number }}" aria-label="{% trans 'Sonraki' %}">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ reviews.paginator.num_pages }}" aria-label="{% trans 'Son Sayfa' %}">
+                                <span aria-hidden="true">&raquo;&raquo;</span>
+                            </a>
+                        </li>
+                        {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link">&raquo;</span>
+                        </li>
+                        <li class="page-item disabled">
+                            <span class="page-link">&raquo;&raquo;</span>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+                <div class="pagination_info">
+                    <p>{% trans "Sayfa" %} {{ reviews.number }} {% trans "of" %} {{ reviews.paginator.num_pages }} ({{ total_count }} {% trans "toplam yorum" %})</p>
+                </div>
+            </div>
+            {% endif %}
+            {% else %}
+            <div class="no_reviews">
+                <p>{% trans "Henüz yorum bulunmamaktadır." %}</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<style>
+.reviews_page {
+    background: #fff;
+    padding-top: 0;
+}
+
+.reviews_hero {
+    background: linear-gradient(135deg, #F5F1EB 0%, #E6DFD3 100%);
+    padding: 100px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 1px solid #D4C5B0;
+}
+
+.reviews_hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #5C4A37;
+}
+
+.reviews_hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #7D6E3C;
+    font-weight: 300;
+}
+
+.reviews_summary_section {
+    padding: 60px 0;
+    background: #F5F1EB;
+}
+
+.summary_card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.summary_item {
+    text-align: center;
+}
+
+.summary_value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.summary_stars {
+    color: #FFC107;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.summary_label {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.review_btn_primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: var(--primary);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.review_btn_primary:hover {
+    background: #d4a574;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.review_btn_primary i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.rating_distribution {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.rating_bar_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rating_label {
+    width: 100px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.rating_bar {
+    flex: 1;
+    height: 25px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+.rating_bar_fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 15px;
+    transition: width 0.5s ease;
+}
+
+.rating_count {
+    width: 50px;
+    text-align: right;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.reviews_list_section {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.reviews_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    align-items: start; /* Kartların üstten hizalanması */
+}
+
+.review_card_full {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.review_card_full:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.review_header_full {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviewer_photo_full {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.reviewer_avatar_full {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.reviewer_info_full h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #2C3E50;
+}
+
+.rating_full {
+    color: #FFC107;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.review_date_full {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.review_content_full {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.review_content_full p {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 10.8em; /* 6 lines * 1.8 line-height */
+}
+
+.review_content_full.expanded p {
+    display: block;
+    -webkit-line-clamp: unset;
+    max-height: none;
+}
+
+.read_more_btn {
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.read_more_btn:hover {
+    color: #d4a574;
+}
+
+.review_footer_full {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+}
+
+.review_link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.review_link:hover {
+    color: #d4a574;
+}
+
+.review_link i {
+    margin-right: 5px;
+}
+
+.review_photos_full {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 140px; /* Sabit yükseklik */
+    flex-shrink: 0; /* Flexbox'ta küçülmesin */
+}
+
+.photos_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    height: 100%;
+}
+
+.photo_item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%; /* Grid yüksekliğine uyum */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo_item:hover {
+    transform: scale(1.05);
+}
+
+.photo_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo_more {
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.photo_more_overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.photo_more:hover .photo_more_overlay {
+    background: rgba(0,0,0,0.7);
+}
+
+.photo_more_text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.no_reviews {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+/* Photo Modal */
+.photo_modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.photo_modal.active {
+    display: flex;
+}
+
+.photo_modal_content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+}
+
+.photo_modal_content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.photo_modal_close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.photo_modal_close:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+/* Pagination Styles */
+.pagination_wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+}
+
+.page-item {
+    margin: 0;
+}
+
+.page-link {
+    display: block;
+    padding: 10px 15px;
+    color: #5C4A37;
+    background: #F5F1EB;
+    border: 1px solid #D4C5B0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.page-link:hover {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.page-item.active .page-link {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.page-item.disabled .page-link {
+    background: #E6DFD3;
+    color: #999;
+    cursor: not-allowed;
+    border-color: #D4C5B0;
+}
+
+.pagination_info {
+    text-align: center;
+    color: #7D6E3C;
+    font-size: 0.95rem;
+}
+
+.pagination_info strong {
+    color: #5C4A37;
+}
+
+@media (max-width: 991px) {
+    .reviews_hero {
+        padding: 80px 0 40px;
+    }
+
+    .reviews_hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .reviews_hero p {
+        font-size: 1.2rem;
+    }
+
+    .summary_card {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .reviews_grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .reviews_hero {
+        padding: 60px 0 30px;
+    }
+
+    .reviews_hero h1 {
+        font-size: 2rem;
+    }
+
+    .reviews_hero p {
+        font-size: 1rem;
+    }
+
+    .summary_card {
+        padding: 20px 15px;
+    }
+
+    .summary_value {
+        font-size: 2rem;
+    }
+
+    .reviews_grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .review_card_full {
+        padding: 20px;
+    }
+
+    .rating_distribution {
+        padding: 20px;
+    }
+
+    .rating_bar_item {
+        flex-wrap: wrap;
+    }
+
+    .rating_label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .rating_bar {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .rating_count {
+        width: 100%;
+        text-align: left;
+    }
+}
+</style>
+
+<!-- Photo Modal -->
+<div id="photoModal" class="photo_modal" onclick="closePhotoModal()">
+    <div class="photo_modal_content" onclick="event.stopPropagation()">
+        <span class="photo_modal_close" onclick="closePhotoModal()">&times;</span>
+        <img id="modalPhoto" src="" alt="{% trans 'Yorum fotoğrafı' %}">
+    </div>
+</div>
+
+<script>
+function openPhotoModal(photoUrl) {
+    document.getElementById('modalPhoto').src = photoUrl;
+    document.getElementById('photoModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePhotoModal() {
+    document.getElementById('photoModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// ESC tuşu ile kapat
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closePhotoModal();
+    }
+});
+
+// Yorum genişletme/daraltma
+function toggleReview(index) {
+    const content = document.getElementById('review_content_' + index);
+    const readMore = content.querySelector('.read_more_text');
+    const readLess = content.querySelector('.read_less_text');
+    
+    if (content.classList.contains('expanded')) {
+        content.classList.remove('expanded');
+        readMore.style.display = 'inline';
+        readLess.style.display = 'none';
+    } else {
+        content.classList.add('expanded');
+        readMore.style.display = 'none';
+        readLess.style.display = 'inline';
+    }
+}
+
+// Tüm fotoğrafları göster
+function openAllPhotos(reviewId) {
+    // İlgili yorumun tüm fotoğraflarını modal'da göster
+    // Şimdilik ilk fotoğrafı aç, daha sonra carousel eklenebilir
+    const reviewCard = document.querySelector(`[data-review-id="${reviewId}"]`);
+    if (reviewCard) {
+        const firstPhoto = reviewCard.querySelector('.photo_item img');
+        if (firstPhoto) {
+            openPhotoModal(firstPhoto.src);
+        }
+    }
+}
+</script>
+{% endblock %}
+

@@ -132,13 +132,12 @@
 }
 
 .room_hero {
-    height: 60vh;
+    background: linear-gradient(135deg, #F5F1EB 0%, #E6DFD3 100%);
+    padding: 100px 0 60px;
     display: flex;
     align-items: center;
-    margin-bottom: 80px;
-    position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{% static "img/views/70.jpg" %}') no-repeat center center;
-    background-size: cover;
+    margin-bottom: 0;
+    border-bottom: 1px solid #D4C5B0;
 }
 
 .hero_content {
@@ -148,17 +147,15 @@
 
 .hero_content h1 {
     font-size: 3.5rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: #5C4A37;
 }
 
 .hero_content .lead {
     font-size: 1.5rem;
     font-weight: 300;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    color: #7D6E3C;
 }
 
 .rooms_content {
@@ -313,8 +310,7 @@
 
 @media (max-width: 991px) {
     .room_hero {
-        height: 50vh;
-        margin-bottom: 60px;
+        padding: 80px 0 40px;
     }
 
     .hero_content h1 {
@@ -341,8 +337,7 @@
 
 @media (max-width: 576px) {
     .room_hero {
-        height: 40vh;
-        margin-bottom: 40px;
+        padding: 60px 0 30px;
     }
 
     .hero_content h1 {

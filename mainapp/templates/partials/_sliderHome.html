@@ -22,6 +22,26 @@
             background-size: cover !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Owl Carousel item'ları için */
+        .owl-item .single_slider {
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            display: flex !important;
+        }
+        
+        /* Slider görsellerinin görünür olması için */
+        .slider_area .single_slider {
+            min-height: 100vh;
+        }
+        
+        /* Görsel tag'ini gizle, sadece background kullan */
+        .single_slider .slider_bg_img {
+            display: none;
         }
 
         .slider_text h3 {
@@ -36,6 +56,36 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
             margin-bottom: 30px;
         }
+        .slider_features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .feature_badge {
+            background: rgba(255,255,255,0.25);
+            backdrop-filter: blur(5px);
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.4);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .feature_badge:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+        }
+
+        .feature_badge i {
+            margin-right: 10px;
+        }
+
         @media (max-width: 768px) {
             .slider_active {
                 height: 60vh;
@@ -46,46 +96,88 @@
             }
 
             .slider_text h3 {
-                font-size: 2.5rem;
+                font-size: 2.5rem !important;
             }
             .slider_text p {
-                font-size: 1.2rem;
+                font-size: 1.2rem !important;
+            }
+
+            .slider_features {
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            .feature_badge {
+                padding: 10px 20px;
+                font-size: 0.85rem;
             }
         }
     </style>
     <div class="slider_active owl-carousel">
-        {% if slider_images %}
             {% for image in slider_images %}
             <div class="single_slider d-flex align-items-center justify-content-center" style="background-image: url('{{ image.image.url }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-                <div class="container">
+            <div class="container" style="position: relative; z-index: 10;">
                     <div class="row">
                         <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3>{{ image.title }}</h3>
-                                {% if image.caption %}
-                                <p>{{ image.caption }}</p>
-                                {% endif %}
+                        <div class="slider_text text-center" style="position: relative; z-index: 11;">
+                            <h3 style="color: #fff; text-shadow: 3px 3px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5); font-size: 4.5rem; font-weight: 700; margin-bottom: 20px; letter-spacing: 2px;">
+                                {% trans "Patina Cappadocia" %}
+                            </h3>
+                            <p style="color: #fff; text-shadow: 2px 2px 8px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4); font-size: 1.8rem; margin-bottom: 30px; font-weight: 400;">
+                                {% trans "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi" %}
+                            </p>
+                            <div class="slider_features" style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px;">
+                                <div class="feature_badge" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(5px); padding: 15px 30px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.4); font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                    <i class="fas fa-heart" style="margin-right: 10px;"></i>
+                                    <span>{% trans "Balayı & Nikah Organizasyonları" %}</span>
+                                </div>
+                                <div class="feature_badge" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(5px); padding: 15px 30px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.4); font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                    <i class="fas fa-hot-air-balloon" style="margin-right: 10px;"></i>
+                                    <span>{% trans "Balon Turu Organizasyonu" %}</span>
+                                </div>
+                                <div class="feature_badge" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(5px); padding: 15px 30px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.4); font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                    <i class="fas fa-spa" style="margin-right: 10px;"></i>
+                                    <span>{% trans "Jakuzili Süitler" %}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {% endfor %}
-        {% else %}
+        </div>
+        {% empty %}
             <!-- Fallback to default slider -->
             <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
-                <div class="container">
+                <div class="container" style="position: relative; z-index: 10;">
                     <div class="row">
                         <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3>{% trans "Patina Cappadocia" %}</h3>
-                                <p>{% trans "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi" %}</p>
+                            <div class="slider_text text-center" style="position: relative; z-index: 11;">
+                                <h3 style="color: #fff; text-shadow: 3px 3px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5); font-size: 4.5rem; font-weight: 700; margin-bottom: 20px; letter-spacing: 2px;">
+                                    {% trans "Patina Cappadocia" %}
+                                </h3>
+                                <p style="color: #fff; text-shadow: 2px 2px 8px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4); font-size: 1.8rem; margin-bottom: 30px; font-weight: 400;">
+                                    {% trans "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi" %}
+                                </p>
+                                <div class="slider_features" style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px;">
+                                    <div class="feature_badge" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(5px); padding: 15px 30px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.4); font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                        <i class="fas fa-heart" style="margin-right: 10px;"></i>
+                                        <span>{% trans "Balayı & Nikah Organizasyonları" %}</span>
+                                    </div>
+                                    <div class="feature_badge" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(5px); padding: 15px 30px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.4); font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                        <i class="fas fa-hot-air-balloon" style="margin-right: 10px;"></i>
+                                        <span>{% trans "Balon Turu Organizasyonu" %}</span>
+                                    </div>
+                                    <div class="feature_badge" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(5px); padding: 15px 30px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.4); font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                        <i class="fas fa-spa" style="margin-right: 10px;"></i>
+                                        <span>{% trans "Jakuzili Süitler" %}</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        {% endif %}
+        {% endfor %}
     </div>
 </div>
 

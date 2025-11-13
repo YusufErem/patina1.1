@@ -6,6 +6,61 @@
         <div class="section_title text-center mb-5">
             <span>{% trans "Misafir Yorumları" %}</span>
             <h3>{% trans "Google'da Bizi Değerlendirin" %}</h3>
+            <div class="reviews_summary mt-3">
+                <div class="avg_rating">
+                    <span class="rating_value">{{ avg_rating|default:"5.0" }}</span>
+                    <div class="stars">
+                        {% for i in "12345"|make_list %}
+                            {% if forloop.counter <= avg_rating|floatformat:0|add:"0" %}
+                            <i class="fas fa-star"></i>
+                            {% else %}
+                            <i class="far fa-star"></i>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="total_reviews">
+                    <a href="{% url 'reviews' %}">{% trans "Toplam" %} {{ total_reviews_count|default:0 }} {% trans "Değerlendirme" %} →</a>
+                </div>
+            </div>
+            
+            <style>
+            .reviews_summary {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                flex-wrap: wrap;
+            }
+            
+            .avg_rating {
+                text-align: center;
+            }
+            
+            .rating_value {
+                display: block;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 10px;
+            }
+            
+            .reviews_summary .stars {
+                color: #FFC107;
+                font-size: 1.3rem;
+            }
+            
+            .total_reviews a {
+                font-size: 1.2rem;
+                color: var(--primary);
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            
+            .total_reviews a:hover {
+                color: #d4a574;
+            }
+            </style>
         </div>
         
         <div class="reviews_slider swiper">
@@ -35,6 +90,17 @@
                         </div>
                         <div class="review_content">
                             <p>{{ review.text }}</p>
+                            {% if review.review_photos %}
+                            <div class="review_photos">
+                                <div class="photos_grid_mini">
+                                    {% for photo_url in review.review_photos|slice:":3" %}
+                                    <div class="photo_item_mini">
+                                        <img src="{{ photo_url }}" alt="{% trans 'Yorum fotoğrafı' %}">
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -54,6 +120,10 @@
         </div>
         
         <div class="text-center mt-5">
+            <a href="{% url 'reviews' %}" class="review_btn" style="margin-right: 15px;">
+                <i class="fas fa-comments"></i>
+                {% trans "Tüm Yorumları Gör" %}
+            </a>
             <a href="https://g.page/r/CRvHwSQUxJ7CEBE/review" target="_blank" class="review_btn">
                 <i class="fab fa-google"></i>
                 {% trans "Google'da Değerlendir" %}
@@ -170,6 +240,35 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.review_photos {
+    margin-top: 15px;
+}
+
+.photos_grid_mini {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.photo_item_mini {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo_item_mini:hover {
+    transform: scale(1.1);
+}
+
+.photo_item_mini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .review_btn {

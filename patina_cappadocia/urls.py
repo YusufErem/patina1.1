@@ -59,7 +59,10 @@ def custom_500(request, exception=None):
     }, status=500)
 
 # Temel URL desenleri
+# Admin paneli kapalı (güvenlik için)
 urlpatterns = [
+    # Admin paneli devre dışı - güvenlik için
+    # path('patina-secret-admin-2024/', admin.site.urls),  # Admin kapalı
     path('i18n/', include('django.conf.urls.i18n')),
     path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
     path('sitemap.xml', sitemap_view, name='sitemap'),

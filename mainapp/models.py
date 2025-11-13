@@ -171,6 +171,7 @@ class GoogleReview(models.Model):
     text = models.TextField(verbose_name="Yorum")
     published_at = models.DateTimeField(verbose_name="Yayın Tarihi")
     language = models.CharField(max_length=10, default='tr', verbose_name="Dil")
+    review_photos = models.JSONField(default=list, blank=True, verbose_name="Yorum Fotoğrafları", help_text="Yorumla birlikte paylaşılan fotoğraflar")
 
     # Sistema ait alanlar
     synced_at = models.DateTimeField(auto_now=True, verbose_name="Senkronize Tarihi")

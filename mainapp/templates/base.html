@@ -20,12 +20,14 @@
     <meta name="csrf-token" content="{{ csrf_token }}">
     
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="https://patinacappadocia.com/static/img/logo.png?v=3">
-    <link rel="icon" type="image/png" href="https://patinacappadocia.com/static/img/logo.png?v=3">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://patinacappadocia.com/static/img/logo.png?v=3">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://patinacappadocia.com/static/img/logo.png?v=3">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://patinacappadocia.com/static/img/logo.png?v=3">
-    <meta name="msapplication-TileImage" content="https://patinacappadocia.com/static/img/logo.png">
+    {% with favicon_url=request.scheme|add:"://"|add:request.get_host|add:"/static/img/logo.png?v=3" %}
+    <link rel="shortcut icon" type="image/png" href="{{ favicon_url }}">
+    <link rel="icon" type="image/png" href="{{ favicon_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_url }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ favicon_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_url }}">
+    <meta name="msapplication-TileImage" content="{{ favicon_url }}">
+    {% endwith %}
     
     <!-- Title -->
     {% with title_suffix=LANGUAGE_CODE|default:"en" %}

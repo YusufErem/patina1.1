@@ -3,83 +3,32 @@
 {% load i18n %}
 
 {% block title %}
-    {% if LANGUAGE_CODE == 'tr' %}
-        Patina Cappadocia - Balayı ve Nikah Organizasyonları | Kapadokya Otel
-    {% elif LANGUAGE_CODE == 'en' %}
-        Patina Cappadocia - Honeymoon & Wedding Organizations | Cappadocia Hotel
-    {% elif LANGUAGE_CODE == 'de' %}
-        Patina Cappadocia - Flitterwochen & Hochzeitsorganisationen | Kappadokien Hotel
-    {% elif LANGUAGE_CODE == 'fr' %}
-        Patina Cappadocia - Organisations Lune de Miel & Mariage | Hôtel Cappadoce
-    {% elif LANGUAGE_CODE == 'es' %}
-        Patina Cappadocia - Organizaciones Luna de Miel y Boda | Hotel Capadocia
-    {% elif LANGUAGE_CODE == 'ru' %}
-        Patina Cappadocia - Организация Медового Месяца и Свадьбы | Отель Каппадокия
-    {% elif LANGUAGE_CODE == 'ar' %}
-        Patina Cappadocia - تنظيم شهر العسل والزفاف | فندق كابادوكيا
-    {% else %}
-        Patina Cappadocia - Honeymoon & Wedding Organizations | Cappadocia Hotel
-    {% endif %}
-{% endblock %}
-
-{% block extra_head %}
-    <!-- SEO Meta Tags for Honeymoon & Wedding -->
-    {% if LANGUAGE_CODE == 'tr' %}
-    <meta name="description" content="Patina Cappadocia'da balayı ve nikah organizasyonları. Balon ve vadi manzaralı teras, özel dekorasyon, profesyonel fotoğraf ve video hizmetleri. WhatsApp ile hızlı rezervasyon.">
-    <meta name="keywords" content="kapadokya balayı organizasyonu, kapadokya nikah organizasyonu, balayı otel kapadokya, nikah organizasyonu nevşehir, balon manzaralı teras, jakuzili balayı süitleri, kapadokya düğün organizasyonu">
-    {% elif LANGUAGE_CODE == 'en' %}
-    <meta name="description" content="Honeymoon and wedding organizations at Patina Cappadocia. Balloon and valley view terrace, custom decoration, professional photography and video services. Quick reservation via WhatsApp.">
-    <meta name="keywords" content="cappadocia honeymoon organization, cappadocia wedding organization, honeymoon hotel cappadocia, wedding organization nevşehir, balloon view terrace, jacuzzi honeymoon suites, cappadocia wedding organization">
-    {% elif LANGUAGE_CODE == 'de' %}
-    <meta name="description" content="Flitterwochen- und Hochzeitsorganisationen im Patina Cappadocia. Ballon- und Talblick-Terrasse, maßgeschneiderte Dekoration, professionelle Foto- und Video-Services. Schnelle Reservierung über WhatsApp.">
-    <meta name="keywords" content="kappadokien flitterwochen organisation, kappadokien hochzeitsorganisation, flitterwochen hotel kappadokien, hochzeitsorganisation nevşehir, ballonblick terrasse, jacuzzi flitterwochen suites, kappadokien hochzeitsorganisation">
-    {% elif LANGUAGE_CODE == 'fr' %}
-    <meta name="description" content="Organisations de lune de miel et mariage au Patina Cappadocia. Terrasse avec vue sur ballons et vallée, décoration personnalisée, services photo et vidéo professionnels. Réservation rapide via WhatsApp.">
-    <meta name="keywords" content="organisation lune de miel cappadoce, organisation mariage cappadoce, hôtel lune de miel cappadoce, organisation mariage nevşehir, terrasse vue ballons, suites lune de miel jacuzzi, organisation mariage cappadoce">
-    {% elif LANGUAGE_CODE == 'es' %}
-    <meta name="description" content="Organizaciones de luna de miel y boda en Patina Cappadocia. Terraza con vista a globos y valle, decoración personalizada, servicios profesionales de fotografía y video. Reserva rápida vía WhatsApp.">
-    <meta name="keywords" content="organización luna de miel capadocia, organización boda capadocia, hotel luna de miel capadocia, organización boda nevşehir, terraza vista globos, suites luna de miel jacuzzi, organización boda capadocia">
-    {% elif LANGUAGE_CODE == 'ru' %}
-    <meta name="description" content="Организация медового месяца и свадьбы в Patina Cappadocia. Терраса с видом на воздушные шары и долину, индивидуальный декор, профессиональные фото и видео услуги. Быстрое бронирование через WhatsApp.">
-    <meta name="keywords" content="организация медового месяца каппадокия, организация свадьбы каппадокия, отель медовый месяц каппадокия, организация свадьбы невшехир, терраса вид воздушные шары, люксы медовый месяц джакузи, организация свадьбы каппадокия">
-    {% elif LANGUAGE_CODE == 'ar' %}
-    <meta name="description" content="تنظيم شهر العسل والزفاف في Patina Cappadocia. شرفة بإطلالة على المناطيد والوادي، ديكور مخصص، خدمات تصوير احترافية. حجز سريع عبر WhatsApp.">
-    <meta name="keywords" content="تنظيم شهر العسل كابادوكيا, تنظيم الزفاف كابادوكيا, فندق شهر العسل كابادوكيا, تنظيم الزفاف نوشهر, شرفة إطلالة المناطيد, أجنحة شهر العسل جاكوزي, تنظيم الزفاف كابادوكيا">
-    {% endif %}
-    
-    <!-- Structured Data for Event Organization -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "{% if LANGUAGE_CODE == 'tr' %}Balayı ve Nikah Organizasyonları{% elif LANGUAGE_CODE == 'en' %}Honeymoon & Wedding Organizations{% else %}Honeymoon & Wedding Organizations{% endif %}",
-        "description": "{% if LANGUAGE_CODE == 'tr' %}Kapadokya'da unutulmaz balayı ve nikah organizasyonları{% elif LANGUAGE_CODE == 'en' %}Unforgettable honeymoon and wedding organizations in Cappadocia{% else %}Unforgettable honeymoon and wedding organizations in Cappadocia{% endif %}",
-        "location": {
-            "@type": "Place",
-            "name": "Patina Cappadocia",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Uçhisar",
-                "addressRegion": "Nevşehir",
-                "addressCountry": "TR"
-            }
-        },
-        "offers": {
-            "@type": "Offer",
-            "url": "https://wa.me/905424685050",
-            "priceCurrency": "TRY"
-        }
-    }
-    </script>
+{% if LANGUAGE_CODE == 'tr' %}
+Patina Cappadocia - Kapadokya Otel
+{% elif LANGUAGE_CODE == 'en' %}
+Patina Cappadocia - Cappadocia Hotel
+{% elif LANGUAGE_CODE == 'de' %}
+Patina Cappadocia - Kappadokien Hotel
+{% elif LANGUAGE_CODE == 'fr' %}
+Patina Cappadocia - Hôtel Cappadoce
+{% elif LANGUAGE_CODE == 'es' %}
+Patina Cappadocia - Hotel Capadocia
+{% elif LANGUAGE_CODE == 'ru' %}
+Patina Cappadocia - Отель Каппадокия
+{% elif LANGUAGE_CODE == 'ar' %}
+Patina Cappadocia - فندق كابادوكيا
+{% else %}
+Patina Cappadocia - Cappadocia Hotel
+{% endif %}
 {% endblock %}
 
 {% block content %}
-    {% include 'partials/_sliderHome.html' %}
-    {% include 'partials/_aboutHome.html' %}
-    {% include 'partials/_roomsHome.html' %}
-    {% include 'partials/_honeymoonWedding.html' %}
-    {% include 'partials/_experiences.html' %}
-    {% include 'partials/_instagramHome.html' %}
+{% include 'partials/_sliderHome.html' %}
+{% include 'partials/_aboutHome.html' %}
+{% include 'partials/_roomsHome.html' %}
+
+{% include 'partials/_experiences.html' %}
+{% include 'partials/_instagramHome.html' %}
 {% endblock %}
 
 <style>
@@ -164,11 +113,13 @@
     /* Instagram Section */
     .instagram-section {
         background: #2C3E50;
-        padding: 120px 0 0 0; /* Removed bottom padding */
+        padding: 120px 0 0 0;
+        /* Removed bottom padding */
         position: relative;
         overflow: hidden;
         color: #fff;
-        margin-bottom: 0; /* Ensure no margin at bottom */
+        margin-bottom: 0;
+        /* Ensure no margin at bottom */
     }
 
     .instagram-section h3,
@@ -190,11 +141,11 @@
     }
 
     /* Section Transitions */
-    #content > div:not(:first-child) {
+    #content>div:not(:first-child) {
         position: relative;
     }
 
-    #content > div:not(:first-child)::before {
+    #content>div:not(:first-child)::before {
         content: '';
         position: absolute;
         top: -1px;
@@ -213,7 +164,7 @@
         min-height: 100vh;
     }
 
-    #content > div:last-child {
+    #content>div:last-child {
         margin-bottom: 0;
     }
 
@@ -229,26 +180,28 @@
 
     /* Responsive Adjustments */
     @media (max-width: 768px) {
+
         .about-section,
         .rooms-section,
         .experiences-section,
         .reviews-section {
             padding: 80px 0;
         }
-        
+
         .instagram-section {
             padding: 80px 0 0 0;
         }
     }
 
     @media (max-width: 576px) {
+
         .about-section,
         .rooms-section,
         .experiences-section,
         .reviews-section {
             padding: 60px 0;
         }
-        
+
         .instagram-section {
             padding: 60px 0 0 0;
         }

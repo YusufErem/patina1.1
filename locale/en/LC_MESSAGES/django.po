@@ -997,8 +997,7 @@ msgstr "Book Now"
 msgid "Özel Organizasyonlar"
 msgstr "Special Events"
 
-msgid "Balayı ve Nikah Organizasyonları"
-msgstr "Honeymoon and Wedding Organizations"
+
 
 msgid "Unutulmaz Anlar İçin"
 msgstr "For Unforgettable Moments"
@@ -1008,14 +1007,7 @@ msgstr "For Unforgettable Moments"
 #| "Balayınızı ve nikah organizasyonunuzu otelimizde balon ve vadi manzaralı "
 #| "terasımızda yapmak isterseniz organizasyonla ilgili otel numaralarından "
 #| "ve mail adresinden lütfen rezervasyon yaptırınız."
-msgid ""
-"Balayınızı ve nikah organizasyonunuzu otelimizde balon ve vadi manzaralı "
-"terasımızda yapmak isterseniz WhatsApp üzerinden bizimle iletişime geçerek "
-"rezervasyon yaptırabilirsiniz."
-msgstr ""
-"If you would like to organize your honeymoon and wedding at our hotel on our "
-"terrace with balloon and valley views, you can make a reservation by "
-"contacting us via WhatsApp."
+
 
 msgid "Hızlı İletişim"
 msgstr "Quick Contact"
@@ -1038,8 +1030,7 @@ msgstr "Jacuzzi Honeymoon Suites"
 msgid "WhatsApp ile İletişime Geç"
 msgstr "Contact via WhatsApp"
 
-msgid "Balayı ve Nikah Organizasyonu"
-msgstr "Honeymoon and Wedding Organization"
+
 
 msgid "Hayalinizdeki Organizasyon"
 msgstr "Your Dream Event"
@@ -1099,8 +1090,7 @@ msgstr "Next"
 msgid "Masalsı Kapadokya'nın Kalbinde Eşsiz Bir Konaklama Deneyimi"
 msgstr "An Unforgettable Stay in the Heart of Magical Cappadocia"
 
-msgid "Balayı & Nikah Organizasyonları"
-msgstr "Honeymoon & Wedding Organizations"
+
 
 msgid "Balon Turu Organizasyonu"
 msgstr "Balloon Tour Organization"

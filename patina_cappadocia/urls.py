@@ -61,13 +61,13 @@ def custom_500(request, exception=None):
         'LANGUAGE_CODE': current_language,
     }, status=500)
 
-# Favicon view - serve logo.png as favicon
+# Favicon view - serve patina_logo.png
 def favicon_view(request):
     from django.contrib.staticfiles import finders
     from django.http import HttpResponse
     
-    # Force serve logo.png as favicon
-    logo_path = finders.find('img/logo.png')
+    # Force serve patina_logo.png as favicon
+    logo_path = finders.find('img/patina_logo.png')
     if logo_path:
         with open(logo_path, 'rb') as f:
             response = HttpResponse(f.read(), content_type='image/png')

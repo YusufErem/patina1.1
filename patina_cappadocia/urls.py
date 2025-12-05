@@ -61,18 +61,12 @@ def custom_500(request, exception=None):
         'LANGUAGE_CODE': current_language,
     }, status=500)
 
-# Favicon view - serve favicon.ico if available, fallback to logo.png
+# Favicon view - serve logo.png as favicon
 def favicon_view(request):
     from django.contrib.staticfiles import finders
     from django.http import HttpResponse
-    # Prefer favicon.ico (standard for browsers)
-    ico_path = finders.find('img/favicon.ico')
-    if ico_path:
-        with open(ico_path, 'rb') as f:
-            response = HttpResponse(f.read(), content_type='image/x-icon')
-            response['Cache-Control'] = 'public, max-age=31536000'
-            return response
-    # Fallback to logo.png if .ico is missing
+    
+    # Force serve logo.png as favicon
     logo_path = finders.find('img/logo.png')
     if logo_path:
         with open(logo_path, 'rb') as f:
@@ -80,6 +74,7 @@ def favicon_view(request):
             # Cache for 1 year
             response['Cache-Control'] = 'public, max-age=31536000'
             return response
+            
     # Last resort: return 404
     from django.http import HttpResponseNotFound
     return HttpResponseNotFound()
